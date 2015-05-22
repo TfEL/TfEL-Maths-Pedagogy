@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12F711D81B0EF4030059C263 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F711D71B0EF4030059C263 /* main.m */; };
+		12F711DB1B0EF4030059C263 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F711DA1B0EF4030059C263 /* AppDelegate.m */; };
+		12F711DE1B0EF4040059C263 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F711DD1B0EF4040059C263 /* ViewController.m */; };
+		12F711E11B0EF4040059C263 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F711DF1B0EF4040059C263 /* Main.storyboard */; };
+		12F711E31B0EF4040059C263 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12F711E21B0EF4040059C263 /* Images.xcassets */; };
+		12F711E61B0EF4040059C263 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12F711E41B0EF4040059C263 /* LaunchScreen.xib */; };
+		12F711F21B0EF4040059C263 /* TfEL_Maths_PedagogyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F711F11B0EF4040059C263 /* TfEL_Maths_PedagogyTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12F711EC1B0EF4040059C263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12F711CA1B0EF4030059C263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12F711D11B0EF4030059C263;
+			remoteInfo = "TfEL Maths Pedagogy";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12F711D21B0EF4030059C263 /* TfEL Maths Pedagogy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TfEL Maths Pedagogy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12F711D61B0EF4030059C263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12F711D71B0EF4030059C263 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		12F711D91B0EF4030059C263 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		12F711DA1B0EF4030059C263 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		12F711DC1B0EF4040059C263 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		12F711DD1B0EF4040059C263 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		12F711E01B0EF4040059C263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12F711E21B0EF4040059C263 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		12F711E51B0EF4040059C263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		12F711EB1B0EF4040059C263 /* TfEL Maths PedagogyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TfEL Maths PedagogyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12F711F01B0EF4040059C263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12F711F11B0EF4040059C263 /* TfEL_Maths_PedagogyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TfEL_Maths_PedagogyTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12F711CF1B0EF4030059C263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12F711E81B0EF4040059C263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12F711C91B0EF4030059C263 = {
+			isa = PBXGroup;
+			children = (
+				12F711D41B0EF4030059C263 /* TfEL Maths Pedagogy */,
+				12F711EE1B0EF4040059C263 /* TfEL Maths PedagogyTests */,
+				12F711D31B0EF4030059C263 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12F711D31B0EF4030059C263 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12F711D21B0EF4030059C263 /* TfEL Maths Pedagogy.app */,
+				12F711EB1B0EF4040059C263 /* TfEL Maths PedagogyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12F711D41B0EF4030059C263 /* TfEL Maths Pedagogy */ = {
+			isa = PBXGroup;
+			children = (
+				12F711D91B0EF4030059C263 /* AppDelegate.h */,
+				12F711DA1B0EF4030059C263 /* AppDelegate.m */,
+				12F711DC1B0EF4040059C263 /* ViewController.h */,
+				12F711DD1B0EF4040059C263 /* ViewController.m */,
+				12F711DF1B0EF4040059C263 /* Main.storyboard */,
+				12F711E21B0EF4040059C263 /* Images.xcassets */,
+				12F711E41B0EF4040059C263 /* LaunchScreen.xib */,
+				12F711D51B0EF4030059C263 /* Supporting Files */,
+			);
+			path = "TfEL Maths Pedagogy";
+			sourceTree = "<group>";
+		};
+		12F711D51B0EF4030059C263 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12F711D61B0EF4030059C263 /* Info.plist */,
+				12F711D71B0EF4030059C263 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12F711EE1B0EF4040059C263 /* TfEL Maths PedagogyTests */ = {
+			isa = PBXGroup;
+			children = (
+				12F711F11B0EF4040059C263 /* TfEL_Maths_PedagogyTests.m */,
+				12F711EF1B0EF4040059C263 /* Supporting Files */,
+			);
+			path = "TfEL Maths PedagogyTests";
+			sourceTree = "<group>";
+		};
+		12F711EF1B0EF4040059C263 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12F711F01B0EF4040059C263 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12F711D11B0EF4030059C263 /* TfEL Maths Pedagogy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12F711F51B0EF4040059C263 /* Build configuration list for PBXNativeTarget "TfEL Maths Pedagogy" */;
+			buildPhases = (
+				12F711CE1B0EF4030059C263 /* Sources */,
+				12F711CF1B0EF4030059C263 /* Frameworks */,
+				12F711D01B0EF4030059C263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TfEL Maths Pedagogy";
+			productName = "TfEL Maths Pedagogy";
+			productReference = 12F711D21B0EF4030059C263 /* TfEL Maths Pedagogy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		12F711EA1B0EF4040059C263 /* TfEL Maths PedagogyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12F711F81B0EF4040059C263 /* Build configuration list for PBXNativeTarget "TfEL Maths PedagogyTests" */;
+			buildPhases = (
+				12F711E71B0EF4040059C263 /* Sources */,
+				12F711E81B0EF4040059C263 /* Frameworks */,
+				12F711E91B0EF4040059C263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12F711ED1B0EF4040059C263 /* PBXTargetDependency */,
+			);
+			name = "TfEL Maths PedagogyTests";
+			productName = "TfEL Maths PedagogyTests";
+			productReference = 12F711EB1B0EF4040059C263 /* TfEL Maths PedagogyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12F711CA1B0EF4030059C263 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Department for Education and Child Development";
+				TargetAttributes = {
+					12F711D11B0EF4030059C263 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					12F711EA1B0EF4040059C263 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 12F711D11B0EF4030059C263;
+					};
+				};
+			};
+			buildConfigurationList = 12F711CD1B0EF4030059C263 /* Build configuration list for PBXProject "TfEL Maths Pedagogy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12F711C91B0EF4030059C263;
+			productRefGroup = 12F711D31B0EF4030059C263 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12F711D11B0EF4030059C263 /* TfEL Maths Pedagogy */,
+				12F711EA1B0EF4040059C263 /* TfEL Maths PedagogyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12F711D01B0EF4030059C263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F711E11B0EF4040059C263 /* Main.storyboard in Resources */,
+				12F711E61B0EF4040059C263 /* LaunchScreen.xib in Resources */,
+				12F711E31B0EF4040059C263 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12F711E91B0EF4040059C263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12F711CE1B0EF4030059C263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F711DE1B0EF4040059C263 /* ViewController.m in Sources */,
+				12F711DB1B0EF4030059C263 /* AppDelegate.m in Sources */,
+				12F711D81B0EF4030059C263 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12F711E71B0EF4040059C263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F711F21B0EF4040059C263 /* TfEL_Maths_PedagogyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12F711ED1B0EF4040059C263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12F711D11B0EF4030059C263 /* TfEL Maths Pedagogy */;
+			targetProxy = 12F711EC1B0EF4040059C263 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		12F711DF1B0EF4040059C263 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12F711E01B0EF4040059C263 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		12F711E41B0EF4040059C263 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12F711E51B0EF4040059C263 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12F711F31B0EF4040059C263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		12F711F41B0EF4040059C263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12F711F61B0EF4040059C263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "TfEL Maths Pedagogy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		12F711F71B0EF4040059C263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "TfEL Maths Pedagogy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		12F711F91B0EF4040059C263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TfEL Maths PedagogyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TfEL Maths Pedagogy.app/TfEL Maths Pedagogy";
+			};
+			name = Debug;
+		};
+		12F711FA1B0EF4040059C263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TfEL Maths PedagogyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TfEL Maths Pedagogy.app/TfEL Maths Pedagogy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12F711CD1B0EF4030059C263 /* Build configuration list for PBXProject "TfEL Maths Pedagogy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12F711F31B0EF4040059C263 /* Debug */,
+				12F711F41B0EF4040059C263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12F711F51B0EF4040059C263 /* Build configuration list for PBXNativeTarget "TfEL Maths Pedagogy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12F711F61B0EF4040059C263 /* Debug */,
+				12F711F71B0EF4040059C263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		12F711F81B0EF4040059C263 /* Build configuration list for PBXNativeTarget "TfEL Maths PedagogyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12F711F91B0EF4040059C263 /* Debug */,
+				12F711FA1B0EF4040059C263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12F711CA1B0EF4030059C263 /* Project object */;
+}
