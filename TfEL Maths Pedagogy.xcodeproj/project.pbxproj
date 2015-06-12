@@ -119,6 +119,7 @@
 		124ABA7E1B2A67F700435632 /* abstractionLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = abstractionLayer.m; sourceTree = "<group>"; };
 		124ABA811B2A765800435632 /* getDataByCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getDataByCode.h; sourceTree = "<group>"; };
 		124ABA821B2A765800435632 /* getDataByCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = getDataByCode.m; sourceTree = "<group>"; };
+		124ABA841B2A81E200435632 /* viewDataMethodReference.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = viewDataMethodReference.m; sourceTree = "<group>"; };
 		12929A9D1B1E793900E6E029 /* domainReflectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = domainReflectionTableViewController.h; sourceTree = "<group>"; };
 		12929A9E1B1E793900E6E029 /* domainReflectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = domainReflectionTableViewController.m; sourceTree = "<group>"; };
 		12929AA61B1E832E00E6E029 /* SZTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZTextView.h; sourceTree = "<group>"; };
@@ -279,6 +280,7 @@
 		124ABA801B2A762900435632 /* 04. Get View By Code */ = {
 			isa = PBXGroup;
 			children = (
+				124ABA841B2A81E200435632 /* viewDataMethodReference.m */,
 				124ABA811B2A765800435632 /* getDataByCode.h */,
 				124ABA821B2A765800435632 /* getDataByCode.m */,
 			);
