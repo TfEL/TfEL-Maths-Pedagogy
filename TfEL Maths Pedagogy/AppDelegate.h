@@ -12,6 +12,14 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+// Inter-view porperty
+@property (strong, nonatomic) NSString *nextDomain;
+
+// Gosh this one is nasty lookin' isn't it! (Should I get the data from user entries, or from the standard db)
+@property (nonatomic) BOOL nvShouldRetrFromUserEntries;
+
+// Global for 'where the database is'
+@property (strong, nonatomic) NSString *databasePath;
 
 @end
 

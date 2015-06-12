@@ -7,13 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		122727B31B1560750050768B /* tfel_compass_lg.png in Resources */ = {isa = PBXBuildFile; fileRef = 122727B01B1560750050768B /* tfel_compass_lg.png */; };
+		122727B41B1560750050768B /* tfel_compass_lg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 122727B11B1560750050768B /* tfel_compass_lg@2x.png */; };
+		122727B51B1560750050768B /* tfel_compass_lg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 122727B21B1560750050768B /* tfel_compass_lg@3x.png */; };
+		122727C01B1568000050768B /* TfEL-Compass-graphic_Domain-2_small-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 122727B71B1568000050768B /* TfEL-Compass-graphic_Domain-2_small-yellow.png */; };
+		122727C11B1568000050768B /* TfEL-Compass-graphic_Domain-2_small-yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 122727B81B1568000050768B /* TfEL-Compass-graphic_Domain-2_small-yellow@2x.png */; };
+		122727C21B1568000050768B /* TfEL-Compass-graphic_Domain-2_small-yellow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 122727B91B1568000050768B /* TfEL-Compass-graphic_Domain-2_small-yellow@3x.png */; };
+		122727C31B1568000050768B /* TfEL-Compass-graphic_Domain-3_small-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 122727BA1B1568000050768B /* TfEL-Compass-graphic_Domain-3_small-yellow.png */; };
+		122727C41B1568000050768B /* TfEL-Compass-graphic_Domain-3_small-yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 122727BB1B1568000050768B /* TfEL-Compass-graphic_Domain-3_small-yellow@2x.png */; };
+		122727C51B1568000050768B /* TfEL-Compass-graphic_Domain-3_small-yellow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 122727BC1B1568000050768B /* TfEL-Compass-graphic_Domain-3_small-yellow@3x.png */; };
+		122727C61B1568000050768B /* TfEL-Compass-graphic_Domain-4_small-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 122727BD1B1568000050768B /* TfEL-Compass-graphic_Domain-4_small-yellow.png */; };
+		122727C71B1568000050768B /* TfEL-Compass-graphic_Domain-4_small-yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 122727BE1B1568000050768B /* TfEL-Compass-graphic_Domain-4_small-yellow@2x.png */; };
+		122727C81B1568000050768B /* TfEL-Compass-graphic_Domain-4_small-yellow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 122727BF1B1568000050768B /* TfEL-Compass-graphic_Domain-4_small-yellow@3x.png */; };
+		122727CC1B156EB80050768B /* domainsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 122727CB1B156EB80050768B /* domainsListTableViewController.m */; };
+		122727CF1B1586EA0050768B /* show-lines.png in Resources */ = {isa = PBXBuildFile; fileRef = 122727CD1B1586EA0050768B /* show-lines.png */; };
+		122727D01B1586EA0050768B /* show-lines@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 122727CE1B1586EA0050768B /* show-lines@2x.png */; };
+		124ABA501B292C0200435632 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124ABA4F1B292C0200435632 /* CloudKit.framework */; };
+		124ABA561B2935B100435632 /* backImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 124ABA541B2935B100435632 /* backImage.png */; };
+		124ABA571B2935B100435632 /* backImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 124ABA551B2935B100435632 /* backImage@2x.png */; };
+		124ABA5C1B294E6200435632 /* myEntriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124ABA5B1B294E6200435632 /* myEntriesTableViewController.m */; };
+		124ABA601B2A56E600435632 /* DECS SATfEL FG_Cover_A4.png in Resources */ = {isa = PBXBuildFile; fileRef = 124ABA5D1B2A56E600435632 /* DECS SATfEL FG_Cover_A4.png */; };
+		124ABA611B2A56E600435632 /* DECS SATfEL FG_Cover_A4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 124ABA5E1B2A56E600435632 /* DECS SATfEL FG_Cover_A4@2x.png */; };
+		124ABA621B2A56E600435632 /* DECS SATfEL FG_Cover_A4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 124ABA5F1B2A56E600435632 /* DECS SATfEL FG_Cover_A4@3x.png */; };
+		124ABA6C1B2A5D4D00435632 /* blue-tt.png in Resources */ = {isa = PBXBuildFile; fileRef = 124ABA641B2A5D4D00435632 /* blue-tt.png */; };
+		124ABA6D1B2A5D4D00435632 /* blue-tt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 124ABA651B2A5D4D00435632 /* blue-tt@2x.png */; };
+		124ABA6E1B2A5D4D00435632 /* green-tt.png in Resources */ = {isa = PBXBuildFile; fileRef = 124ABA661B2A5D4D00435632 /* green-tt.png */; };
+		124ABA6F1B2A5D4D00435632 /* green-tt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 124ABA671B2A5D4D00435632 /* green-tt@2x.png */; };
+		124ABA701B2A5D4D00435632 /* red-tt.png in Resources */ = {isa = PBXBuildFile; fileRef = 124ABA681B2A5D4D00435632 /* red-tt.png */; };
+		124ABA711B2A5D4D00435632 /* red-tt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 124ABA691B2A5D4D00435632 /* red-tt@2x.png */; };
+		124ABA721B2A5D4D00435632 /* yellow-tt.png in Resources */ = {isa = PBXBuildFile; fileRef = 124ABA6A1B2A5D4D00435632 /* yellow-tt.png */; };
+		124ABA731B2A5D4D00435632 /* yellow-tt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 124ABA6B1B2A5D4D00435632 /* yellow-tt@2x.png */; };
+		124ABA771B2A630000435632 /* nextStepsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124ABA761B2A630000435632 /* nextStepsTableViewController.m */; };
+		124ABA7B1B2A631D00435632 /* domainDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124ABA7A1B2A631D00435632 /* domainDetailTableViewController.m */; };
+		124ABA7F1B2A67F700435632 /* abstractionLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 124ABA7E1B2A67F700435632 /* abstractionLayer.m */; };
+		124ABA831B2A765800435632 /* getDataByCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 124ABA821B2A765800435632 /* getDataByCode.m */; };
+		12929A9F1B1E793900E6E029 /* domainReflectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12929A9E1B1E793900E6E029 /* domainReflectionTableViewController.m */; };
+		12929AA81B1E832E00E6E029 /* SZTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12929AA71B1E832E00E6E029 /* SZTextView.m */; };
+		12929AAA1B1E862F00E6E029 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 12929AA91B1E862F00E6E029 /* libsqlite3.dylib */; };
+		12929ACA1B1E905900E6E029 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 12929AC01B1E905900E6E029 /* FMDatabase.m */; };
+		12929ACB1B1E905900E6E029 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 12929AC21B1E905900E6E029 /* FMDatabaseAdditions.m */; };
+		12929ACC1B1E905900E6E029 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 12929AC41B1E905900E6E029 /* FMDatabasePool.m */; };
+		12929ACD1B1E905900E6E029 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 12929AC61B1E905900E6E029 /* FMDatabaseQueue.m */; };
+		12929ACE1B1E905900E6E029 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 12929AC91B1E905900E6E029 /* FMResultSet.m */; };
+		12929AD31B1E91A600E6E029 /* sqlAdminTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12929AD21B1E91A600E6E029 /* sqlAdminTableViewController.m */; };
 		12F711D81B0EF4030059C263 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F711D71B0EF4030059C263 /* main.m */; };
 		12F711DB1B0EF4030059C263 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F711DA1B0EF4030059C263 /* AppDelegate.m */; };
-		12F711DE1B0EF4040059C263 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F711DD1B0EF4040059C263 /* ViewController.m */; };
 		12F711E11B0EF4040059C263 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F711DF1B0EF4040059C263 /* Main.storyboard */; };
 		12F711E31B0EF4040059C263 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12F711E21B0EF4040059C263 /* Images.xcassets */; };
 		12F711E61B0EF4040059C263 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12F711E41B0EF4040059C263 /* LaunchScreen.xib */; };
 		12F711F21B0EF4040059C263 /* TfEL_Maths_PedagogyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F711F11B0EF4040059C263 /* TfEL_Maths_PedagogyTests.m */; };
+		12F712071B0EFCB80059C263 /* navigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F712061B0EFCB80059C263 /* navigationViewController.m */; };
+		12F7120F1B0F01CF0059C263 /* OE_Header.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F7120D1B0F01CF0059C263 /* OE_Header.png */; };
+		12F712101B0F01CF0059C263 /* OE_Header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F7120E1B0F01CF0059C263 /* OE_Header@2x.png */; };
+		12F712131B0F08D00059C263 /* getStartedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F712121B0F08D00059C263 /* getStartedViewController.m */; };
+		12F712161B0F0A0F0059C263 /* 72.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F712141B0F0A0F0059C263 /* 72.png */; };
+		12F712171B0F0A0F0059C263 /* 72@2x-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F712151B0F0A0F0059C263 /* 72@2x-152.png */; };
+		12F719151B1EC4BF00B9F7FB /* databaseDumperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F719141B1EC4BF00B9F7FB /* databaseDumperTest.m */; };
+		12F719171B1EC5C000B9F7FB /* fileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F719161B1EC5C000B9F7FB /* fileManager.m */; };
+		12F719181B1ECE9200B9F7FB /* tfelmped.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 12929ACF1B1E90DA00E6E029 /* tfelmped.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +78,87 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		122727B01B1560750050768B /* tfel_compass_lg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tfel_compass_lg.png; sourceTree = "<group>"; };
+		122727B11B1560750050768B /* tfel_compass_lg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tfel_compass_lg@2x.png"; sourceTree = "<group>"; };
+		122727B21B1560750050768B /* tfel_compass_lg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tfel_compass_lg@3x.png"; sourceTree = "<group>"; };
+		122727B71B1568000050768B /* TfEL-Compass-graphic_Domain-2_small-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TfEL-Compass-graphic_Domain-2_small-yellow.png"; sourceTree = "<group>"; };
+		122727B81B1568000050768B /* TfEL-Compass-graphic_Domain-2_small-yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TfEL-Compass-graphic_Domain-2_small-yellow@2x.png"; sourceTree = "<group>"; };
+		122727B91B1568000050768B /* TfEL-Compass-graphic_Domain-2_small-yellow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TfEL-Compass-graphic_Domain-2_small-yellow@3x.png"; sourceTree = "<group>"; };
+		122727BA1B1568000050768B /* TfEL-Compass-graphic_Domain-3_small-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TfEL-Compass-graphic_Domain-3_small-yellow.png"; sourceTree = "<group>"; };
+		122727BB1B1568000050768B /* TfEL-Compass-graphic_Domain-3_small-yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TfEL-Compass-graphic_Domain-3_small-yellow@2x.png"; sourceTree = "<group>"; };
+		122727BC1B1568000050768B /* TfEL-Compass-graphic_Domain-3_small-yellow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TfEL-Compass-graphic_Domain-3_small-yellow@3x.png"; sourceTree = "<group>"; };
+		122727BD1B1568000050768B /* TfEL-Compass-graphic_Domain-4_small-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TfEL-Compass-graphic_Domain-4_small-yellow.png"; sourceTree = "<group>"; };
+		122727BE1B1568000050768B /* TfEL-Compass-graphic_Domain-4_small-yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TfEL-Compass-graphic_Domain-4_small-yellow@2x.png"; sourceTree = "<group>"; };
+		122727BF1B1568000050768B /* TfEL-Compass-graphic_Domain-4_small-yellow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TfEL-Compass-graphic_Domain-4_small-yellow@3x.png"; sourceTree = "<group>"; };
+		122727CA1B156EB80050768B /* domainsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = domainsListTableViewController.h; sourceTree = "<group>"; };
+		122727CB1B156EB80050768B /* domainsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = domainsListTableViewController.m; sourceTree = "<group>"; };
+		122727CD1B1586EA0050768B /* show-lines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "show-lines.png"; sourceTree = "<group>"; };
+		122727CE1B1586EA0050768B /* show-lines@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "show-lines@2x.png"; sourceTree = "<group>"; };
+		124ABA4E1B29273100435632 /* TfEL Maths Pedagogy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "TfEL Maths Pedagogy.entitlements"; sourceTree = "<group>"; };
+		124ABA4F1B292C0200435632 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		124ABA541B2935B100435632 /* backImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backImage.png; sourceTree = "<group>"; };
+		124ABA551B2935B100435632 /* backImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backImage@2x.png"; sourceTree = "<group>"; };
+		124ABA5A1B294E6200435632 /* myEntriesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myEntriesTableViewController.h; sourceTree = "<group>"; };
+		124ABA5B1B294E6200435632 /* myEntriesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myEntriesTableViewController.m; sourceTree = "<group>"; };
+		124ABA5D1B2A56E600435632 /* DECS SATfEL FG_Cover_A4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DECS SATfEL FG_Cover_A4.png"; sourceTree = "<group>"; };
+		124ABA5E1B2A56E600435632 /* DECS SATfEL FG_Cover_A4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DECS SATfEL FG_Cover_A4@2x.png"; sourceTree = "<group>"; };
+		124ABA5F1B2A56E600435632 /* DECS SATfEL FG_Cover_A4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DECS SATfEL FG_Cover_A4@3x.png"; sourceTree = "<group>"; };
+		124ABA641B2A5D4D00435632 /* blue-tt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-tt.png"; sourceTree = "<group>"; };
+		124ABA651B2A5D4D00435632 /* blue-tt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-tt@2x.png"; sourceTree = "<group>"; };
+		124ABA661B2A5D4D00435632 /* green-tt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green-tt.png"; sourceTree = "<group>"; };
+		124ABA671B2A5D4D00435632 /* green-tt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green-tt@2x.png"; sourceTree = "<group>"; };
+		124ABA681B2A5D4D00435632 /* red-tt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-tt.png"; sourceTree = "<group>"; };
+		124ABA691B2A5D4D00435632 /* red-tt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-tt@2x.png"; sourceTree = "<group>"; };
+		124ABA6A1B2A5D4D00435632 /* yellow-tt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yellow-tt.png"; sourceTree = "<group>"; };
+		124ABA6B1B2A5D4D00435632 /* yellow-tt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yellow-tt@2x.png"; sourceTree = "<group>"; };
+		124ABA751B2A630000435632 /* nextStepsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nextStepsTableViewController.h; sourceTree = "<group>"; };
+		124ABA761B2A630000435632 /* nextStepsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = nextStepsTableViewController.m; sourceTree = "<group>"; };
+		124ABA791B2A631D00435632 /* domainDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = domainDetailTableViewController.h; sourceTree = "<group>"; };
+		124ABA7A1B2A631D00435632 /* domainDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = domainDetailTableViewController.m; sourceTree = "<group>"; };
+		124ABA7D1B2A67F700435632 /* abstractionLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = abstractionLayer.h; sourceTree = "<group>"; };
+		124ABA7E1B2A67F700435632 /* abstractionLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = abstractionLayer.m; sourceTree = "<group>"; };
+		124ABA811B2A765800435632 /* getDataByCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getDataByCode.h; sourceTree = "<group>"; };
+		124ABA821B2A765800435632 /* getDataByCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = getDataByCode.m; sourceTree = "<group>"; };
+		12929A9D1B1E793900E6E029 /* domainReflectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = domainReflectionTableViewController.h; sourceTree = "<group>"; };
+		12929A9E1B1E793900E6E029 /* domainReflectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = domainReflectionTableViewController.m; sourceTree = "<group>"; };
+		12929AA61B1E832E00E6E029 /* SZTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZTextView.h; sourceTree = "<group>"; };
+		12929AA71B1E832E00E6E029 /* SZTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZTextView.m; sourceTree = "<group>"; };
+		12929AA91B1E862F00E6E029 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		12929ABF1B1E905900E6E029 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		12929AC01B1E905900E6E029 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		12929AC11B1E905900E6E029 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		12929AC21B1E905900E6E029 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		12929AC31B1E905900E6E029 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		12929AC41B1E905900E6E029 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		12929AC51B1E905900E6E029 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		12929AC61B1E905900E6E029 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		12929AC71B1E905900E6E029 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		12929AC81B1E905900E6E029 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		12929AC91B1E905900E6E029 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		12929ACF1B1E90DA00E6E029 /* tfelmped.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = tfelmped.sqlite; path = "TfEL Maths Pedagogy/tfelmped.sqlite"; sourceTree = "<group>"; };
+		12929AD11B1E91A600E6E029 /* sqlAdminTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlAdminTableViewController.h; sourceTree = "<group>"; };
+		12929AD21B1E91A600E6E029 /* sqlAdminTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sqlAdminTableViewController.m; sourceTree = "<group>"; };
 		12F711D21B0EF4030059C263 /* TfEL Maths Pedagogy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TfEL Maths Pedagogy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F711D61B0EF4030059C263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12F711D71B0EF4030059C263 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		12F711D91B0EF4030059C263 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		12F711DA1B0EF4030059C263 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		12F711DC1B0EF4040059C263 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		12F711DD1B0EF4040059C263 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		12F711E01B0EF4040059C263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12F711E21B0EF4040059C263 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		12F711E51B0EF4040059C263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		12F711EB1B0EF4040059C263 /* TfEL Maths PedagogyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TfEL Maths PedagogyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F711F01B0EF4040059C263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12F711F11B0EF4040059C263 /* TfEL_Maths_PedagogyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TfEL_Maths_PedagogyTests.m; sourceTree = "<group>"; };
+		12F712051B0EFCB80059C263 /* navigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = navigationViewController.h; sourceTree = "<group>"; };
+		12F712061B0EFCB80059C263 /* navigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = navigationViewController.m; sourceTree = "<group>"; };
+		12F7120D1B0F01CF0059C263 /* OE_Header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OE_Header.png; sourceTree = "<group>"; };
+		12F7120E1B0F01CF0059C263 /* OE_Header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OE_Header@2x.png"; sourceTree = "<group>"; };
+		12F712111B0F08D00059C263 /* getStartedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getStartedViewController.h; sourceTree = "<group>"; };
+		12F712121B0F08D00059C263 /* getStartedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = getStartedViewController.m; sourceTree = "<group>"; };
+		12F712141B0F0A0F0059C263 /* 72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 72.png; sourceTree = "<group>"; };
+		12F712151B0F0A0F0059C263 /* 72@2x-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "72@2x-152.png"; sourceTree = "<group>"; };
+		12F719141B1EC4BF00B9F7FB /* databaseDumperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = databaseDumperTest.m; sourceTree = "<group>"; };
+		12F719161B1EC5C000B9F7FB /* fileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fileManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +166,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12929AAA1B1E862F00E6E029 /* libsqlite3.dylib in Frameworks */,
+				124ABA501B292C0200435632 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +181,172 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		122727AF1B155FD90050768B /* 03. TfEL Compass Logo */ = {
+			isa = PBXGroup;
+			children = (
+				122727B01B1560750050768B /* tfel_compass_lg.png */,
+				122727B11B1560750050768B /* tfel_compass_lg@2x.png */,
+				122727B21B1560750050768B /* tfel_compass_lg@3x.png */,
+			);
+			name = "03. TfEL Compass Logo";
+			sourceTree = "<group>";
+		};
+		122727B61B1567F40050768B /* 04. TfEL Compass Exploded */ = {
+			isa = PBXGroup;
+			children = (
+				122727B71B1568000050768B /* TfEL-Compass-graphic_Domain-2_small-yellow.png */,
+				122727B81B1568000050768B /* TfEL-Compass-graphic_Domain-2_small-yellow@2x.png */,
+				122727B91B1568000050768B /* TfEL-Compass-graphic_Domain-2_small-yellow@3x.png */,
+				122727BA1B1568000050768B /* TfEL-Compass-graphic_Domain-3_small-yellow.png */,
+				122727BB1B1568000050768B /* TfEL-Compass-graphic_Domain-3_small-yellow@2x.png */,
+				122727BC1B1568000050768B /* TfEL-Compass-graphic_Domain-3_small-yellow@3x.png */,
+				122727BD1B1568000050768B /* TfEL-Compass-graphic_Domain-4_small-yellow.png */,
+				122727BE1B1568000050768B /* TfEL-Compass-graphic_Domain-4_small-yellow@2x.png */,
+				122727BF1B1568000050768B /* TfEL-Compass-graphic_Domain-4_small-yellow@3x.png */,
+			);
+			name = "04. TfEL Compass Exploded";
+			sourceTree = "<group>";
+		};
+		122727C91B156E920050768B /* 03. Domains Screen */ = {
+			isa = PBXGroup;
+			children = (
+				122727CA1B156EB80050768B /* domainsListTableViewController.h */,
+				122727CB1B156EB80050768B /* domainsListTableViewController.m */,
+			);
+			name = "03. Domains Screen";
+			sourceTree = "<group>";
+		};
+		124ABA581B29453100435632 /* 05. Navigation Assets */ = {
+			isa = PBXGroup;
+			children = (
+				124ABA541B2935B100435632 /* backImage.png */,
+				124ABA551B2935B100435632 /* backImage@2x.png */,
+			);
+			name = "05. Navigation Assets";
+			sourceTree = "<group>";
+		};
+		124ABA591B294E3D00435632 /* 05. My Entries */ = {
+			isa = PBXGroup;
+			children = (
+				124ABA5A1B294E6200435632 /* myEntriesTableViewController.h */,
+				124ABA5B1B294E6200435632 /* myEntriesTableViewController.m */,
+			);
+			name = "05. My Entries";
+			sourceTree = "<group>";
+		};
+		124ABA631B2A5D1F00435632 /* 06. Transforming Tasks Logos */ = {
+			isa = PBXGroup;
+			children = (
+				124ABA641B2A5D4D00435632 /* blue-tt.png */,
+				124ABA651B2A5D4D00435632 /* blue-tt@2x.png */,
+				124ABA661B2A5D4D00435632 /* green-tt.png */,
+				124ABA671B2A5D4D00435632 /* green-tt@2x.png */,
+				124ABA681B2A5D4D00435632 /* red-tt.png */,
+				124ABA691B2A5D4D00435632 /* red-tt@2x.png */,
+				124ABA6A1B2A5D4D00435632 /* yellow-tt.png */,
+				124ABA6B1B2A5D4D00435632 /* yellow-tt@2x.png */,
+			);
+			name = "06. Transforming Tasks Logos";
+			sourceTree = "<group>";
+		};
+		124ABA741B2A62CE00435632 /* 06. Next Steps */ = {
+			isa = PBXGroup;
+			children = (
+				124ABA751B2A630000435632 /* nextStepsTableViewController.h */,
+				124ABA761B2A630000435632 /* nextStepsTableViewController.m */,
+			);
+			name = "06. Next Steps";
+			sourceTree = "<group>";
+		};
+		124ABA781B2A630600435632 /* 07. Detail Expanded */ = {
+			isa = PBXGroup;
+			children = (
+				124ABA791B2A631D00435632 /* domainDetailTableViewController.h */,
+				124ABA7A1B2A631D00435632 /* domainDetailTableViewController.m */,
+			);
+			name = "07. Detail Expanded";
+			sourceTree = "<group>";
+		};
+		124ABA7C1B2A67D700435632 /* 03. Database Abstraction */ = {
+			isa = PBXGroup;
+			children = (
+				124ABA7D1B2A67F700435632 /* abstractionLayer.h */,
+				124ABA7E1B2A67F700435632 /* abstractionLayer.m */,
+			);
+			name = "03. Database Abstraction";
+			sourceTree = "<group>";
+		};
+		124ABA801B2A762900435632 /* 04. Get View By Code */ = {
+			isa = PBXGroup;
+			children = (
+				124ABA811B2A765800435632 /* getDataByCode.h */,
+				124ABA821B2A765800435632 /* getDataByCode.m */,
+			);
+			name = "04. Get View By Code";
+			sourceTree = "<group>";
+		};
+		12929A9B1B1E791C00E6E029 /* 04. Domain Reflection */ = {
+			isa = PBXGroup;
+			children = (
+				12929A9D1B1E793900E6E029 /* domainReflectionTableViewController.h */,
+				12929A9E1B1E793900E6E029 /* domainReflectionTableViewController.m */,
+			);
+			name = "04. Domain Reflection";
+			sourceTree = "<group>";
+		};
+		12929AA11B1E7D1500E6E029 /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				124ABA801B2A762900435632 /* 04. Get View By Code */,
+				124ABA7C1B2A67D700435632 /* 03. Database Abstraction */,
+				12929ABE1B1E905200E6E029 /* 02. FMDB */,
+				12929AA21B1E7D1C00E6E029 /* 01. Custom UITextView */,
+			);
+			name = "Custom Classes";
+			sourceTree = "<group>";
+		};
+		12929AA21B1E7D1C00E6E029 /* 01. Custom UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				12929AA61B1E832E00E6E029 /* SZTextView.h */,
+				12929AA71B1E832E00E6E029 /* SZTextView.m */,
+			);
+			name = "01. Custom UITextView";
+			sourceTree = "<group>";
+		};
+		12929ABE1B1E905200E6E029 /* 02. FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				12929ABF1B1E905900E6E029 /* FMDatabase.h */,
+				12929AC01B1E905900E6E029 /* FMDatabase.m */,
+				12929AC11B1E905900E6E029 /* FMDatabaseAdditions.h */,
+				12929AC21B1E905900E6E029 /* FMDatabaseAdditions.m */,
+				12929AC31B1E905900E6E029 /* FMDatabasePool.h */,
+				12929AC41B1E905900E6E029 /* FMDatabasePool.m */,
+				12929AC51B1E905900E6E029 /* FMDatabaseQueue.h */,
+				12929AC61B1E905900E6E029 /* FMDatabaseQueue.m */,
+				12929AC71B1E905900E6E029 /* FMDB.h */,
+				12929AC81B1E905900E6E029 /* FMResultSet.h */,
+				12929AC91B1E905900E6E029 /* FMResultSet.m */,
+			);
+			name = "02. FMDB";
+			sourceTree = "<group>";
+		};
+		12929AD01B1E919000E6E029 /* 00. Admin SQL */ = {
+			isa = PBXGroup;
+			children = (
+				12929AD11B1E91A600E6E029 /* sqlAdminTableViewController.h */,
+				12929AD21B1E91A600E6E029 /* sqlAdminTableViewController.m */,
+			);
+			name = "00. Admin SQL";
+			sourceTree = "<group>";
+		};
 		12F711C91B0EF4030059C263 = {
 			isa = PBXGroup;
 			children = (
+				124ABA4F1B292C0200435632 /* CloudKit.framework */,
+				12929AA91B1E862F00E6E029 /* libsqlite3.dylib */,
+				12929ACF1B1E90DA00E6E029 /* tfelmped.sqlite */,
 				12F711D41B0EF4030059C263 /* TfEL Maths Pedagogy */,
 				12F711EE1B0EF4040059C263 /* TfEL Maths PedagogyTests */,
 				12F711D31B0EF4030059C263 /* Products */,
@@ -81,13 +365,12 @@
 		12F711D41B0EF4030059C263 /* TfEL Maths Pedagogy */ = {
 			isa = PBXGroup;
 			children = (
-				12F711D91B0EF4030059C263 /* AppDelegate.h */,
-				12F711DA1B0EF4030059C263 /* AppDelegate.m */,
-				12F711DC1B0EF4040059C263 /* ViewController.h */,
-				12F711DD1B0EF4040059C263 /* ViewController.m */,
-				12F711DF1B0EF4040059C263 /* Main.storyboard */,
-				12F711E21B0EF4040059C263 /* Images.xcassets */,
-				12F711E41B0EF4040059C263 /* LaunchScreen.xib */,
+				124ABA4E1B29273100435632 /* TfEL Maths Pedagogy.entitlements */,
+				12929AA11B1E7D1500E6E029 /* Custom Classes */,
+				12F712021B0EF5740059C263 /* Storyboards */,
+				12F712001B0EF5560059C263 /* Assets */,
+				12F711FC1B0EF4E80059C263 /* View Controllers */,
+				12F711FB1B0EF4E10059C263 /* Application Controllers */,
 				12F711D51B0EF4030059C263 /* Supporting Files */,
 			);
 			path = "TfEL Maths Pedagogy";
@@ -107,6 +390,8 @@
 			children = (
 				12F711F11B0EF4040059C263 /* TfEL_Maths_PedagogyTests.m */,
 				12F711EF1B0EF4040059C263 /* Supporting Files */,
+				12F719141B1EC4BF00B9F7FB /* databaseDumperTest.m */,
+				12F719161B1EC5C000B9F7FB /* fileManager.m */,
 			);
 			path = "TfEL Maths PedagogyTests";
 			sourceTree = "<group>";
@@ -117,6 +402,118 @@
 				12F711F01B0EF4040059C263 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12F711FB1B0EF4E10059C263 /* Application Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				12F711FF1B0EF5390059C263 /* 01. Application Delegate */,
+			);
+			name = "Application Controllers";
+			sourceTree = "<group>";
+		};
+		12F711FC1B0EF4E80059C263 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				12929AD01B1E919000E6E029 /* 00. Admin SQL */,
+				12F711FD1B0EF4EF0059C263 /* 01. Master View Controller */,
+				12F711FE1B0EF5130059C263 /* 02. Home Screen */,
+				122727C91B156E920050768B /* 03. Domains Screen */,
+				12929A9B1B1E791C00E6E029 /* 04. Domain Reflection */,
+				124ABA591B294E3D00435632 /* 05. My Entries */,
+				124ABA741B2A62CE00435632 /* 06. Next Steps */,
+				124ABA781B2A630600435632 /* 07. Detail Expanded */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		12F711FD1B0EF4EF0059C263 /* 01. Master View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				12F712051B0EFCB80059C263 /* navigationViewController.h */,
+				12F712061B0EFCB80059C263 /* navigationViewController.m */,
+			);
+			name = "01. Master View Controller";
+			sourceTree = "<group>";
+		};
+		12F711FE1B0EF5130059C263 /* 02. Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				12F712111B0F08D00059C263 /* getStartedViewController.h */,
+				12F712121B0F08D00059C263 /* getStartedViewController.m */,
+			);
+			name = "02. Home Screen";
+			sourceTree = "<group>";
+		};
+		12F711FF1B0EF5390059C263 /* 01. Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				12F711D91B0EF4030059C263 /* AppDelegate.h */,
+				12F711DA1B0EF4030059C263 /* AppDelegate.m */,
+			);
+			name = "01. Application Delegate";
+			sourceTree = "<group>";
+		};
+		12F712001B0EF5560059C263 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				12F712011B0EF55D0059C263 /* 01. XCode Asset Files */,
+				12F712081B0EFF820059C263 /* 02. Styling */,
+				122727AF1B155FD90050768B /* 03. TfEL Compass Logo */,
+				122727B61B1567F40050768B /* 04. TfEL Compass Exploded */,
+				124ABA581B29453100435632 /* 05. Navigation Assets */,
+				124ABA631B2A5D1F00435632 /* 06. Transforming Tasks Logos */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		12F712011B0EF55D0059C263 /* 01. XCode Asset Files */ = {
+			isa = PBXGroup;
+			children = (
+				12F711E21B0EF4040059C263 /* Images.xcassets */,
+			);
+			name = "01. XCode Asset Files";
+			sourceTree = "<group>";
+		};
+		12F712021B0EF5740059C263 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				12F712041B0EF5830059C263 /* 01. iPad Launch */,
+				12F712031B0EF57B0059C263 /* 02. iPad */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		12F712031B0EF57B0059C263 /* 02. iPad */ = {
+			isa = PBXGroup;
+			children = (
+				12F711DF1B0EF4040059C263 /* Main.storyboard */,
+			);
+			name = "02. iPad";
+			sourceTree = "<group>";
+		};
+		12F712041B0EF5830059C263 /* 01. iPad Launch */ = {
+			isa = PBXGroup;
+			children = (
+				12F711E41B0EF4040059C263 /* LaunchScreen.xib */,
+			);
+			name = "01. iPad Launch";
+			sourceTree = "<group>";
+		};
+		12F712081B0EFF820059C263 /* 02. Styling */ = {
+			isa = PBXGroup;
+			children = (
+				124ABA5D1B2A56E600435632 /* DECS SATfEL FG_Cover_A4.png */,
+				124ABA5E1B2A56E600435632 /* DECS SATfEL FG_Cover_A4@2x.png */,
+				124ABA5F1B2A56E600435632 /* DECS SATfEL FG_Cover_A4@3x.png */,
+				122727CD1B1586EA0050768B /* show-lines.png */,
+				122727CE1B1586EA0050768B /* show-lines@2x.png */,
+				12F712141B0F0A0F0059C263 /* 72.png */,
+				12F712151B0F0A0F0059C263 /* 72@2x-152.png */,
+				12F7120D1B0F01CF0059C263 /* OE_Header.png */,
+				12F7120E1B0F01CF0059C263 /* OE_Header@2x.png */,
+			);
+			name = "02. Styling";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +565,12 @@
 				TargetAttributes = {
 					12F711D11B0EF4030059C263 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = CW4CCV9S93;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					12F711EA1B0EF4040059C263 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -199,9 +602,41 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12F719181B1ECE9200B9F7FB /* tfelmped.sqlite in Resources */,
+				124ABA6F1B2A5D4D00435632 /* green-tt@2x.png in Resources */,
+				122727C51B1568000050768B /* TfEL-Compass-graphic_Domain-3_small-yellow@3x.png in Resources */,
+				122727C21B1568000050768B /* TfEL-Compass-graphic_Domain-2_small-yellow@3x.png in Resources */,
+				124ABA6C1B2A5D4D00435632 /* blue-tt.png in Resources */,
+				122727CF1B1586EA0050768B /* show-lines.png in Resources */,
+				122727C71B1568000050768B /* TfEL-Compass-graphic_Domain-4_small-yellow@2x.png in Resources */,
+				124ABA6D1B2A5D4D00435632 /* blue-tt@2x.png in Resources */,
+				122727B31B1560750050768B /* tfel_compass_lg.png in Resources */,
+				124ABA621B2A56E600435632 /* DECS SATfEL FG_Cover_A4@3x.png in Resources */,
+				124ABA611B2A56E600435632 /* DECS SATfEL FG_Cover_A4@2x.png in Resources */,
+				12F712161B0F0A0F0059C263 /* 72.png in Resources */,
+				122727B51B1560750050768B /* tfel_compass_lg@3x.png in Resources */,
+				124ABA701B2A5D4D00435632 /* red-tt.png in Resources */,
+				12F7120F1B0F01CF0059C263 /* OE_Header.png in Resources */,
+				122727C61B1568000050768B /* TfEL-Compass-graphic_Domain-4_small-yellow.png in Resources */,
+				122727C01B1568000050768B /* TfEL-Compass-graphic_Domain-2_small-yellow.png in Resources */,
+				122727D01B1586EA0050768B /* show-lines@2x.png in Resources */,
+				124ABA601B2A56E600435632 /* DECS SATfEL FG_Cover_A4.png in Resources */,
+				124ABA711B2A5D4D00435632 /* red-tt@2x.png in Resources */,
 				12F711E11B0EF4040059C263 /* Main.storyboard in Resources */,
+				122727C11B1568000050768B /* TfEL-Compass-graphic_Domain-2_small-yellow@2x.png in Resources */,
+				124ABA561B2935B100435632 /* backImage.png in Resources */,
 				12F711E61B0EF4040059C263 /* LaunchScreen.xib in Resources */,
+				124ABA6E1B2A5D4D00435632 /* green-tt.png in Resources */,
+				124ABA721B2A5D4D00435632 /* yellow-tt.png in Resources */,
 				12F711E31B0EF4040059C263 /* Images.xcassets in Resources */,
+				124ABA571B2935B100435632 /* backImage@2x.png in Resources */,
+				122727B41B1560750050768B /* tfel_compass_lg@2x.png in Resources */,
+				122727C41B1568000050768B /* TfEL-Compass-graphic_Domain-3_small-yellow@2x.png in Resources */,
+				122727C81B1568000050768B /* TfEL-Compass-graphic_Domain-4_small-yellow@3x.png in Resources */,
+				12F712171B0F0A0F0059C263 /* 72@2x-152.png in Resources */,
+				122727C31B1568000050768B /* TfEL-Compass-graphic_Domain-3_small-yellow.png in Resources */,
+				12F712101B0F01CF0059C263 /* OE_Header@2x.png in Resources */,
+				124ABA731B2A5D4D00435632 /* yellow-tt@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +654,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12F711DE1B0EF4040059C263 /* ViewController.m in Sources */,
+				124ABA831B2A765800435632 /* getDataByCode.m in Sources */,
 				12F711DB1B0EF4030059C263 /* AppDelegate.m in Sources */,
+				12F712071B0EFCB80059C263 /* navigationViewController.m in Sources */,
+				12929A9F1B1E793900E6E029 /* domainReflectionTableViewController.m in Sources */,
 				12F711D81B0EF4030059C263 /* main.m in Sources */,
+				12929AA81B1E832E00E6E029 /* SZTextView.m in Sources */,
+				12929AD31B1E91A600E6E029 /* sqlAdminTableViewController.m in Sources */,
+				124ABA5C1B294E6200435632 /* myEntriesTableViewController.m in Sources */,
+				124ABA771B2A630000435632 /* nextStepsTableViewController.m in Sources */,
+				12929ACB1B1E905900E6E029 /* FMDatabaseAdditions.m in Sources */,
+				12929ACE1B1E905900E6E029 /* FMResultSet.m in Sources */,
+				124ABA7B1B2A631D00435632 /* domainDetailTableViewController.m in Sources */,
+				12F712131B0F08D00059C263 /* getStartedViewController.m in Sources */,
+				12929ACC1B1E905900E6E029 /* FMDatabasePool.m in Sources */,
+				124ABA7F1B2A67F700435632 /* abstractionLayer.m in Sources */,
+				12929ACD1B1E905900E6E029 /* FMDatabaseQueue.m in Sources */,
+				122727CC1B156EB80050768B /* domainsListTableViewController.m in Sources */,
+				12929ACA1B1E905900E6E029 /* FMDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +679,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12F719171B1EC5C000B9F7FB /* fileManager.m in Sources */,
 				12F711F21B0EF4040059C263 /* TfEL_Maths_PedagogyTests.m in Sources */,
+				12F719151B1EC4BF00B9F7FB /* databaseDumperTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,9 +801,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "TfEL Maths Pedagogy/TfEL Maths Pedagogy.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "TfEL Maths Pedagogy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -359,9 +815,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "TfEL Maths Pedagogy/TfEL Maths Pedagogy.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "TfEL Maths Pedagogy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -418,6 +878,7 @@
 				12F711F71B0EF4040059C263 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		12F711F81B0EF4040059C263 /* Build configuration list for PBXNativeTarget "TfEL Maths PedagogyTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +887,7 @@
 				12F711FA1B0EF4040059C263 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
