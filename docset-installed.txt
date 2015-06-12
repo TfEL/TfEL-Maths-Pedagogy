@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/aidancornelius/Library/Developer/Shared/Documentation/DocSets/com.departmentforeducationandchilddevelopment.tfelmathspedagogy.TfEL-Maths-Pedagogy.docset
+Time: 2015-06-12 02:46:41 +0000
