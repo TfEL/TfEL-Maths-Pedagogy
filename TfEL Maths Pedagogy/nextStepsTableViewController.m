@@ -7,6 +7,12 @@
 //
 
 #import "nextStepsTableViewController.h"
+#import "AppDelegate.h"
+#import "abstractionLayer.h"
+#import "getDataByCode.h"
+
+// Quick access types...
+#define AppDelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])
 
 @interface nextStepsTableViewController ()
 
@@ -14,19 +20,26 @@
 
 @implementation nextStepsTableViewController
 
+@synthesize subdomainTitleOutlet, domainSubtitleOutlet, domainTitleOutlet, domainTitleSubdomainTitleOutlet, compassImageOutlet;
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    // Setup the view
+    [getDataByCode alloc];
+    NSMutableDictionary *presentationElements = [[NSMutableDictionary alloc] init];
+    presentationElements = [getDataByCode getPresentationElementsFor:AppDelegate.nextDomain :@"Next Steps:"];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    domainTitleOutlet.text = [presentationElements objectForKey:@"domainTitleOutlet"];
+    domainSubtitleOutlet.text = [presentationElements objectForKey:@"domainSubtitleOutlet"];
+    subdomainTitleOutlet.text = [presentationElements objectForKey:@"subdomainTitleOutlet"];
+    domainTitleSubdomainTitleOutlet.text = [presentationElements objectForKey:@"domainTitleSubdomainTitleOutlet"];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
 @end

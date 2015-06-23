@@ -11,5 +11,6 @@
 @interface getStartedViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIButton *getStartedButton;
+@property (weak, nonatomic) IBOutlet UIButton *createAccountButton;
 
 @end

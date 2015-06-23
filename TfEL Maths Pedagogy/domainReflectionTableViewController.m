@@ -9,6 +9,7 @@
 #import "domainReflectionTableViewController.h"
 #import "AppDelegate.h"
 #import "FMDatabase.h"
+#import "abstractionLayer.h"
 
 // Quick access types...
 #define AppDelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])
@@ -72,7 +73,13 @@ bool shouldPopulateNydIwd;
         subdomainGuidingQuestions.text = [NSString stringWithFormat:@"%@ %@ - Guiding Questions:", [viewData valueForKey:@"code"], [viewData valueForKey:@"subdomainTitle"]];
         
         if (shouldPopulateNydIwd == YES) {
+            // The person doesn't need to do any more reflection...
             myPastEntries.hidden = YES;
+            nextSteps.hidden = YES;
+            nydWhatMight.hidden = YES;
+            iwdWhatMight.hidden = YES;
+            nydTextOutlet.editable = NO;
+            iwdTextOutlet.editable = NO;
             
             nydTextOutlet.text = [viewData valueForKey:@"notYet"];
             iwdTextOutlet.text = [viewData valueForKey:@"wellDev"];
@@ -137,23 +144,14 @@ bool shouldPopulateNydIwd;
     [super viewWillDisappear:animated];
     
     // Now we need to save the values of the text in use
-    if ([iwdTextOutlet.text length] >= 2 || [nydTextOutlet.text length] >= 2) {
+    if (([iwdTextOutlet.text length] >= 2 || [nydTextOutlet.text length] >= 2 ) && shouldPopulateNydIwd == NO  && AppDelegate.nvShouldEnterToUserEntries == YES) {
         static BOOL shouldUpdate = YES;
         
         NSString *saveDataQuery = [NSString stringWithFormat:@"INSERT INTO \"userentries\" (\"id\",\"datemodified\",\"domain_title\",\"domain_subtitle\",\"subdomain_title\",\"subdomain_body\",\"neg_notes\",\"pos_notes\",\"slider_val\",\"domaincode\") VALUES (NULL,time(),'%@','%@','%@','%@','%@','%@','%f', '%@')", [viewData valueForKey:@"domainTitle"], [viewData valueForKey:@"domainSubtitle"], [viewData valueForKey:@"subdomainTitle"], [viewData valueForKey:@"subdomainBody"], nydTextOutlet.text, iwdTextOutlet.text, sliderOutlet.value, [viewData valueForKey:@"code"]];
         
-#warning incomplete method implementation
-        NSLog(@"The view wants to save data, because the context was modified. This is the query it would run \"%@\", see the coded warning above for method implementation.", saveDataQuery);
-        
         if (shouldUpdate) {
-            AppDelegate.databasePath = [[NSBundle mainBundle] pathForResource:@"tfelmped" ofType:@"sqlite"];
-            FMDatabase* db = [FMDatabase databaseWithPath:AppDelegate.databasePath];
-            BOOL s = [db executeUpdate:saveDataQuery];
-            
-            if (s) {
-                // Success...
-#pragma mark: successful update
-            }
+            [abstractionLayer alloc];
+            if ( [abstractionLayer runBoolReturnQuery:saveDataQuery] ) { NSLog(@"TfEL Maths: Added new data"); AppDelegate.nvShouldEnterToUserEntries = NO; }
         }
     } else {
         // Resume, nothing here...
@@ -161,6 +159,10 @@ bool shouldPopulateNydIwd;
     
 }
 
+- (void)textViewDidBeginEditing:(UITextView *)textView {
+    NSLog(@"TfEL Maths: TV content is changing, updating AD.");
+    AppDelegate.nvShouldEnterToUserEntries = YES;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -172,8 +174,14 @@ bool shouldPopulateNydIwd;
     // First, let's set the return value to the right type, so we don't break anything..
     NSMutableDictionary *domainData = [[NSMutableDictionary alloc] init];
     
-    // Now we can retreive the query and do something with that...
-    AppDelegate.databasePath = [[NSBundle mainBundle] pathForResource:@"tfelmped" ofType:@"sqlite"];
+    if (AppDelegate.nvShouldRetrFromUserEntries == YES) {
+        // use UserData database
+        AppDelegate.databasePath = [NSString stringWithFormat:@"%@/tfeluserdata.sqlite", [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]];
+    } else {
+        // Now we can retreive the query and do something with that...
+        AppDelegate.databasePath = [[NSBundle mainBundle] pathForResource:@"tfelmped" ofType:@"sqlite"];
+    }
+    
     FMDatabase* db = [FMDatabase databaseWithPath:AppDelegate.databasePath];
     
     if (![db open]) {

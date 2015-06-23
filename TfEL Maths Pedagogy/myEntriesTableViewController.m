@@ -9,6 +9,7 @@
 #import "myEntriesTableViewController.h"
 #import "AppDelegate.h"
 #import "FMDatabase.h"
+#import "abstractionLayer.h"
 
 // Quick access types...
 #define AppDelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])
@@ -29,7 +30,7 @@ NSMutableArray *tableViewPopulationIdentifier;
     // Uncomment the following line to preserve selection between presentations.
     self.clearsSelectionOnViewWillAppear = YES;
     
-    AppDelegate.databasePath = [[NSBundle mainBundle] pathForResource:@"tfelmped" ofType:@"sqlite"];
+    AppDelegate.databasePath = [NSString stringWithFormat:@"%@/tfeluserdata.sqlite", [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]];
     FMDatabase* db = [FMDatabase databaseWithPath:AppDelegate.databasePath];
     
     tableViewPopulationDomains = [[NSMutableArray alloc] init];
@@ -102,10 +103,15 @@ NSMutableArray *tableViewPopulationIdentifier;
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
+        [abstractionLayer alloc];
+        [abstractionLayer runBoolReturnQuery:[NSString stringWithFormat:@"DELETE FROM \"userentries\" WHERE ROWID = %@", [tableViewPopulationIdentifier objectAtIndex:indexPath.row]]];
+        
+        [tableViewPopulationDomains removeObjectAtIndex:indexPath.row];
+        [tableViewPopulationIdentifier removeObjectAtIndex:indexPath.row];
+        [tableViewPopulationTimes removeObjectAtIndex:indexPath.row];
+        
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

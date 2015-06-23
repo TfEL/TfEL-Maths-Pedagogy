@@ -12,6 +12,12 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+// This one stops stuff from going into the UDB repetedly - I should add updates to the database
+@property (nonatomic) BOOL nvShouldEnterToUserEntries;
+
+// While building CDC name
+@property (strong, nonatomic) NSString *cdcName;
+
 // Inter-view porperty
 @property (strong, nonatomic) NSString *nextDomain;
 

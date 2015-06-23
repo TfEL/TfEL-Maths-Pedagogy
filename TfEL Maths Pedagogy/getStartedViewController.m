@@ -7,6 +7,11 @@
 //
 
 #import "getStartedViewController.h"
+#import "abstractionLayer.h"
+#import "AppDelegate.h"
+
+// Quick access types...
+#define AppDelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])
 
 @interface getStartedViewController ()
 
@@ -14,7 +19,7 @@
 
 @implementation getStartedViewController
 
-@synthesize getStartedButton;
+@synthesize getStartedButton, createAccountButton;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,6 +28,30 @@
     getStartedButton.layer.borderWidth = 1;
     getStartedButton.layer.borderColor = getStartedButton.tintColor.CGColor;
     
+    createAccountButton.layer.cornerRadius = 3;
+    createAccountButton.layer.borderWidth = 1;
+    createAccountButton.layer.borderColor = getStartedButton.tintColor.CGColor;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [abstractionLayer alloc];
+    
+    NSMutableDictionary *userData = [abstractionLayer runDictionaryReturnQueryUser:@"SELECT * FROM `userdata`" : [NSArray arrayWithObjects:@"key", @"value", nil]];
+    
+    if ([[userData valueForKey:@"value"] length] >= 1) {
+        [getStartedButton setTitle:[NSString stringWithFormat:@"Continue as %@ »", [userData valueForKey:@"value"]] forState:UIControlStateNormal];
+        getStartedButton.hidden = NO;
+        createAccountButton.hidden = YES;
+    } else {
+        if ([AppDelegate.cdcName length] >= 1) {
+            [getStartedButton setTitle:[NSString stringWithFormat:@"Continue as %@ »", AppDelegate.cdcName] forState:UIControlStateNormal];
+            getStartedButton.hidden = NO;
+        } else {
+            getStartedButton.hidden = YES;
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning {

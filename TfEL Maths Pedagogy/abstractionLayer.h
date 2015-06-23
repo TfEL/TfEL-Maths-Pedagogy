@@ -13,4 +13,9 @@
 + (NSMutableDictionary *) runDictionaryReturnQuery: (NSString *) runQuery
                                                   : (NSArray *) dataToPopulateInDictionary;
 
++ (NSMutableDictionary *) runDictionaryReturnQueryUser: (NSString *) runQuery
+                                                      : (NSArray *) dataToPopulateInDictionary;
+
++ (BOOL) runBoolReturnQuery: (NSString *) runQuery;
+
 @end

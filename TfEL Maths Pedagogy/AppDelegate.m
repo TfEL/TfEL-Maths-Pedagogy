@@ -17,7 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    NSLog(@"TfEL Maths: didFinishLaunchingWithOptions: %@", launchOptions);
+    
+    if ( [[[NSProcessInfo processInfo]environment]objectForKey:@"cleanSandbox"] ) {
+        NSLog(@"TfEL Maths: is starting to cleanSandbox");
+        [self EmptySandbox];
+    } else {
+        NSLog(@"TfEL Maths: didFinishLaunchingWithOptions: ev: nil (or unhandled)");
+    }
+        
     return YES;
 }
 
@@ -41,6 +48,59 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL) uploadToiCloud {
+    NSURL *ubiquityManager = [NSURL URLWithString:[NSString stringWithFormat:@"%@/tfeluserdata.sqlite", [[NSFileManager defaultManager] URLForUbiquityContainerIdentifier:nil]]];
+    
+    if (ubiquityManager) { NSLog(@"TfEL Maths: Has iCloud access at %@.", ubiquityManager); } else { NSLog(@"TfEL Maths: is running on local data only."); }
+    
+    NSURL *userDataPath = [NSURL URLWithString:[NSString stringWithFormat:@"file://%@/tfeluserdata.sqlite", [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]]];
+    
+    NSError *iCloudSyncError;
+    
+    [[[NSFileManager alloc]init]setUbiquitous:YES itemAtURL:userDataPath destinationURL:ubiquityManager error:&iCloudSyncError];
+    
+    if (!iCloudSyncError) {
+        return YES;
+    } else {
+        NSLog(@"%@, Full DD: %@", [iCloudSyncError localizedDescription], iCloudSyncError);
+        return NO;
+    }
+}
+
+- (void)EmptySandbox {
+    NSFileManager *fileMgr = [[NSFileManager alloc] init];
+    NSError *error = nil;
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSArray *files = [fileMgr contentsOfDirectoryAtPath:documentsDirectory error:nil];
+    NSString *failed;
+    
+    while (files.count > 0) {
+        NSString *documentsDirectory = [paths objectAtIndex:0];
+        NSArray *directoryContents = [fileMgr contentsOfDirectoryAtPath:documentsDirectory error:&error];
+        if (error == nil) {
+            for (NSString *path in directoryContents) {
+                NSString *fullPath = [documentsDirectory stringByAppendingPathComponent:path];
+                BOOL removeSuccess = [fileMgr removeItemAtPath:fullPath error:&error];
+                files = [fileMgr contentsOfDirectoryAtPath:documentsDirectory error:nil];
+                if (!removeSuccess) {
+                    // Error
+                    failed = @"could not remove a (1) file.";
+                }
+            }
+        } else {
+            // Error
+            failed = @"could not remove, or find any file(s).";
+        }
+    }
+    if ([failed length] >= 2) {
+        NSLog(@"TfEL Maths Pedagogy Crashed Gracefully: Sandbox not cleared, %@.", failed);
+    } else {
+        NSLog(@"TfEL Maths Pedagogy Crashed Gracefully: Sandbox cleared.");
+    }
+    @throw NSInternalInconsistencyException;
 }
 
 @end

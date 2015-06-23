@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SZTextView.h"
 
-@interface domainReflectionTableViewController : UITableViewController
+@interface domainReflectionTableViewController : UITableViewController <UITextViewDelegate>
 
 // Button Groups
 @property (weak, nonatomic) IBOutlet UIButton *nydWhatMight;

@@ -10,4 +10,11 @@
 
 @interface nextStepsTableViewController : UITableViewController
 
+// Domain setup outlets
+@property (weak, nonatomic) IBOutlet UIImageView *compassImageOutlet;
+@property (weak, nonatomic) IBOutlet UILabel *domainTitleOutlet;
+@property (weak, nonatomic) IBOutlet UILabel *domainSubtitleOutlet;
+@property (weak, nonatomic) IBOutlet UILabel *subdomainTitleOutlet;
+@property (weak, nonatomic) IBOutlet UILabel *domainTitleSubdomainTitleOutlet;
+
 @end

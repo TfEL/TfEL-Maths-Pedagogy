@@ -69,12 +69,29 @@ Your Mathematics Classroom</string>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Get Started »">
+                                <state key="normal" title="Continue as &lt;null&gt; »">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="g7U-4x-sKn" kind="show" id="cRq-II-FVn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V85-pF-ihY">
+                                <rect key="frame" x="387" y="690" width="250" height="45"/>
+                                <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="FGp-sH-SSQ"/>
+                                    <constraint firstAttribute="width" constant="250" id="T47-q8-0sW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Create New Account »">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="1u4-g6-lCT" kind="show" id="Y6n-yf-v5U"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -84,11 +101,13 @@ Your Mathematics Classroom</string>
                             <constraint firstItem="7FU-uC-oAF" firstAttribute="top" secondItem="Chy-of-ZBF" secondAttribute="bottom" constant="55" id="AkF-vY-DkF"/>
                             <constraint firstItem="6i3-Cb-kg9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="78" id="DPe-Ki-KzZ"/>
                             <constraint firstItem="V4N-0z-VE8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="382" id="Gha-VJ-YSc"/>
+                            <constraint firstItem="V85-pF-ihY" firstAttribute="leading" secondItem="hyL-XC-kIM" secondAttribute="leading" id="JIA-fr-RQ3"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hyL-XC-kIM" secondAttribute="bottom" constant="86" id="P43-a1-5rK"/>
                             <constraint firstItem="hyL-XC-kIM" firstAttribute="top" secondItem="V4N-0z-VE8" secondAttribute="bottom" constant="37" id="Tj2-Or-x3g"/>
                             <constraint firstItem="ZUS-vn-4P8" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Uwe-Ew-3zF"/>
                             <constraint firstItem="7FU-uC-oAF" firstAttribute="centerX" secondItem="Chy-of-ZBF" secondAttribute="centerX" id="cxW-In-JlU"/>
                             <constraint firstItem="ZUS-vn-4P8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dr5-US-RpH"/>
+                            <constraint firstItem="V85-pF-ihY" firstAttribute="top" secondItem="hyL-XC-kIM" secondAttribute="bottom" constant="8" symbolic="YES" id="n2E-6K-zAp"/>
                             <constraint firstItem="6i3-Cb-kg9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pIf-dZ-995"/>
                             <constraint firstItem="Chy-of-ZBF" firstAttribute="top" secondItem="6i3-Cb-kg9" secondAttribute="bottom" constant="8" symbolic="YES" id="uQT-UP-lke"/>
                             <constraint firstItem="hyL-XC-kIM" firstAttribute="centerX" secondItem="7FU-uC-oAF" secondAttribute="centerX" id="uhj-gv-Yef"/>
@@ -100,12 +119,88 @@ Your Mathematics Classroom</string>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
+                        <outlet property="createAccountButton" destination="V85-pF-ihY" id="xgl-NN-ekp"/>
                         <outlet property="getStartedButton" destination="hyL-XC-kIM" id="s6w-Zo-4NV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1513" y="477"/>
+        </scene>
+        <!--Data Creator View Controller-->
+        <scene sceneID="LQi-J6-9kl">
+            <objects>
+                <viewController id="1u4-g6-lCT" customClass="dataCreatorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O7Y-Gx-P8t"/>
+                        <viewControllerLayoutGuide type="bottom" id="kFF-Ih-41t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bwz-Pb-mg4">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SINGLE RUNTIME VERSION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3v-Y4-yVD">
+                                <rect key="frame" x="788" y="739" width="220" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1T9-Tf-Usw">
+                                <rect key="frame" x="367" y="108" width="290" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="cEr-oZ-gBV"/>
+                                    <constraint firstAttribute="height" constant="30" id="cPv-gG-qDf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data Set To Copy" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FIZ-vg-wjs">
+                                <rect key="frame" x="367" y="156" width="290" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LZE-Sv-Xva"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3n1-yP-iYI">
+                                <rect key="frame" x="422" y="207" width="180" height="35"/>
+                                <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="rNB-Ec-GCa"/>
+                                </constraints>
+                                <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Create User »">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="createUserButton:" destination="1u4-g6-lCT" eventType="touchUpInside" id="LwS-Z7-JGK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1T9-Tf-Usw" firstAttribute="leading" secondItem="FIZ-vg-wjs" secondAttribute="leading" id="7cZ-1i-ARU"/>
+                            <constraint firstItem="b3v-Y4-yVD" firstAttribute="trailing" secondItem="bwz-Pb-mg4" secondAttribute="trailingMargin" id="8f8-Rf-shi"/>
+                            <constraint firstItem="FIZ-vg-wjs" firstAttribute="centerX" secondItem="3n1-yP-iYI" secondAttribute="centerX" id="9cH-Wl-VDo"/>
+                            <constraint firstItem="FIZ-vg-wjs" firstAttribute="trailing" secondItem="1T9-Tf-Usw" secondAttribute="trailing" id="JGu-EH-8Zg"/>
+                            <constraint firstItem="kFF-Ih-41t" firstAttribute="top" secondItem="b3v-Y4-yVD" secondAttribute="bottom" constant="8" id="LVK-gW-Atz"/>
+                            <constraint firstItem="1T9-Tf-Usw" firstAttribute="top" secondItem="O7Y-Gx-P8t" secondAttribute="bottom" constant="44" id="PdA-ZN-M8r"/>
+                            <constraint firstItem="3n1-yP-iYI" firstAttribute="top" secondItem="FIZ-vg-wjs" secondAttribute="bottom" constant="21" id="T3u-Fb-dJb"/>
+                            <constraint firstItem="FIZ-vg-wjs" firstAttribute="top" secondItem="1T9-Tf-Usw" secondAttribute="bottom" constant="18" id="ghr-eQ-faa"/>
+                            <constraint firstItem="kFF-Ih-41t" firstAttribute="top" secondItem="3n1-yP-iYI" secondAttribute="bottom" constant="526" id="lsg-9T-mha"/>
+                            <constraint firstItem="1T9-Tf-Usw" firstAttribute="centerX" secondItem="bwz-Pb-mg4" secondAttribute="centerX" id="qNn-JE-Rk8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="createUserButtonOutlet" destination="3n1-yP-iYI" id="D5r-Ha-SQc"/>
+                        <outlet property="dataNameOutlet" destination="1T9-Tf-Usw" id="PHs-wf-49M"/>
+                        <outlet property="dataOriginOutlet" destination="FIZ-vg-wjs" id="DUE-zU-7Xw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GGT-aK-dpI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1513" y="1390"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="92p-WH-NWb">
@@ -809,7 +904,7 @@ support materials</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qdH-Zc-WZg">
-                            <rect key="frame" x="0.0" y="691" width="1024" height="44"/>
+                            <rect key="frame" x="0.0" y="627" width="1024" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -829,6 +924,9 @@ support materials</string>
                                                     <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="ZDM-P1-4nj" id="5cd-Yx-9Zy"/>
+                                                    </connections>
                                                 </textView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MtW-av-KPI" customClass="SZTextView">
                                                     <rect key="frame" x="516" y="228" width="475" height="235"/>
@@ -836,6 +934,9 @@ support materials</string>
                                                     <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="ZDM-P1-4nj" id="hSv-ay-Khj"/>
+                                                    </connections>
                                                 </textView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pGU-6x-uAU">
                                                     <rect key="frame" x="0.0" y="0.0" width="1024" height="80"/>
@@ -1061,6 +1162,8 @@ support materials</string>
                         </connections>
                     </tableView>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="domainSubtitle" destination="Hmi-8G-sxn" id="on4-qk-GHs"/>
                         <outlet property="domainTitle" destination="0rj-Nu-kCK" id="Ot5-ag-RAp"/>
@@ -1083,7 +1186,7 @@ support materials</string>
         <!--Next Steps-->
         <scene sceneID="Emb-6d-keU">
             <objects>
-                <tableViewController title="Next Steps" id="2hR-3w-cJg" sceneMemberID="viewController">
+                <tableViewController title="Next Steps" id="2hR-3w-cJg" customClass="nextStepsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="vY5-tf-AhQ">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1155,14 +1258,22 @@ support materials</string>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u67-F3-1rs">
                                                     <rect key="frame" x="27" y="162" width="295" height="220"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <string key="text">The transforming tasks module on the Leading Learning resource supports teachers to transform traditional textbook tasks for greater intellectual challenge.The complete transforming tasks module can be found here.The links below are excerpts from the transforming tasks module. These excerpts support the development of TfEL Element 2.2.</string>
+                                                    <string key="text">The transforming tasks module on the Leading Learning resource supports teachers to transform traditional textbook tasks for greater intellectual challenge.
+
+The complete transforming tasks module can be found here.
+
+The links below are excerpts from the transforming tasks module. These excerpts support the development of TfEL Element 2.2.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfw-uI-lXd">
                                                     <rect key="frame" x="365" y="162" width="295" height="234"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <string key="text">The Teaching for Effective Learning framework is the mandated pedagogy for South Australian DECD schools. It draws together the research evidence, the voices of educational experts from around the world and South Australian expertise.The resources below support teachers to further develop their pedagogical repitoire, and teach for effective learning.The links below are excerpts relevant to TfEL element 2.2</string>
+                                                    <string key="text">The Teaching for Effective Learning framework is the mandated pedagogy for South Australian DECD schools. It draws together the research evidence, the voices of educational experts from around the world and South Australian expertise.
+
+The resources below support teachers to further develop their pedagogical repitoire, and teach for effective learning.
+
+The links below are excerpts relevant to TfEL element 2.2</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
@@ -1282,6 +1393,13 @@ support materials</string>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="compassImageOutlet" destination="XMA-WC-5dw" id="cDv-ew-BaC"/>
+                        <outlet property="domainSubtitleOutlet" destination="HDR-aH-r5n" id="nyi-qa-SPh"/>
+                        <outlet property="domainTitleOutlet" destination="2gh-sG-HKr" id="KYK-dd-2Hg"/>
+                        <outlet property="domainTitleSubdomainTitleOutlet" destination="o1V-hC-AmJ" id="KsF-fo-Rwv"/>
+                        <outlet property="subdomainTitleOutlet" destination="Els-ei-M6a" id="aSB-CP-cYm"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qdj-S5-IhF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
