@@ -1014,7 +1014,7 @@ support materials</string>
                                                     <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sad-face.png" translatesAutoresizingMaskIntoConstraints="NO" id="HWh-Jo-gbZ">
-                                                    <rect key="frame" x="463" y="184" width="45" height="45"/>
+                                                    <rect key="frame" x="463" y="186" width="42" height="42"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNk-bZ-W97">
                                                     <rect key="frame" x="33" y="462" width="475" height="32"/>
@@ -1030,9 +1030,6 @@ support materials</string>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Am1-WH-IUe">
                                                     <rect key="frame" x="516" y="184" width="475" height="45"/>
                                                     <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy-face.png" translatesAutoresizingMaskIntoConstraints="NO" id="f1Y-A6-DYD">
-                                                    <rect key="frame" x="946" y="184" width="45" height="45"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKS-VX-hNH">
                                                     <rect key="frame" x="46" y="184" width="409" height="45"/>
@@ -1105,6 +1102,9 @@ support materials</string>
                                                         <segue destination="mPA-iN-tim" kind="show" id="vOg-oX-Dxr"/>
                                                     </connections>
                                                 </button>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy-face.png" translatesAutoresizingMaskIntoConstraints="NO" id="f1Y-A6-DYD">
+                                                    <rect key="frame" x="946" y="186" width="42" height="42"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -1480,7 +1480,7 @@ The links below are excerpts relevant to TfEL element 2.2</string>
                         <sections>
                             <tableViewSection id="pdg-wE-Gbq">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" rowHeight="695" id="xw9-UQ-gdk">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" rowHeight="630" id="xw9-UQ-gdk">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xw9-UQ-gdk" id="eaV-kE-HvO">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -1517,14 +1517,14 @@ The links below are excerpts relevant to TfEL element 2.2</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUg-SF-COa">
-                                                    <rect key="frame" x="33" y="183" width="475" height="150"/>
+                                                    <rect key="frame" x="33" y="183" width="475" height="169"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2D1-eP-JIZ">
-                                                    <rect key="frame" x="516" y="183" width="475" height="150"/>
+                                                    <rect key="frame" x="516" y="183" width="475" height="169"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1535,14 +1535,11 @@ The links below are excerpts relevant to TfEL element 2.2</string>
                                                     <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sad-face.png" translatesAutoresizingMaskIntoConstraints="NO" id="q9B-hv-Kjf">
-                                                    <rect key="frame" x="463" y="139" width="45" height="45"/>
+                                                    <rect key="frame" x="463" y="141" width="42" height="42"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6gN-Lt-jii">
                                                     <rect key="frame" x="516" y="139" width="475" height="45"/>
                                                     <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy-face.png" translatesAutoresizingMaskIntoConstraints="NO" id="PhG-8l-Yhn">
-                                                    <rect key="frame" x="946" y="139" width="45" height="45"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99I-Pz-uhv">
                                                     <rect key="frame" x="46" y="139" width="409" height="45"/>
@@ -1590,19 +1587,22 @@ Evidence that suggests this  element is developed:</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeI-ND-ZBl">
-                                                    <rect key="frame" x="33" y="351" width="475" height="150"/>
+                                                    <rect key="frame" x="33" y="351" width="475" height="169"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhM-gK-bC5">
-                                                    <rect key="frame" x="516" y="351" width="475" height="150"/>
+                                                    <rect key="frame" x="516" y="351" width="475" height="169"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy-face.png" translatesAutoresizingMaskIntoConstraints="NO" id="PhG-8l-Yhn">
+                                                    <rect key="frame" x="946" y="141" width="42" height="42"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>

@@ -37,6 +37,16 @@ NSMutableDictionary *detailViewData;
     subdomainTitleOutlet.text = [presentationElements objectForKey:@"subdomainTitleOutlet"];
     domainTitleSubdomainTitleOutlet.text = [presentationElements objectForKey:@"domainTitleSubdomainTitleOutlet"];
     
+    // Instantiate the text box style...
+    posStudentOutlet.layer.borderWidth = 1;
+    posStudentOutlet.layer.borderColor = posStudentOutlet.tintColor.CGColor;
+    negTeacherOutlet.layer.borderWidth = 1;
+    negTeacherOutlet.layer.borderColor = negTeacherOutlet.tintColor.CGColor;
+    negStudentOutlet.layer.borderWidth = 1;
+    negStudentOutlet.layer.borderColor = negStudentOutlet.tintColor.CGColor;
+    posTeacherOutlet.layer.borderWidth = 1;
+    posTeacherOutlet.layer.borderColor = posTeacherOutlet.tintColor.CGColor;
+    
     // Initialise some memory
     detailViewData = [[NSMutableDictionary alloc] init];
     
