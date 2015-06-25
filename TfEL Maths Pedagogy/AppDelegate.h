@@ -12,6 +12,9 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+// I know this is ugly, but we're passing to the resource view from everywhere
+@property (strong, nonatomic) NSString *nextPDFView;
+
 // This one stops stuff from going into the UDB repetedly - I should add updates to the database
 @property (nonatomic) BOOL nvShouldEnterToUserEntries;
 

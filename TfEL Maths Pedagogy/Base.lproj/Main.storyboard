@@ -1013,9 +1013,8 @@ support materials</string>
                                                     <rect key="frame" x="33" y="184" width="475" height="45"/>
                                                     <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HWh-Jo-gbZ">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sad-face.png" translatesAutoresizingMaskIntoConstraints="NO" id="HWh-Jo-gbZ">
                                                     <rect key="frame" x="463" y="184" width="45" height="45"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNk-bZ-W97">
                                                     <rect key="frame" x="33" y="462" width="475" height="32"/>
@@ -1032,9 +1031,8 @@ support materials</string>
                                                     <rect key="frame" x="516" y="184" width="475" height="45"/>
                                                     <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f1Y-A6-DYD">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy-face.png" translatesAutoresizingMaskIntoConstraints="NO" id="f1Y-A6-DYD">
                                                     <rect key="frame" x="946" y="184" width="45" height="45"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKS-VX-hNH">
                                                     <rect key="frame" x="46" y="184" width="409" height="45"/>
@@ -1295,7 +1293,7 @@ The links below are excerpts relevant to TfEL element 2.2</string>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DECS SATfEL FG_Cover_A4.png" translatesAutoresizingMaskIntoConstraints="NO" id="By5-PK-2Jc">
                                                     <rect key="frame" x="371" y="28" width="55" height="77"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DECS SATfEL FG_Cover_A4.png" translatesAutoresizingMaskIntoConstraints="NO" id="EZK-1K-I4D">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="compass_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="EZK-1K-I4D">
                                                     <rect key="frame" x="371" y="144" width="55" height="77"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxO-R4-E0G">
@@ -1349,31 +1347,34 @@ The links below are excerpts relevant to TfEL element 2.2</string>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RdD-vx-jsr">
                                                     <rect key="frame" x="84" y="31" width="159" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <state key="normal" title="TfEL Framework Guide »">
+                                                    <state key="normal" title="From Closed to Open »">
                                                         <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <segue destination="iuh-E6-Eh0" kind="show" id="61b-GD-4m3"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Z8-1T-cmv">
                                                     <rect key="frame" x="84" y="84" width="159" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <state key="normal" title="TfEL Framework Guide »">
+                                                    <state key="normal" title="From Tell to Ask »">
                                                         <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXa-13-14C">
-                                                    <rect key="frame" x="84" y="137" width="159" height="30"/>
+                                                    <rect key="frame" x="84" y="137" width="238" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <state key="normal" title="TfEL Framework Guide »">
+                                                    <state key="normal" title="From Information to Understanding »">
                                                         <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sth-tC-hMX">
-                                                    <rect key="frame" x="84" y="190" width="159" height="30"/>
+                                                    <rect key="frame" x="84" y="190" width="238" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <state key="normal" title="TfEL Framework Guide »">
+                                                    <state key="normal" title="From Procedural to Problem Based »">
                                                         <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -1404,6 +1405,42 @@ The links below are excerpts relevant to TfEL element 2.2</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qdj-S5-IhF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5228" y="-70"/>
+        </scene>
+        <!--Resource View Controller-->
+        <scene sceneID="9Dc-rt-1DH">
+            <objects>
+                <viewController id="iuh-E6-Eh0" customClass="resourceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="13M-yu-lRE"/>
+                        <viewControllerLayoutGuide type="bottom" id="5xX-D1-AWd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g9g-5c-s4z">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ghc-WT-qwF">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="iuh-E6-Eh0" id="ws8-45-eKe"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ghc-WT-qwF" firstAttribute="leading" secondItem="g9g-5c-s4z" secondAttribute="leadingMargin" constant="-16" id="7wG-bq-Po4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ghc-WT-qwF" secondAttribute="trailing" constant="-16" id="D6V-OZ-xCw"/>
+                            <constraint firstItem="5xX-D1-AWd" firstAttribute="top" secondItem="Ghc-WT-qwF" secondAttribute="bottom" id="MSH-1P-xOK"/>
+                            <constraint firstItem="Ghc-WT-qwF" firstAttribute="top" secondItem="g9g-5c-s4z" secondAttribute="topMargin" id="cF2-Oo-hGr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="Ghc-WT-qwF" id="c1D-G9-eW6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qfq-pN-dCa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6391" y="-70"/>
         </scene>
         <!--Navigation View Controller-->
         <scene sceneID="AN8-Gt-vk8">
@@ -1497,17 +1534,15 @@ The links below are excerpts relevant to TfEL element 2.2</string>
                                                     <rect key="frame" x="33" y="139" width="475" height="45"/>
                                                     <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q9B-hv-Kjf">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sad-face.png" translatesAutoresizingMaskIntoConstraints="NO" id="q9B-hv-Kjf">
                                                     <rect key="frame" x="463" y="139" width="45" height="45"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6gN-Lt-jii">
                                                     <rect key="frame" x="516" y="139" width="475" height="45"/>
                                                     <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PhG-8l-Yhn">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy-face.png" translatesAutoresizingMaskIntoConstraints="NO" id="PhG-8l-Yhn">
                                                     <rect key="frame" x="946" y="139" width="45" height="45"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99I-Pz-uhv">
                                                     <rect key="frame" x="46" y="139" width="409" height="45"/>
@@ -1608,14 +1643,17 @@ Evidence that suggests this  element is developed:</string>
         <image name="TfEL-Compass-graphic_Domain-3_small-yellow.png" width="718" height="670"/>
         <image name="TfEL-Compass-graphic_Domain-4_small-yellow.png" width="718" height="670"/>
         <image name="blue-tt.png" width="800" height="801"/>
+        <image name="compass_bg.png" width="85" height="82"/>
         <image name="green-tt.png" width="800" height="801"/>
+        <image name="happy-face.png" width="116" height="116"/>
         <image name="red-tt.png" width="800" height="801"/>
+        <image name="sad-face.png" width="116" height="116"/>
         <image name="show-lines.png" width="24" height="15"/>
         <image name="tfel_compass_lg.png" width="316" height="295"/>
         <image name="yellow-tt.png" width="800" height="801"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="CiE-wf-CmZ"/>
-        <segue reference="vOg-oX-Dxr"/>
+        <segue reference="Xvw-xV-gdU"/>
     </inferredMetricsTieBreakers>
 </document>
