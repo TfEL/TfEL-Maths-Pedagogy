@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface dataCreatorViewController : UIViewController
+@interface dataCreatorViewController : UIViewController <UIAlertViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *dataNameOutlet;
 @property (weak, nonatomic) IBOutlet UITextField *dataOriginOutlet;

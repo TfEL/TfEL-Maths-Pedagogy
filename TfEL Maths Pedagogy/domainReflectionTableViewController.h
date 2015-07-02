@@ -27,6 +27,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *subdomaintitle;
 @property (weak, nonatomic) IBOutlet UILabel *subdomainGuidingQuestions;
 @property (weak, nonatomic) IBOutlet UITextView *subdomainBody;
+@property (weak, nonatomic) IBOutlet UIImageView *domainImage;
+
 
 @property (weak, nonatomic) IBOutlet UISlider *sliderOutlet;
 

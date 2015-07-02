@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aO0-Rm-Hdg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aO0-Rm-Hdg">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -29,7 +29,7 @@
                                     <constraint firstAttribute="height" constant="21" id="GxR-VZ-kK6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7FU-uC-oAF">
@@ -41,7 +41,7 @@
                                 <string key="text">Teaching for Effective Learning in
 Your Mathematics Classroom</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tfel_compass_lg.png" translatesAutoresizingMaskIntoConstraints="NO" id="V4N-0z-VE8">
@@ -61,7 +61,7 @@ Your Mathematics Classroom</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyL-XC-kIM">
-                                <rect key="frame" x="387" y="637" width="250" height="45"/>
+                                <rect key="frame" x="387" y="627" width="250" height="45"/>
                                 <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Whs-l1-U2v"/>
@@ -78,7 +78,7 @@ Your Mathematics Classroom</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V85-pF-ihY">
-                                <rect key="frame" x="387" y="690" width="250" height="45"/>
+                                <rect key="frame" x="387" y="680" width="250" height="45"/>
                                 <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="FGp-sH-SSQ"/>
@@ -86,7 +86,7 @@ Your Mathematics Classroom</string>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Create New Account »">
+                                <state key="normal" title="Get Started »">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -102,8 +102,8 @@ Your Mathematics Classroom</string>
                             <constraint firstItem="6i3-Cb-kg9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="78" id="DPe-Ki-KzZ"/>
                             <constraint firstItem="V4N-0z-VE8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="382" id="Gha-VJ-YSc"/>
                             <constraint firstItem="V85-pF-ihY" firstAttribute="leading" secondItem="hyL-XC-kIM" secondAttribute="leading" id="JIA-fr-RQ3"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hyL-XC-kIM" secondAttribute="bottom" constant="86" id="P43-a1-5rK"/>
-                            <constraint firstItem="hyL-XC-kIM" firstAttribute="top" secondItem="V4N-0z-VE8" secondAttribute="bottom" constant="37" id="Tj2-Or-x3g"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hyL-XC-kIM" secondAttribute="bottom" constant="96" id="P43-a1-5rK"/>
+                            <constraint firstItem="hyL-XC-kIM" firstAttribute="top" secondItem="V4N-0z-VE8" secondAttribute="bottom" constant="27" id="Tj2-Or-x3g"/>
                             <constraint firstItem="ZUS-vn-4P8" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Uwe-Ew-3zF"/>
                             <constraint firstItem="7FU-uC-oAF" firstAttribute="centerX" secondItem="Chy-of-ZBF" secondAttribute="centerX" id="cxW-In-JlU"/>
                             <constraint firstItem="ZUS-vn-4P8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dr5-US-RpH"/>
@@ -139,37 +139,29 @@ Your Mathematics Classroom</string>
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SINGLE RUNTIME VERSION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3v-Y4-yVD">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SINGLE RUNTIME VERSION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3v-Y4-yVD">
                                 <rect key="frame" x="788" y="739" width="220" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1T9-Tf-Usw">
-                                <rect key="frame" x="367" y="108" width="290" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1T9-Tf-Usw">
+                                <rect key="frame" x="367" y="174" width="290" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="290" id="cEr-oZ-gBV"/>
                                     <constraint firstAttribute="height" constant="30" id="cPv-gG-qDf"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data Set To Copy" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FIZ-vg-wjs">
-                                <rect key="frame" x="367" y="156" width="290" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="LZE-Sv-Xva"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3n1-yP-iYI">
-                                <rect key="frame" x="422" y="207" width="180" height="35"/>
+                                <rect key="frame" x="422" y="240" width="180" height="35"/>
                                 <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="rNB-Ec-GCa"/>
                                 </constraints>
                                 <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Create User »">
+                                <state key="normal" title="Create Account »">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -177,18 +169,38 @@ Your Mathematics Classroom</string>
                                     <action selector="createUserButton:" destination="1u4-g6-lCT" eventType="touchUpInside" id="LwS-Z7-JGK"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To begin, tell us your first name." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whl-fu-erI">
+                                <rect key="frame" x="371" y="119" width="282" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="282" id="Vaw-ry-7C4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data Set To Copy" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FIZ-vg-wjs">
+                                <rect key="frame" x="363" y="285" width="290" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LZE-Sv-Xva"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1T9-Tf-Usw" firstAttribute="leading" secondItem="FIZ-vg-wjs" secondAttribute="leading" id="7cZ-1i-ARU"/>
+                            <constraint firstItem="1T9-Tf-Usw" firstAttribute="leading" secondItem="FIZ-vg-wjs" secondAttribute="leading" constant="4" id="7cZ-1i-ARU"/>
                             <constraint firstItem="b3v-Y4-yVD" firstAttribute="trailing" secondItem="bwz-Pb-mg4" secondAttribute="trailingMargin" id="8f8-Rf-shi"/>
-                            <constraint firstItem="FIZ-vg-wjs" firstAttribute="centerX" secondItem="3n1-yP-iYI" secondAttribute="centerX" id="9cH-Wl-VDo"/>
-                            <constraint firstItem="FIZ-vg-wjs" firstAttribute="trailing" secondItem="1T9-Tf-Usw" secondAttribute="trailing" id="JGu-EH-8Zg"/>
+                            <constraint firstItem="FIZ-vg-wjs" firstAttribute="centerX" secondItem="3n1-yP-iYI" secondAttribute="centerX" constant="-4" id="9cH-Wl-VDo"/>
+                            <constraint firstItem="whl-fu-erI" firstAttribute="top" secondItem="O7Y-Gx-P8t" secondAttribute="bottom" constant="55" id="BBO-Vz-Xkh"/>
+                            <constraint firstItem="FIZ-vg-wjs" firstAttribute="trailing" secondItem="1T9-Tf-Usw" secondAttribute="trailing" constant="-4" id="JGu-EH-8Zg"/>
+                            <constraint firstItem="whl-fu-erI" firstAttribute="centerX" secondItem="1T9-Tf-Usw" secondAttribute="centerX" id="JJR-kf-jgJ"/>
+                            <constraint firstItem="1T9-Tf-Usw" firstAttribute="top" secondItem="whl-fu-erI" secondAttribute="bottom" constant="24" id="Jxo-4J-kcc"/>
                             <constraint firstItem="kFF-Ih-41t" firstAttribute="top" secondItem="b3v-Y4-yVD" secondAttribute="bottom" constant="8" id="LVK-gW-Atz"/>
-                            <constraint firstItem="1T9-Tf-Usw" firstAttribute="top" secondItem="O7Y-Gx-P8t" secondAttribute="bottom" constant="44" id="PdA-ZN-M8r"/>
-                            <constraint firstItem="3n1-yP-iYI" firstAttribute="top" secondItem="FIZ-vg-wjs" secondAttribute="bottom" constant="21" id="T3u-Fb-dJb"/>
-                            <constraint firstItem="FIZ-vg-wjs" firstAttribute="top" secondItem="1T9-Tf-Usw" secondAttribute="bottom" constant="18" id="ghr-eQ-faa"/>
-                            <constraint firstItem="kFF-Ih-41t" firstAttribute="top" secondItem="3n1-yP-iYI" secondAttribute="bottom" constant="526" id="lsg-9T-mha"/>
+                            <constraint firstItem="1T9-Tf-Usw" firstAttribute="top" secondItem="O7Y-Gx-P8t" secondAttribute="bottom" constant="110" id="PdA-ZN-M8r"/>
+                            <constraint firstItem="3n1-yP-iYI" firstAttribute="top" secondItem="FIZ-vg-wjs" secondAttribute="bottom" constant="-75" id="T3u-Fb-dJb"/>
+                            <constraint firstItem="FIZ-vg-wjs" firstAttribute="top" secondItem="1T9-Tf-Usw" secondAttribute="bottom" constant="81" id="ghr-eQ-faa"/>
+                            <constraint firstItem="kFF-Ih-41t" firstAttribute="top" secondItem="3n1-yP-iYI" secondAttribute="bottom" constant="493" id="lsg-9T-mha"/>
                             <constraint firstItem="1T9-Tf-Usw" firstAttribute="centerX" secondItem="bwz-Pb-mg4" secondAttribute="centerX" id="qNn-JE-Rk8"/>
                         </constraints>
                     </view>
@@ -202,23 +214,28 @@ Your Mathematics Classroom</string>
             </objects>
             <point key="canvasLocation" x="1513" y="1390"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Drop Menu Table View Controller-->
         <scene sceneID="92p-WH-NWb">
             <objects>
-                <tableViewController id="khn-vP-hhO" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="zkS-a8-JxQ">
+                <tableViewController id="khn-vP-hhO" customClass="dropMenuTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="zkS-a8-JxQ">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TfEL Maths Pedagogy v0.1b" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Whm-WK-gQS">
-                            <rect key="frame" x="0.0" y="-21" width="667" height="44"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eyu-f9-nS5">
+                            <rect key="frame" x="-23" y="-15" width="667" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                            <state key="normal" title="TfEL Maths Pedagogy v1.0">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="versionButton:" destination="khn-vP-hhO" eventType="touchUpInside" id="Sda-xi-M73"/>
+                            </connections>
+                        </button>
                         <sections>
-                            <tableViewSection headerTitle="TMP Navigation" id="ueG-ZM-v6x">
+                            <tableViewSection headerTitle="TfEL Maths" id="ueG-ZM-v6x">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="I7i-rs-9vh" rowHeight="50" style="IBUITableViewCellStyleDefault" id="8b9-r8-e77">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -228,7 +245,7 @@ Your Mathematics Classroom</string>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Home Screen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I7i-rs-9vh">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -237,56 +254,6 @@ Your Mathematics Classroom</string>
                                             <segue destination="aO0-Rm-Hdg" kind="show" id="JpY-hv-Bmv"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="gNq-Nw-2Ic" rowHeight="50" style="IBUITableViewCellStyleDefault" id="GUp-TS-KfV">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GUp-TS-KfV" id="FDM-Uc-UWA">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Community" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gNq-Nw-2Ic">
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="TMP Settings" id="9yM-Cm-NFv">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="5vo-IP-nbq" rowHeight="50" style="IBUITableViewCellStyleDefault" id="Q2A-6P-edd">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q2A-6P-edd" id="RFN-yv-WLn">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="TfEL on Facebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5vo-IP-nbq">
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="WOk-97-fgB" rowHeight="50" style="IBUITableViewCellStyleDefault" id="V4K-do-Rae">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V4K-do-Rae" id="7yh-cr-phx">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="About TfEL Maths Pedagogy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WOk-97-fgB">
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="TMP Administrator" id="hH0-Ev-dpt">
-                                <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="bQu-eC-gfQ" rowHeight="50" style="IBUITableViewCellStyleDefault" id="YuR-7a-ay1">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YuR-7a-ay1" id="M2W-dN-rMv">
@@ -295,7 +262,7 @@ Your Mathematics Classroom</string>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Administrator" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bQu-eC-gfQ">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -315,6 +282,9 @@ Your Mathematics Classroom</string>
                         </connections>
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="adminButton" destination="YuR-7a-ay1" id="WU8-Cp-KIP"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6u-Gk-uW8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -339,7 +309,7 @@ Your Mathematics Classroom</string>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Probe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IWR-u1-6I3">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="THi-AL-ehC">
@@ -444,7 +414,7 @@ Your Mathematics Classroom</string>
                             <rect key="frame" x="0.0" y="-21" width="1024" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <sections>
@@ -470,7 +440,7 @@ Your Mathematics Classroom</string>
 for rigorous mathematics
 learning</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DOMAIN 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4L-KP-MMO">
@@ -487,7 +457,7 @@ learning</string>
                                                     <string key="text">Personalise and connect
 mathematics learning</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TfEL-Compass-graphic_Domain-3_small-yellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="TPA-6Z-Dh1">
@@ -504,7 +474,7 @@ mathematics learning</string>
                                                     <string key="text">Develop expert
 mathematics learners</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a TfEL element you are interested in exploring." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jac-uF-UGP">
@@ -543,7 +513,7 @@ mathematics learners</string>
                                                     <rect key="frame" x="51" y="30" width="229" height="53"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="Develop democratic relationships">
-                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
@@ -555,7 +525,7 @@ mathematics learners</string>
                                                     <rect key="frame" x="417" y="30" width="229" height="53"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="Teach teachers how to learn">
-                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
@@ -567,7 +537,7 @@ mathematics learners</string>
                                                     <rect key="frame" x="767" y="30" width="229" height="53"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="Build on learners' understandings">
-                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
@@ -605,7 +575,7 @@ mathematics learners</string>
                                                     <rect key="frame" x="52" y="30" width="229" height="53"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="Build a community of learners">
-                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
@@ -617,7 +587,7 @@ mathematics learners</string>
                                                     <rect key="frame" x="432" y="30" width="229" height="53"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="Foster deep understanding and skillful action">
-                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
@@ -631,7 +601,7 @@ mathematics learners</string>
                                                     <state key="normal">
                                                         <string key="title">Connect learning to learner's lives
 and aspirations</string>
-                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
@@ -669,7 +639,7 @@ and aspirations</string>
                                                     <rect key="frame" x="58" y="30" width="229" height="53"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="Negotiate learning">
-                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
@@ -681,7 +651,7 @@ and aspirations</string>
                                                     <rect key="frame" x="433" y="30" width="249" height="53"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="Explore the construction of knowledge">
-                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
@@ -695,7 +665,7 @@ and aspirations</string>
                                                     <state key="normal">
                                                         <string key="title">Apply and assess learning in 
 authentic contexts</string>
-                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
@@ -735,7 +705,7 @@ authentic contexts</string>
                                                     <state key="normal">
                                                         <string key="title">Challenge learners to acheive high
 standards with appropriate support</string>
-                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
@@ -747,7 +717,7 @@ standards with appropriate support</string>
                                                     <rect key="frame" x="431" y="28" width="264" height="53"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="Promote dialogue as a means of learning">
-                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
@@ -761,7 +731,7 @@ standards with appropriate support</string>
                                                     <state key="normal">
                                                         <string key="title">Communicate learning in multiple
 modes</string>
-                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
@@ -800,7 +770,7 @@ modes</string>
                                                     <string key="text">Download all Domain 2
 support materials</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8V3-dP-6Ik">
@@ -808,7 +778,7 @@ support materials</string>
                                                     <string key="text">Download all Domain 3
 support materials</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8R-1y-g37">
@@ -816,7 +786,7 @@ support materials</string>
                                                     <string key="text">Download all Domain 4
 support materials</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -832,7 +802,7 @@ support materials</string>
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="0ox-q5-DgE">
-                        <barButtonItem key="leftBarButtonItem" image="show-lines.png" id="ARP-0k-X3l">
+                        <barButtonItem key="leftBarButtonItem" title="%n" id="ARP-0k-X3l">
                             <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="khn-vP-hhO" kind="popoverPresentation" popoverAnchorBarButtonItem="ARP-0k-X3l" id="K0m-43-0q0">
@@ -842,6 +812,9 @@ support materials</string>
                         </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="nameRef" destination="ARP-0k-X3l" id="sZk-uX-6iu"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PZq-yh-B3G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -864,7 +837,7 @@ support materials</string>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="2.1 Develop democratic relationships" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="16e-od-oNW">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="28-05-2015 8:40 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OWH-RO-OLk">
@@ -907,7 +880,7 @@ support materials</string>
                             <rect key="frame" x="0.0" y="627" width="1024" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <sections>
@@ -966,7 +939,7 @@ support materials</string>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.2 BUILD A COMMUNITY OF LEARNERS - Guiding Questions:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sqq-zF-koj">
                                                     <rect key="frame" x="16" y="88" width="666" height="29"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVf-PL-qPu">
@@ -1122,7 +1095,7 @@ support materials</string>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Use the slider to note your balance judgement about how well you are currently enacting this element" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRN-Sh-9Ir">
                                                     <rect key="frame" x="37" y="14" width="600" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVe-qO-hbh">
@@ -1163,6 +1136,7 @@ support materials</string>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
+                        <outlet property="domainImage" destination="MTQ-mW-GK8" id="gT6-6T-vQk"/>
                         <outlet property="domainSubtitle" destination="Hmi-8G-sxn" id="on4-qk-GHs"/>
                         <outlet property="domainTitle" destination="0rj-Nu-kCK" id="Ot5-ag-RAp"/>
                         <outlet property="iwdTextOutlet" destination="MtW-av-KPI" id="aJd-Sf-37h"/>
@@ -1185,7 +1159,7 @@ support materials</string>
         <scene sceneID="Emb-6d-keU">
             <objects>
                 <tableViewController title="Next Steps" id="2hR-3w-cJg" customClass="nextStepsTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="vY5-tf-AhQ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="vY5-tf-AhQ">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1193,7 +1167,7 @@ support materials</string>
                             <rect key="frame" x="0.0" y="-21" width="1024" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <sections>
@@ -1232,52 +1206,40 @@ support materials</string>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.2 BUILD A COMMUNITY OF LEARNERS - Guiding Questions:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1V-hC-AmJ">
                                                     <rect key="frame" x="16" y="88" width="666" height="29"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Transforming Tasks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAG-8j-0g0">
-                                                    <rect key="frame" x="-16" y="125" width="380" height="29"/>
+                                                    <rect key="frame" x="149" y="125" width="380" height="29"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TfEL Resources" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIL-JS-VGV">
-                                                    <rect key="frame" x="322" y="125" width="380" height="29"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                    <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Other Resources" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRl-f7-bos">
-                                                    <rect key="frame" x="660" y="125" width="380" height="29"/>
+                                                    <rect key="frame" x="495" y="125" width="380" height="29"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u67-F3-1rs">
-                                                    <rect key="frame" x="27" y="162" width="295" height="220"/>
+                                                    <rect key="frame" x="192" y="162" width="295" height="220"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <string key="text">The transforming tasks module on the Leading Learning resource supports teachers to transform traditional textbook tasks for greater intellectual challenge.
 
 The complete transforming tasks module can be found here.
 
-The links below are excerpts from the transforming tasks module. These excerpts support the development of TfEL Element 2.2.</string>
+The links below are excerpts from the transforming tasks module. These excerpts support the development of this TfEL Element.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfw-uI-lXd">
-                                                    <rect key="frame" x="365" y="162" width="295" height="234"/>
+                                                    <rect key="frame" x="538" y="162" width="295" height="234"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <string key="text">The Teaching for Effective Learning framework is the mandated pedagogy for South Australian DECD schools. It draws together the research evidence, the voices of educational experts from around the world and South Australian expertise.
 
 The resources below support teachers to further develop their pedagogical repitoire, and teach for effective learning.
 
-The links below are excerpts relevant to TfEL element 2.2</string>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="No other resources available at this time." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hn3-V2-9Wt">
-                                                    <rect key="frame" x="703" y="162" width="295" height="220"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+The links below are excerpts relevant to this TfEL element.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
@@ -1291,93 +1253,105 @@ The links below are excerpts relevant to TfEL element 2.2</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DECS SATfEL FG_Cover_A4.png" translatesAutoresizingMaskIntoConstraints="NO" id="By5-PK-2Jc">
-                                                    <rect key="frame" x="371" y="28" width="55" height="77"/>
+                                                    <rect key="frame" x="546" y="28" width="55" height="77"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="compass_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="EZK-1K-I4D">
-                                                    <rect key="frame" x="371" y="144" width="55" height="77"/>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="compass_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="EZK-1K-I4D">
+                                                    <rect key="frame" x="546" y="144" width="55" height="77"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxO-R4-E0G">
-                                                    <rect key="frame" x="434" y="28" width="159" height="30"/>
+                                                    <rect key="frame" x="609" y="28" width="159" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="TfEL Framework Guide »">
                                                         <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="frameworkGuideOne:" destination="2hR-3w-cJg" eventType="touchUpInside" id="ryG-XJ-VpJ"/>
+                                                    </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsO-Kb-WoF">
-                                                    <rect key="frame" x="434" y="52" width="158" height="30"/>
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsO-Kb-WoF">
+                                                    <rect key="frame" x="609" y="52" width="158" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="TfEL in Action Cards »">
                                                         <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byL-p9-gKp">
-                                                    <rect key="frame" x="434" y="75" width="158" height="30"/>
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byL-p9-gKp">
+                                                    <rect key="frame" x="609" y="75" width="158" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="Learning Progressions »">
                                                         <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TfEL Compass Numeracy Survey" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkr-3Y-fcq">
-                                                    <rect key="frame" x="437" y="144" width="153" height="39"/>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TfEL Compass Numeracy Survey" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkr-3Y-fcq">
+                                                    <rect key="frame" x="612" y="144" width="153" height="39"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login and open template 7." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJS-aG-nCr">
-                                                    <rect key="frame" x="435" y="182" width="156" height="39"/>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login and open template 7." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJS-aG-nCr">
+                                                    <rect key="frame" x="610" y="182" width="156" height="39"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue-tt.png" translatesAutoresizingMaskIntoConstraints="NO" id="zjd-gF-YEP">
-                                                    <rect key="frame" x="31" y="23" width="45" height="45"/>
+                                                    <rect key="frame" x="191" y="20" width="45" height="45"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green-tt.png" translatesAutoresizingMaskIntoConstraints="NO" id="LN6-i6-UO6">
-                                                    <rect key="frame" x="31" y="76" width="45" height="45"/>
+                                                    <rect key="frame" x="191" y="73" width="45" height="45"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red-tt.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nrz-NH-R6Y">
-                                                    <rect key="frame" x="31" y="129" width="45" height="45"/>
+                                                    <rect key="frame" x="191" y="126" width="45" height="45"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yellow-tt.png" translatesAutoresizingMaskIntoConstraints="NO" id="DWB-k2-ZLd">
-                                                    <rect key="frame" x="31" y="182" width="45" height="45"/>
+                                                    <rect key="frame" x="191" y="179" width="45" height="45"/>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Z8-1T-cmv">
+                                                    <rect key="frame" x="244" y="81" width="159" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <state key="normal" title="From Tell to Ask »">
+                                                        <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="transformingTasksTwo:" destination="2hR-3w-cJg" eventType="touchUpInside" id="ifk-fG-6qP"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXa-13-14C">
+                                                    <rect key="frame" x="244" y="134" width="238" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <state key="normal" title="From Information to Understanding »">
+                                                        <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="transformingTasksThree:" destination="2hR-3w-cJg" eventType="touchUpInside" id="Hr5-mW-z7d"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sth-tC-hMX">
+                                                    <rect key="frame" x="244" y="187" width="238" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <state key="normal" title="From Procedural to Problem Based »">
+                                                        <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="transformingTasksFour:" destination="2hR-3w-cJg" eventType="touchUpInside" id="AgP-sc-B99"/>
+                                                    </connections>
+                                                </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RdD-vx-jsr">
-                                                    <rect key="frame" x="84" y="31" width="159" height="30"/>
+                                                    <rect key="frame" x="244" y="28" width="159" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="From Closed to Open »">
                                                         <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="iuh-E6-Eh0" kind="show" id="61b-GD-4m3"/>
+                                                        <action selector="transformingTasksOne:" destination="2hR-3w-cJg" eventType="touchUpInside" id="hhM-CW-Wbq"/>
                                                     </connections>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Z8-1T-cmv">
-                                                    <rect key="frame" x="84" y="84" width="159" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <state key="normal" title="From Tell to Ask »">
-                                                        <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXa-13-14C">
-                                                    <rect key="frame" x="84" y="137" width="238" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <state key="normal" title="From Information to Understanding »">
-                                                        <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sth-tC-hMX">
-                                                    <rect key="frame" x="84" y="190" width="238" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <state key="normal" title="From Procedural to Problem Based »">
-                                                        <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -1409,17 +1383,17 @@ The links below are excerpts relevant to TfEL element 2.2</string>
         <!--Resource View Controller-->
         <scene sceneID="9Dc-rt-1DH">
             <objects>
-                <viewController id="iuh-E6-Eh0" customClass="resourceViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="resourceView" id="iuh-E6-Eh0" customClass="resourceViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="13M-yu-lRE"/>
                         <viewControllerLayoutGuide type="bottom" id="5xX-D1-AWd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="g9g-5c-s4z">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ghc-WT-qwF">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            <webView multipleTouchEnabled="YES" contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ghc-WT-qwF">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="delegate" destination="iuh-E6-Eh0" id="ws8-45-eKe"/>
@@ -1434,7 +1408,15 @@ The links below are excerpts relevant to TfEL element 2.2</string>
                             <constraint firstItem="Ghc-WT-qwF" firstAttribute="top" secondItem="g9g-5c-s4z" secondAttribute="topMargin" id="cF2-Oo-hGr"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="nfa-RJ-Ckh">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="gnE-Eq-Xe2">
+                            <connections>
+                                <action selector="shareButton:" destination="iuh-E6-Eh0" id="IYs-mL-tiA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="shareButtonRef" destination="gnE-Eq-Xe2" id="jCb-mf-vIO"/>
                         <outlet property="webView" destination="Ghc-WT-qwF" id="c1D-G9-eW6"/>
                     </connections>
                 </viewController>
@@ -1445,7 +1427,7 @@ The links below are excerpts relevant to TfEL element 2.2</string>
         <!--Navigation View Controller-->
         <scene sceneID="AN8-Gt-vk8">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aO0-Rm-Hdg" customClass="navigationViewController" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="homeScreen" automaticallyAdjustsScrollViewInsets="NO" id="aO0-Rm-Hdg" customClass="navigationViewController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
@@ -1474,7 +1456,7 @@ The links below are excerpts relevant to TfEL element 2.2</string>
                             <rect key="frame" x="0.0" y="691" width="1024" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <sections>
@@ -1513,7 +1495,7 @@ The links below are excerpts relevant to TfEL element 2.2</string>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.2 BUILD A COMMUNITY OF LEARNERS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnO-Xx-TWH">
                                                     <rect key="frame" x="16" y="88" width="666" height="29"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUg-SF-COa">
@@ -1648,12 +1630,11 @@ Evidence that suggests this  element is developed:</string>
         <image name="happy-face.png" width="116" height="116"/>
         <image name="red-tt.png" width="800" height="801"/>
         <image name="sad-face.png" width="116" height="116"/>
-        <image name="show-lines.png" width="24" height="15"/>
         <image name="tfel_compass_lg.png" width="316" height="295"/>
         <image name="yellow-tt.png" width="800" height="801"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CiE-wf-CmZ"/>
+        <segue reference="eKb-q0-CK8"/>
         <segue reference="Xvw-xV-gdU"/>
     </inferredMetricsTieBreakers>
 </document>

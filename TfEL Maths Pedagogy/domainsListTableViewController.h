@@ -26,5 +26,6 @@
 - (IBAction)threePointFour:(id)sender;
 - (IBAction)fourPointFour:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *nameRef;
 
 @end

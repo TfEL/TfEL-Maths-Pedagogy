@@ -17,4 +17,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *subdomainTitleOutlet;
 @property (weak, nonatomic) IBOutlet UILabel *domainTitleSubdomainTitleOutlet;
 
+- (IBAction)transformingTasksOne:(id)sender;
+- (IBAction)transformingTasksTwo:(id)sender;
+- (IBAction)transformingTasksThree:(id)sender;
+- (IBAction)transformingTasksFour:(id)sender;
+- (IBAction)frameworkGuideOne:(id)sender;
+
+
 @end

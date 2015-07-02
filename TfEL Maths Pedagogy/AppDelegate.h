@@ -12,8 +12,15 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+// Admin Enabled
+@property (nonatomic) int adminButton;
+
+// Users Chosen Name
+@property (strong, nonatomic) NSString *userFullName;
+
 // I know this is ugly, but we're passing to the resource view from everywhere
 @property (strong, nonatomic) NSString *nextPDFView;
+@property (nonatomic) int nextPDFPage;
 
 // This one stops stuff from going into the UDB repetedly - I should add updates to the database
 @property (nonatomic) BOOL nvShouldEnterToUserEntries;

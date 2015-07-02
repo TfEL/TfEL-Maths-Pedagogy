@@ -21,11 +21,13 @@ BOOL statuscode;
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
     
-    NSFileManager *fileManager = [NSFileManager defaultManager];
+    /* NSFileManager *fileManager = [NSFileManager defaultManager];
     
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
     NSString *writableDBPath = [documentsDirectory stringByAppendingPathComponent:@"tfelmped.sqlite"];
+     
+     */
 }
 
 - (void)tearDown {

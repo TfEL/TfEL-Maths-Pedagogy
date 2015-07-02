@@ -18,9 +18,17 @@
 
 @implementation domainsListTableViewController
 
+@synthesize nameRef;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    AppDelegate.userFullName = AppDelegate.cdcName;
+    
+    NSLog(@"TfEL Maths: Welcome to TfEL Maths Pedagogy, %@.", AppDelegate.userFullName);
+    
+    [nameRef setTitle:[NSString stringWithFormat:@"%@", AppDelegate.userFullName]];
+        
     self.navigationItem.hidesBackButton = YES;
 }
 - (void)didReceiveMemoryWarning {
@@ -87,4 +95,5 @@
     // This is the SQL `domaincode` match...
     AppDelegate.nextDomain = @"4.4";
 }
+
 @end

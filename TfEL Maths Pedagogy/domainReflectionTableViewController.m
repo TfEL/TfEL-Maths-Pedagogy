@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "FMDatabase.h"
 #import "abstractionLayer.h"
+#import "determineDomainUIImageForReturn.h"
 
 // Quick access types...
 #define AppDelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])
@@ -20,7 +21,7 @@
 
 @implementation domainReflectionTableViewController
 
-@synthesize nydWhatMight, iwdWhatMight, nextSteps, myPastEntries, nydTextOutlet, iwdTextOutlet, domainTitle, domainSubtitle, subdomainBody, subdomainGuidingQuestions, subdomaintitle, sliderOutlet;
+@synthesize nydWhatMight, iwdWhatMight, nextSteps, myPastEntries, nydTextOutlet, iwdTextOutlet, domainTitle, domainSubtitle, subdomainBody, subdomainGuidingQuestions, subdomaintitle, sliderOutlet, domainImage;
 
 // Some public variables
 NSString *nextQuery;
@@ -65,11 +66,15 @@ bool shouldPopulateNydIwd;
     viewData = [self runQueryForDomainKey];
     if ([viewData valueForKey:@"code"]) {
         
+        [determineDomainUIImageForReturn alloc];
+        
         // Establish the view data from the database :)
         domainTitle.text = [viewData valueForKey:@"domainTitle"];
         domainSubtitle.text = [viewData valueForKey:@"domainSubtitle"];
         subdomaintitle.text = [viewData valueForKey:@"subdomainTitle"];
         subdomainBody.text = [viewData valueForKey:@"subdomainBody"];
+        NSLog(@"%@", [determineDomainUIImageForReturn imageToWrapInImageView:[viewData valueForKey:@"domainTitle"]]);
+        [domainImage setImage:[UIImage imageNamed:[determineDomainUIImageForReturn imageToWrapInImageView:[viewData valueForKey:@"domainTitle"]]]];
         subdomainGuidingQuestions.text = [NSString stringWithFormat:@"%@ %@ - Guiding Questions:", [viewData valueForKey:@"code"], [viewData valueForKey:@"subdomainTitle"]];
         
         if (shouldPopulateNydIwd == YES) {

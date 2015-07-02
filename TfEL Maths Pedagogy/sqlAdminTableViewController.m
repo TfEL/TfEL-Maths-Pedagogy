@@ -39,7 +39,7 @@
         // Run a dummy query
         FMResultSet *s = [db executeQuery:@"SELECT * FROM \"datastore\" LIMIT 0, 30"];
         while ([s next]) {
-            NSLog(@"id: %d datemodified: %d data: %d", [s intForColumnIndex:0], [s intForColumnIndex:1], [s intForColumnIndex:2]);
+            NSLog(@"TfEL Maths: id: %d datemodified: %d data: %d", [s intForColumnIndex:0], [s intForColumnIndex:1], [s intForColumnIndex:2]);
             
             resultQuery.text = [s objectForColumnName:@"data"];
         }

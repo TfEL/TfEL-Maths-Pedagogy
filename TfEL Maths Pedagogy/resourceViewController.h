@@ -12,4 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
+- (IBAction)shareButton:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *shareButtonRef;
+
 @end

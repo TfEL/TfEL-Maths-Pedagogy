@@ -4,10 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>TfEL Maths Pedagogy Tests.xcscheme</key>
+		<key>Clean Maths Pedagogy.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+		<key>TfEL Maths Pedagogy Tests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>TfEL Maths Pedagogy.xcscheme</key>
 		<dict>

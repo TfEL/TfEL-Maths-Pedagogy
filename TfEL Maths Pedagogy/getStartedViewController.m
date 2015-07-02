@@ -42,12 +42,16 @@
     
     if ([[userData valueForKey:@"value"] length] >= 1) {
         [getStartedButton setTitle:[NSString stringWithFormat:@"Continue as %@ »", [userData valueForKey:@"value"]] forState:UIControlStateNormal];
+        AppDelegate.cdcName = [userData valueForKey:@"value"];
+        AppDelegate.userFullName = [userData valueForKey:@"value"];
         getStartedButton.hidden = NO;
         createAccountButton.hidden = YES;
     } else {
         if ([AppDelegate.cdcName length] >= 1) {
             [getStartedButton setTitle:[NSString stringWithFormat:@"Continue as %@ »", AppDelegate.cdcName] forState:UIControlStateNormal];
             getStartedButton.hidden = NO;
+            
+            AppDelegate.userFullName = AppDelegate.cdcName;
         } else {
             getStartedButton.hidden = YES;
         }

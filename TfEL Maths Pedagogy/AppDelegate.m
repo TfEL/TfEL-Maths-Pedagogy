@@ -21,6 +21,9 @@
     if ( [[[NSProcessInfo processInfo]environment]objectForKey:@"cleanSandbox"] ) {
         NSLog(@"TfEL Maths: is starting to cleanSandbox");
         [self EmptySandbox];
+    } else if ([[[NSProcessInfo processInfo] environment] objectForKey:@"synciCloud"]) {
+        NSLog(@"TfEL Maths: is starting to uploadToiCloud");
+        [self uploadToiCloud];
     } else {
         NSLog(@"TfEL Maths: didFinishLaunchingWithOptions: ev: nil (or unhandled)");
     }

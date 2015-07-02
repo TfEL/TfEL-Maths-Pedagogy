@@ -41,6 +41,9 @@
 		124ABA7B1B2A631D00435632 /* domainDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124ABA7A1B2A631D00435632 /* domainDetailTableViewController.m */; };
 		124ABA7F1B2A67F700435632 /* abstractionLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 124ABA7E1B2A67F700435632 /* abstractionLayer.m */; };
 		124ABA831B2A765800435632 /* getDataByCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 124ABA821B2A765800435632 /* getDataByCode.m */; };
+		124ABA871B2A994400435632 /* dataCreatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124ABA861B2A994400435632 /* dataCreatorViewController.m */; };
+		124ABA891B2AA3E600435632 /* tfeluserdata.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 124ABA881B2AA3E600435632 /* tfeluserdata.sqlite */; };
+		1289122B1B44DF6D00765785 /* determineDomainUIImageForReturn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1289122A1B44DF6D00765785 /* determineDomainUIImageForReturn.m */; };
 		12929A9F1B1E793900E6E029 /* domainReflectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12929A9E1B1E793900E6E029 /* domainReflectionTableViewController.m */; };
 		12929AA81B1E832E00E6E029 /* SZTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12929AA71B1E832E00E6E029 /* SZTextView.m */; };
 		12929AAA1B1E862F00E6E029 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 12929AA91B1E862F00E6E029 /* libsqlite3.dylib */; };
@@ -50,6 +53,40 @@
 		12929ACD1B1E905900E6E029 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 12929AC61B1E905900E6E029 /* FMDatabaseQueue.m */; };
 		12929ACE1B1E905900E6E029 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 12929AC91B1E905900E6E029 /* FMResultSet.m */; };
 		12929AD31B1E91A600E6E029 /* sqlAdminTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12929AD21B1E91A600E6E029 /* sqlAdminTableViewController.m */; };
+		12C30CC21B3A331B008A28A1 /* compass_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C30CC01B3A331A008A28A1 /* compass_bg.png */; };
+		12C30CC31B3A331B008A28A1 /* compass_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C30CC11B3A331A008A28A1 /* compass_bg@2x.png */; };
+		12C30CD01B3A4F64008A28A1 /* resourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C30CCF1B3A4F64008A28A1 /* resourceViewController.m */; };
+		12C30CE01B3B771E008A28A1 /* happy-face.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C30CDA1B3B771E008A28A1 /* happy-face.png */; };
+		12C30CE11B3B771E008A28A1 /* happy-face@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C30CDB1B3B771E008A28A1 /* happy-face@2x.png */; };
+		12C30CE21B3B771E008A28A1 /* happy-face@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C30CDC1B3B771E008A28A1 /* happy-face@3x.png */; };
+		12C30CE31B3B771E008A28A1 /* sad-face.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C30CDD1B3B771E008A28A1 /* sad-face.png */; };
+		12C30CE41B3B771E008A28A1 /* sad-face@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C30CDE1B3B771E008A28A1 /* sad-face@2x.png */; };
+		12C30CE51B3B771E008A28A1 /* sad-face@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C30CDF1B3B771E008A28A1 /* sad-face@3x.png */; };
+		12C30CF41B3BA9BD008A28A1 /* 4.4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12C30CE81B3BA9BD008A28A1 /* 4.4.pdf */; };
+		12C30CF51B3BA9BD008A28A1 /* 4.3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12C30CE91B3BA9BD008A28A1 /* 4.3.pdf */; };
+		12C30CF61B3BA9BD008A28A1 /* 4.2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12C30CEA1B3BA9BD008A28A1 /* 4.2.pdf */; };
+		12C30CF71B3BA9BD008A28A1 /* 4.1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12C30CEB1B3BA9BD008A28A1 /* 4.1.pdf */; };
+		12C30CF81B3BA9BD008A28A1 /* 3.4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12C30CEC1B3BA9BD008A28A1 /* 3.4.pdf */; };
+		12C30CF91B3BA9BD008A28A1 /* 3.3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12C30CED1B3BA9BD008A28A1 /* 3.3.pdf */; };
+		12C30CFA1B3BA9BD008A28A1 /* 3.2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12C30CEE1B3BA9BD008A28A1 /* 3.2.pdf */; };
+		12C30CFB1B3BA9BD008A28A1 /* 3.1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12C30CEF1B3BA9BD008A28A1 /* 3.1.pdf */; };
+		12C30CFC1B3BA9BD008A28A1 /* 2.4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12C30CF01B3BA9BD008A28A1 /* 2.4.pdf */; };
+		12C30CFD1B3BA9BD008A28A1 /* 2.3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12C30CF11B3BA9BD008A28A1 /* 2.3.pdf */; };
+		12C30CFE1B3BA9BD008A28A1 /* 2.2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12C30CF21B3BA9BD008A28A1 /* 2.2.pdf */; };
+		12C30CFF1B3BA9BD008A28A1 /* 2.1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12C30CF31B3BA9BD008A28A1 /* 2.1.pdf */; };
+		12C30D031B3BC134008A28A1 /* dropMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C30D021B3BC134008A28A1 /* dropMenuTableViewController.m */; };
+		12C30D121B3BCE43008A28A1 /* 2.1_fg.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12C30D061B3BCE43008A28A1 /* 2.1_fg.pdf */; };
+		12C30D131B3BCE43008A28A1 /* 2.2_fg.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12C30D071B3BCE43008A28A1 /* 2.2_fg.pdf */; };
+		12C30D141B3BCE43008A28A1 /* 2.3_fg.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12C30D081B3BCE43008A28A1 /* 2.3_fg.pdf */; };
+		12C30D151B3BCE43008A28A1 /* 2.4_fg.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12C30D091B3BCE43008A28A1 /* 2.4_fg.pdf */; };
+		12C30D161B3BCE43008A28A1 /* 3.1_fg.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12C30D0A1B3BCE43008A28A1 /* 3.1_fg.pdf */; };
+		12C30D171B3BCE43008A28A1 /* 3.2_fg.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12C30D0B1B3BCE43008A28A1 /* 3.2_fg.pdf */; };
+		12C30D181B3BCE43008A28A1 /* 3.3_fg.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12C30D0C1B3BCE43008A28A1 /* 3.3_fg.pdf */; };
+		12C30D191B3BCE43008A28A1 /* 3.4_fg.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12C30D0D1B3BCE43008A28A1 /* 3.4_fg.pdf */; };
+		12C30D1A1B3BCE43008A28A1 /* 4.1_fg.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12C30D0E1B3BCE43008A28A1 /* 4.1_fg.pdf */; };
+		12C30D1B1B3BCE43008A28A1 /* 4.2_fg.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12C30D0F1B3BCE43008A28A1 /* 4.2_fg.pdf */; };
+		12C30D1C1B3BCE43008A28A1 /* 4.3_fg.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12C30D101B3BCE43008A28A1 /* 4.3_fg.pdf */; };
+		12C30D1D1B3BCE43008A28A1 /* 4.4_fg.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12C30D111B3BCE43008A28A1 /* 4.4_fg.pdf */; };
 		12F711D81B0EF4030059C263 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F711D71B0EF4030059C263 /* main.m */; };
 		12F711DB1B0EF4030059C263 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F711DA1B0EF4030059C263 /* AppDelegate.m */; };
 		12F711E11B0EF4040059C263 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F711DF1B0EF4040059C263 /* Main.storyboard */; };
@@ -120,6 +157,11 @@
 		124ABA811B2A765800435632 /* getDataByCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getDataByCode.h; sourceTree = "<group>"; };
 		124ABA821B2A765800435632 /* getDataByCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = getDataByCode.m; sourceTree = "<group>"; };
 		124ABA841B2A81E200435632 /* viewDataMethodReference.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = viewDataMethodReference.m; sourceTree = "<group>"; };
+		124ABA851B2A994400435632 /* dataCreatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataCreatorViewController.h; sourceTree = "<group>"; };
+		124ABA861B2A994400435632 /* dataCreatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dataCreatorViewController.m; sourceTree = "<group>"; };
+		124ABA881B2AA3E600435632 /* tfeluserdata.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = tfeluserdata.sqlite; path = "TfEL Maths Pedagogy/tfeluserdata.sqlite"; sourceTree = "<group>"; };
+		128912291B44DF6D00765785 /* determineDomainUIImageForReturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = determineDomainUIImageForReturn.h; sourceTree = "<group>"; };
+		1289122A1B44DF6D00765785 /* determineDomainUIImageForReturn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = determineDomainUIImageForReturn.m; sourceTree = "<group>"; };
 		12929A9D1B1E793900E6E029 /* domainReflectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = domainReflectionTableViewController.h; sourceTree = "<group>"; };
 		12929A9E1B1E793900E6E029 /* domainReflectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = domainReflectionTableViewController.m; sourceTree = "<group>"; };
 		12929AA61B1E832E00E6E029 /* SZTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZTextView.h; sourceTree = "<group>"; };
@@ -139,6 +181,42 @@
 		12929ACF1B1E90DA00E6E029 /* tfelmped.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = tfelmped.sqlite; path = "TfEL Maths Pedagogy/tfelmped.sqlite"; sourceTree = "<group>"; };
 		12929AD11B1E91A600E6E029 /* sqlAdminTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlAdminTableViewController.h; sourceTree = "<group>"; };
 		12929AD21B1E91A600E6E029 /* sqlAdminTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sqlAdminTableViewController.m; sourceTree = "<group>"; };
+		12C30CC01B3A331A008A28A1 /* compass_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass_bg.png; sourceTree = "<group>"; };
+		12C30CC11B3A331A008A28A1 /* compass_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass_bg@2x.png"; sourceTree = "<group>"; };
+		12C30CCE1B3A4F64008A28A1 /* resourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resourceViewController.h; sourceTree = "<group>"; };
+		12C30CCF1B3A4F64008A28A1 /* resourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = resourceViewController.m; sourceTree = "<group>"; };
+		12C30CDA1B3B771E008A28A1 /* happy-face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "happy-face.png"; sourceTree = "<group>"; };
+		12C30CDB1B3B771E008A28A1 /* happy-face@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "happy-face@2x.png"; sourceTree = "<group>"; };
+		12C30CDC1B3B771E008A28A1 /* happy-face@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "happy-face@3x.png"; sourceTree = "<group>"; };
+		12C30CDD1B3B771E008A28A1 /* sad-face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sad-face.png"; sourceTree = "<group>"; };
+		12C30CDE1B3B771E008A28A1 /* sad-face@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sad-face@2x.png"; sourceTree = "<group>"; };
+		12C30CDF1B3B771E008A28A1 /* sad-face@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sad-face@3x.png"; sourceTree = "<group>"; };
+		12C30CE81B3BA9BD008A28A1 /* 4.4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 4.4.pdf; sourceTree = "<group>"; };
+		12C30CE91B3BA9BD008A28A1 /* 4.3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 4.3.pdf; sourceTree = "<group>"; };
+		12C30CEA1B3BA9BD008A28A1 /* 4.2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 4.2.pdf; sourceTree = "<group>"; };
+		12C30CEB1B3BA9BD008A28A1 /* 4.1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 4.1.pdf; sourceTree = "<group>"; };
+		12C30CEC1B3BA9BD008A28A1 /* 3.4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 3.4.pdf; sourceTree = "<group>"; };
+		12C30CED1B3BA9BD008A28A1 /* 3.3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 3.3.pdf; sourceTree = "<group>"; };
+		12C30CEE1B3BA9BD008A28A1 /* 3.2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 3.2.pdf; sourceTree = "<group>"; };
+		12C30CEF1B3BA9BD008A28A1 /* 3.1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 3.1.pdf; sourceTree = "<group>"; };
+		12C30CF01B3BA9BD008A28A1 /* 2.4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 2.4.pdf; sourceTree = "<group>"; };
+		12C30CF11B3BA9BD008A28A1 /* 2.3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 2.3.pdf; sourceTree = "<group>"; };
+		12C30CF21B3BA9BD008A28A1 /* 2.2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 2.2.pdf; sourceTree = "<group>"; };
+		12C30CF31B3BA9BD008A28A1 /* 2.1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 2.1.pdf; sourceTree = "<group>"; };
+		12C30D011B3BC134008A28A1 /* dropMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dropMenuTableViewController.h; sourceTree = "<group>"; };
+		12C30D021B3BC134008A28A1 /* dropMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dropMenuTableViewController.m; sourceTree = "<group>"; };
+		12C30D061B3BCE43008A28A1 /* 2.1_fg.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 2.1_fg.pdf; sourceTree = "<group>"; };
+		12C30D071B3BCE43008A28A1 /* 2.2_fg.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 2.2_fg.pdf; sourceTree = "<group>"; };
+		12C30D081B3BCE43008A28A1 /* 2.3_fg.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 2.3_fg.pdf; sourceTree = "<group>"; };
+		12C30D091B3BCE43008A28A1 /* 2.4_fg.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 2.4_fg.pdf; sourceTree = "<group>"; };
+		12C30D0A1B3BCE43008A28A1 /* 3.1_fg.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 3.1_fg.pdf; sourceTree = "<group>"; };
+		12C30D0B1B3BCE43008A28A1 /* 3.2_fg.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 3.2_fg.pdf; sourceTree = "<group>"; };
+		12C30D0C1B3BCE43008A28A1 /* 3.3_fg.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 3.3_fg.pdf; sourceTree = "<group>"; };
+		12C30D0D1B3BCE43008A28A1 /* 3.4_fg.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 3.4_fg.pdf; sourceTree = "<group>"; };
+		12C30D0E1B3BCE43008A28A1 /* 4.1_fg.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 4.1_fg.pdf; sourceTree = "<group>"; };
+		12C30D0F1B3BCE43008A28A1 /* 4.2_fg.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 4.2_fg.pdf; sourceTree = "<group>"; };
+		12C30D101B3BCE43008A28A1 /* 4.3_fg.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 4.3_fg.pdf; sourceTree = "<group>"; };
+		12C30D111B3BCE43008A28A1 /* 4.4_fg.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 4.4_fg.pdf; sourceTree = "<group>"; };
 		12F711D21B0EF4030059C263 /* TfEL Maths Pedagogy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TfEL Maths Pedagogy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F711D61B0EF4030059C263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12F711D71B0EF4030059C263 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -195,6 +273,8 @@
 		122727B61B1567F40050768B /* 04. TfEL Compass Exploded */ = {
 			isa = PBXGroup;
 			children = (
+				12C30CC01B3A331A008A28A1 /* compass_bg.png */,
+				12C30CC11B3A331A008A28A1 /* compass_bg@2x.png */,
 				122727B71B1568000050768B /* TfEL-Compass-graphic_Domain-2_small-yellow.png */,
 				122727B81B1568000050768B /* TfEL-Compass-graphic_Domain-2_small-yellow@2x.png */,
 				122727B91B1568000050768B /* TfEL-Compass-graphic_Domain-2_small-yellow@3x.png */,
@@ -287,6 +367,15 @@
 			name = "04. Get View By Code";
 			sourceTree = "<group>";
 		};
+		128912281B44DEFC00765785 /* 05. Image Return */ = {
+			isa = PBXGroup;
+			children = (
+				128912291B44DF6D00765785 /* determineDomainUIImageForReturn.h */,
+				1289122A1B44DF6D00765785 /* determineDomainUIImageForReturn.m */,
+			);
+			name = "05. Image Return";
+			sourceTree = "<group>";
+		};
 		12929A9B1B1E791C00E6E029 /* 04. Domain Reflection */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,10 +388,11 @@
 		12929AA11B1E7D1500E6E029 /* Custom Classes */ = {
 			isa = PBXGroup;
 			children = (
-				124ABA801B2A762900435632 /* 04. Get View By Code */,
-				124ABA7C1B2A67D700435632 /* 03. Database Abstraction */,
-				12929ABE1B1E905200E6E029 /* 02. FMDB */,
 				12929AA21B1E7D1C00E6E029 /* 01. Custom UITextView */,
+				12929ABE1B1E905200E6E029 /* 02. FMDB */,
+				124ABA7C1B2A67D700435632 /* 03. Database Abstraction */,
+				124ABA801B2A762900435632 /* 04. Get View By Code */,
+				128912281B44DEFC00765785 /* 05. Image Return */,
 			);
 			name = "Custom Classes";
 			sourceTree = "<group>";
@@ -343,12 +433,107 @@
 			name = "00. Admin SQL";
 			sourceTree = "<group>";
 		};
-		12F711C91B0EF4030059C263 = {
+		12C30CC41B3A4E89008A28A1 /* 07. PDF Assets */ = {
+			isa = PBXGroup;
+			children = (
+				12C30D051B3BCD3D008A28A1 /* 02. Framework Guide */,
+				12C30D041B3BCD32008A28A1 /* 01. Transforming Tasks */,
+			);
+			name = "07. PDF Assets";
+			sourceTree = "<group>";
+		};
+		12C30CCD1B3A4F46008A28A1 /* 08. Resource View */ = {
+			isa = PBXGroup;
+			children = (
+				12C30CCE1B3A4F64008A28A1 /* resourceViewController.h */,
+				12C30CCF1B3A4F64008A28A1 /* resourceViewController.m */,
+			);
+			name = "08. Resource View";
+			sourceTree = "<group>";
+		};
+		12C30CD91B3B7709008A28A1 /* 08. Emotions */ = {
+			isa = PBXGroup;
+			children = (
+				12C30CDA1B3B771E008A28A1 /* happy-face.png */,
+				12C30CDB1B3B771E008A28A1 /* happy-face@2x.png */,
+				12C30CDC1B3B771E008A28A1 /* happy-face@3x.png */,
+				12C30CDD1B3B771E008A28A1 /* sad-face.png */,
+				12C30CDE1B3B771E008A28A1 /* sad-face@2x.png */,
+				12C30CDF1B3B771E008A28A1 /* sad-face@3x.png */,
+			);
+			name = "08. Emotions";
+			sourceTree = "<group>";
+		};
+		12C30CE61B3B95B3008A28A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				124ABA4F1B292C0200435632 /* CloudKit.framework */,
 				12929AA91B1E862F00E6E029 /* libsqlite3.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		12C30CE71B3B95C1008A28A1 /* Data Sets */ = {
+			isa = PBXGroup;
+			children = (
+				124ABA881B2AA3E600435632 /* tfeluserdata.sqlite */,
 				12929ACF1B1E90DA00E6E029 /* tfelmped.sqlite */,
+			);
+			name = "Data Sets";
+			sourceTree = "<group>";
+		};
+		12C30D001B3BC11A008A28A1 /* 09. Menu Controller */ = {
+			isa = PBXGroup;
+			children = (
+				12C30D011B3BC134008A28A1 /* dropMenuTableViewController.h */,
+				12C30D021B3BC134008A28A1 /* dropMenuTableViewController.m */,
+			);
+			name = "09. Menu Controller";
+			sourceTree = "<group>";
+		};
+		12C30D041B3BCD32008A28A1 /* 01. Transforming Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				12C30CE81B3BA9BD008A28A1 /* 4.4.pdf */,
+				12C30CE91B3BA9BD008A28A1 /* 4.3.pdf */,
+				12C30CEA1B3BA9BD008A28A1 /* 4.2.pdf */,
+				12C30CEB1B3BA9BD008A28A1 /* 4.1.pdf */,
+				12C30CEC1B3BA9BD008A28A1 /* 3.4.pdf */,
+				12C30CED1B3BA9BD008A28A1 /* 3.3.pdf */,
+				12C30CEE1B3BA9BD008A28A1 /* 3.2.pdf */,
+				12C30CEF1B3BA9BD008A28A1 /* 3.1.pdf */,
+				12C30CF01B3BA9BD008A28A1 /* 2.4.pdf */,
+				12C30CF11B3BA9BD008A28A1 /* 2.3.pdf */,
+				12C30CF21B3BA9BD008A28A1 /* 2.2.pdf */,
+				12C30CF31B3BA9BD008A28A1 /* 2.1.pdf */,
+			);
+			name = "01. Transforming Tasks";
+			sourceTree = "<group>";
+		};
+		12C30D051B3BCD3D008A28A1 /* 02. Framework Guide */ = {
+			isa = PBXGroup;
+			children = (
+				12C30D061B3BCE43008A28A1 /* 2.1_fg.pdf */,
+				12C30D071B3BCE43008A28A1 /* 2.2_fg.pdf */,
+				12C30D081B3BCE43008A28A1 /* 2.3_fg.pdf */,
+				12C30D091B3BCE43008A28A1 /* 2.4_fg.pdf */,
+				12C30D0A1B3BCE43008A28A1 /* 3.1_fg.pdf */,
+				12C30D0B1B3BCE43008A28A1 /* 3.2_fg.pdf */,
+				12C30D0C1B3BCE43008A28A1 /* 3.3_fg.pdf */,
+				12C30D0D1B3BCE43008A28A1 /* 3.4_fg.pdf */,
+				12C30D0E1B3BCE43008A28A1 /* 4.1_fg.pdf */,
+				12C30D0F1B3BCE43008A28A1 /* 4.2_fg.pdf */,
+				12C30D101B3BCE43008A28A1 /* 4.3_fg.pdf */,
+				12C30D111B3BCE43008A28A1 /* 4.4_fg.pdf */,
+			);
+			name = "02. Framework Guide";
+			sourceTree = "<group>";
+		};
+		12F711C91B0EF4030059C263 = {
+			isa = PBXGroup;
+			children = (
+				12C30CE61B3B95B3008A28A1 /* Frameworks */,
+				12C30CE71B3B95C1008A28A1 /* Data Sets */,
 				12F711D41B0EF4030059C263 /* TfEL Maths Pedagogy */,
 				12F711EE1B0EF4040059C263 /* TfEL Maths PedagogyTests */,
 				12F711D31B0EF4030059C263 /* Products */,
@@ -425,6 +610,8 @@
 				124ABA591B294E3D00435632 /* 05. My Entries */,
 				124ABA741B2A62CE00435632 /* 06. Next Steps */,
 				124ABA781B2A630600435632 /* 07. Detail Expanded */,
+				12C30CCD1B3A4F46008A28A1 /* 08. Resource View */,
+				12C30D001B3BC11A008A28A1 /* 09. Menu Controller */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -443,6 +630,8 @@
 			children = (
 				12F712111B0F08D00059C263 /* getStartedViewController.h */,
 				12F712121B0F08D00059C263 /* getStartedViewController.m */,
+				124ABA851B2A994400435632 /* dataCreatorViewController.h */,
+				124ABA861B2A994400435632 /* dataCreatorViewController.m */,
 			);
 			name = "02. Home Screen";
 			sourceTree = "<group>";
@@ -465,6 +654,8 @@
 				122727B61B1567F40050768B /* 04. TfEL Compass Exploded */,
 				124ABA581B29453100435632 /* 05. Navigation Assets */,
 				124ABA631B2A5D1F00435632 /* 06. Transforming Tasks Logos */,
+				12C30CC41B3A4E89008A28A1 /* 07. PDF Assets */,
+				12C30CD91B3B7709008A28A1 /* 08. Emotions */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -604,39 +795,72 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C30CF41B3BA9BD008A28A1 /* 4.4.pdf in Resources */,
+				12C30CE51B3B771E008A28A1 /* sad-face@3x.png in Resources */,
+				12C30D131B3BCE43008A28A1 /* 2.2_fg.pdf in Resources */,
 				12F719181B1ECE9200B9F7FB /* tfelmped.sqlite in Resources */,
 				124ABA6F1B2A5D4D00435632 /* green-tt@2x.png in Resources */,
+				12C30CC21B3A331B008A28A1 /* compass_bg.png in Resources */,
+				12C30CF91B3BA9BD008A28A1 /* 3.3.pdf in Resources */,
 				122727C51B1568000050768B /* TfEL-Compass-graphic_Domain-3_small-yellow@3x.png in Resources */,
 				122727C21B1568000050768B /* TfEL-Compass-graphic_Domain-2_small-yellow@3x.png in Resources */,
 				124ABA6C1B2A5D4D00435632 /* blue-tt.png in Resources */,
 				122727CF1B1586EA0050768B /* show-lines.png in Resources */,
 				122727C71B1568000050768B /* TfEL-Compass-graphic_Domain-4_small-yellow@2x.png in Resources */,
+				12C30D141B3BCE43008A28A1 /* 2.3_fg.pdf in Resources */,
 				124ABA6D1B2A5D4D00435632 /* blue-tt@2x.png in Resources */,
+				12C30D1C1B3BCE43008A28A1 /* 4.3_fg.pdf in Resources */,
 				122727B31B1560750050768B /* tfel_compass_lg.png in Resources */,
+				12C30CF51B3BA9BD008A28A1 /* 4.3.pdf in Resources */,
+				12C30CF81B3BA9BD008A28A1 /* 3.4.pdf in Resources */,
 				124ABA621B2A56E600435632 /* DECS SATfEL FG_Cover_A4@3x.png in Resources */,
+				12C30CF61B3BA9BD008A28A1 /* 4.2.pdf in Resources */,
+				12C30D171B3BCE43008A28A1 /* 3.2_fg.pdf in Resources */,
 				124ABA611B2A56E600435632 /* DECS SATfEL FG_Cover_A4@2x.png in Resources */,
+				12C30D161B3BCE43008A28A1 /* 3.1_fg.pdf in Resources */,
 				12F712161B0F0A0F0059C263 /* 72.png in Resources */,
 				122727B51B1560750050768B /* tfel_compass_lg@3x.png in Resources */,
+				12C30D181B3BCE43008A28A1 /* 3.3_fg.pdf in Resources */,
+				12C30CF71B3BA9BD008A28A1 /* 4.1.pdf in Resources */,
+				12C30CFB1B3BA9BD008A28A1 /* 3.1.pdf in Resources */,
+				12C30CFA1B3BA9BD008A28A1 /* 3.2.pdf in Resources */,
 				124ABA701B2A5D4D00435632 /* red-tt.png in Resources */,
 				12F7120F1B0F01CF0059C263 /* OE_Header.png in Resources */,
 				122727C61B1568000050768B /* TfEL-Compass-graphic_Domain-4_small-yellow.png in Resources */,
 				122727C01B1568000050768B /* TfEL-Compass-graphic_Domain-2_small-yellow.png in Resources */,
 				122727D01B1586EA0050768B /* show-lines@2x.png in Resources */,
 				124ABA601B2A56E600435632 /* DECS SATfEL FG_Cover_A4.png in Resources */,
+				12C30D1A1B3BCE43008A28A1 /* 4.1_fg.pdf in Resources */,
 				124ABA711B2A5D4D00435632 /* red-tt@2x.png in Resources */,
 				12F711E11B0EF4040059C263 /* Main.storyboard in Resources */,
+				12C30CE21B3B771E008A28A1 /* happy-face@3x.png in Resources */,
 				122727C11B1568000050768B /* TfEL-Compass-graphic_Domain-2_small-yellow@2x.png in Resources */,
 				124ABA561B2935B100435632 /* backImage.png in Resources */,
+				12C30CC31B3A331B008A28A1 /* compass_bg@2x.png in Resources */,
 				12F711E61B0EF4040059C263 /* LaunchScreen.xib in Resources */,
+				12C30CFD1B3BA9BD008A28A1 /* 2.3.pdf in Resources */,
+				12C30CE11B3B771E008A28A1 /* happy-face@2x.png in Resources */,
 				124ABA6E1B2A5D4D00435632 /* green-tt.png in Resources */,
 				124ABA721B2A5D4D00435632 /* yellow-tt.png in Resources */,
+				12C30CFE1B3BA9BD008A28A1 /* 2.2.pdf in Resources */,
+				12C30D1D1B3BCE43008A28A1 /* 4.4_fg.pdf in Resources */,
 				12F711E31B0EF4040059C263 /* Images.xcassets in Resources */,
 				124ABA571B2935B100435632 /* backImage@2x.png in Resources */,
 				122727B41B1560750050768B /* tfel_compass_lg@2x.png in Resources */,
 				122727C41B1568000050768B /* TfEL-Compass-graphic_Domain-3_small-yellow@2x.png in Resources */,
 				122727C81B1568000050768B /* TfEL-Compass-graphic_Domain-4_small-yellow@3x.png in Resources */,
+				12C30D191B3BCE43008A28A1 /* 3.4_fg.pdf in Resources */,
+				124ABA891B2AA3E600435632 /* tfeluserdata.sqlite in Resources */,
+				12C30CE01B3B771E008A28A1 /* happy-face.png in Resources */,
+				12C30D151B3BCE43008A28A1 /* 2.4_fg.pdf in Resources */,
+				12C30CFF1B3BA9BD008A28A1 /* 2.1.pdf in Resources */,
+				12C30CE31B3B771E008A28A1 /* sad-face.png in Resources */,
+				12C30D121B3BCE43008A28A1 /* 2.1_fg.pdf in Resources */,
 				12F712171B0F0A0F0059C263 /* 72@2x-152.png in Resources */,
+				12C30D1B1B3BCE43008A28A1 /* 4.2_fg.pdf in Resources */,
 				122727C31B1568000050768B /* TfEL-Compass-graphic_Domain-3_small-yellow.png in Resources */,
+				12C30CFC1B3BA9BD008A28A1 /* 2.4.pdf in Resources */,
+				12C30CE41B3B771E008A28A1 /* sad-face@2x.png in Resources */,
 				12F712101B0F01CF0059C263 /* OE_Header@2x.png in Resources */,
 				124ABA731B2A5D4D00435632 /* yellow-tt@2x.png in Resources */,
 			);
@@ -658,22 +882,26 @@
 			files = (
 				124ABA831B2A765800435632 /* getDataByCode.m in Sources */,
 				12F711DB1B0EF4030059C263 /* AppDelegate.m in Sources */,
+				12C30CD01B3A4F64008A28A1 /* resourceViewController.m in Sources */,
 				12F712071B0EFCB80059C263 /* navigationViewController.m in Sources */,
 				12929A9F1B1E793900E6E029 /* domainReflectionTableViewController.m in Sources */,
 				12F711D81B0EF4030059C263 /* main.m in Sources */,
 				12929AA81B1E832E00E6E029 /* SZTextView.m in Sources */,
 				12929AD31B1E91A600E6E029 /* sqlAdminTableViewController.m in Sources */,
 				124ABA5C1B294E6200435632 /* myEntriesTableViewController.m in Sources */,
+				1289122B1B44DF6D00765785 /* determineDomainUIImageForReturn.m in Sources */,
 				124ABA771B2A630000435632 /* nextStepsTableViewController.m in Sources */,
 				12929ACB1B1E905900E6E029 /* FMDatabaseAdditions.m in Sources */,
 				12929ACE1B1E905900E6E029 /* FMResultSet.m in Sources */,
 				124ABA7B1B2A631D00435632 /* domainDetailTableViewController.m in Sources */,
 				12F712131B0F08D00059C263 /* getStartedViewController.m in Sources */,
 				12929ACC1B1E905900E6E029 /* FMDatabasePool.m in Sources */,
+				12C30D031B3BC134008A28A1 /* dropMenuTableViewController.m in Sources */,
 				124ABA7F1B2A67F700435632 /* abstractionLayer.m in Sources */,
 				12929ACD1B1E905900E6E029 /* FMDatabaseQueue.m in Sources */,
 				122727CC1B156EB80050768B /* domainsListTableViewController.m in Sources */,
 				12929ACA1B1E905900E6E029 /* FMDatabase.m in Sources */,
+				124ABA871B2A994400435632 /* dataCreatorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

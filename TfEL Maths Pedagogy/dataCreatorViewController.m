@@ -53,23 +53,37 @@ NSFileManager *fileManager;
 */
 
 - (IBAction)createUserButton:(id)sender {
-    AppDelegate.cdcName = dataNameOutlet.text;
-    
     NSLog(@"TfEL Maths: copying %@ to %@/.", [[NSBundle mainBundle] pathForResource:@"tfeluserdata" ofType:@"sqlite"], [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]);
     
-    if ([self copyFolderAtPath: [[NSBundle mainBundle] pathForResource:@"tfeluserdata" ofType:@"sqlite"]
-     toDestinationFolderAtPath: [NSString stringWithFormat:@"%@/", [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]]]) {
-        createUserButtonOutlet.enabled = NO;
-        [dataNameOutlet resignFirstResponder];
+    [[[UIAlertView alloc] initWithTitle:@"Create Account" message:[NSString stringWithFormat:@"You have entered your name as %@. If you're ready, let's get started.", dataNameOutlet.text] delegate:self cancelButtonTitle:@"Create Account" otherButtonTitles:@"Cancel", nil] show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 0) {
+        AppDelegate.cdcName = dataNameOutlet.text;
         
-        [abstractionLayer alloc];
-        
-        if ([abstractionLayer runBoolReturnQuery:[NSString stringWithFormat:@"INSERT INTO \"userdata\" (\"id\",\"key\",\"value\") VALUES (NULL,'username','%@')", dataNameOutlet.text]]) { } else { NSLog(@"TfEL Maths: Couldn't update user database"); }
-        
-    } else {
-        NSLog(@"TfEL Maths: Failed to copy empty dataset.");
+        if ([self copyFolderAtPath: [[NSBundle mainBundle] pathForResource:@"tfeluserdata" ofType:@"sqlite"]
+         toDestinationFolderAtPath: [NSString stringWithFormat:@"%@/", [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]]]) {
+            createUserButtonOutlet.enabled = NO;
+            [dataNameOutlet resignFirstResponder];
+            
+            [abstractionLayer alloc];
+            
+            if ([abstractionLayer runBoolReturnQuery:[NSString stringWithFormat:@"INSERT INTO \"userdata\" (\"id\",\"key\",\"value\") VALUES (NULL,'username','%@')", [dataNameOutlet.text capitalizedString]]]) {
+                // Jump!
+                AppDelegate.cdcName = dataNameOutlet.text;
+                AppDelegate.userFullName = dataNameOutlet.text;
+                UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                UIViewController *vc = [mainStoryboard instantiateViewControllerWithIdentifier:@"homeScreen"];
+                [self presentViewController:vc animated:YES completion:^{}];
+            } else {
+                NSLog(@"TfEL Maths: Couldn't update user database");
+            }
+            
+        } else {
+            NSLog(@"TfEL Maths: Failed to copy empty dataset.");
+        }
     }
-    
 }
 
 - (BOOL)copyFolderAtPath:(NSString *)sourceFolder toDestinationFolderAtPath:(NSString*)destinationFolder {

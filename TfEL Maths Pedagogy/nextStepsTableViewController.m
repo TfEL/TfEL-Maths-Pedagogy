@@ -42,4 +42,36 @@
 
 }
 
+- (IBAction)transformingTasksOne:(id)sender {
+    AppDelegate.nextPDFView = [NSString stringWithFormat:@"%@", AppDelegate.nextDomain];
+    [self jumpToResourceView];
+}
+
+- (IBAction)transformingTasksTwo:(id)sender {
+    AppDelegate.nextPDFView = [NSString stringWithFormat:@"%@", AppDelegate.nextDomain];
+    [self jumpToResourceView];
+}
+
+- (IBAction)transformingTasksThree:(id)sender {
+    AppDelegate.nextPDFView = [NSString stringWithFormat:@"%@", AppDelegate.nextDomain];
+    [self jumpToResourceView];
+}
+
+- (IBAction)transformingTasksFour:(id)sender {
+    AppDelegate.nextPDFView = [NSString stringWithFormat:@"%@", AppDelegate.nextDomain];
+    [self jumpToResourceView];
+}
+
+- (IBAction)frameworkGuideOne:(id)sender {
+    // Set up the resource view for Framework Guide reference at page 1.
+    AppDelegate.nextPDFPage = 1;
+    AppDelegate.nextPDFView = [NSString stringWithFormat:@"%@_fg", AppDelegate.nextDomain];
+    [self jumpToResourceView];
+}
+
+- (void) jumpToResourceView {
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"resourceView"];
+    [self showViewController:vc sender:self];
+}
+
 @end
