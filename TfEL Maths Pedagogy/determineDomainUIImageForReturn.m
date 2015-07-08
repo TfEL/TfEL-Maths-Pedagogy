@@ -15,9 +15,9 @@
     
     NSString *imageToWrapInImageView;
     
-    if ([domainString isEqualToString:@"DOMAIN 2"]) { imageToWrapInImageView = @"TfEL-Compass-graphic_Domain-2_Small-yellow"; }
-    else if ([domainString isEqualToString:@"DOMAIN 3"]) { imageToWrapInImageView = @"TfEL-Compass-graphic_Domain-2_Small-yellow"; }
-    else if ([domainString isEqualToString:@"DOMAIN 4"]) { imageToWrapInImageView = @"TfEL-Compass-graphic_Domain-2_Small-yellow"; }
+    if ([domainString isEqualToString:@"DOMAIN 2"]) { imageToWrapInImageView = @"TfEL-Compass-graphic_Domain-2_small-yellow"; }
+    else if ([domainString isEqualToString:@"DOMAIN 3"]) { imageToWrapInImageView = @"TfEL-Compass-graphic_Domain-3_small-yellow"; }
+    else if ([domainString isEqualToString:@"DOMAIN 4"]) { imageToWrapInImageView = @"TfEL-Compass-graphic_Domain-4_small-yellow"; }
     else { imageToWrapInImageView = @"TfEL-Compass-graphic_Domain-2_Small-yellow"; NSLog(@"TfEL Maths: This installation has become corrupted and will now close. Please re download the application."); @throw NSInternalInconsistencyException; }
     
     return imageToWrapInImageView;
