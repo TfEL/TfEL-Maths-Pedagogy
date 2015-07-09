@@ -20,7 +20,7 @@
 
 @implementation domainDetailTableViewController
 
-@synthesize posStudentOutlet, negStudentOutlet, posTeacherOutlet, negTeacherOutlet, subdomainTitleOutlet, domainSubtitleOutlet, domainTitleOutlet, domainTitleSubdomainTitleOutlet, compassImageOutlet;
+@synthesize posStudentOutlet, negStudentOutlet, posTeacherOutlet, negTeacherOutlet, subdomainTitleOutlet, domainSubtitleOutlet, domainTitleOutlet, domainTitleSubdomainTitleOutlet, compassImageOutlet, negStudentOutletWebView, negTeacherOutletWebView, posStudentOutletWebView, posTeacherOutletWebView;
 
 NSMutableDictionary *detailViewData;
 
@@ -38,14 +38,14 @@ NSMutableDictionary *detailViewData;
     domainTitleSubdomainTitleOutlet.text = [presentationElements objectForKey:@"domainTitleSubdomainTitleOutlet"];
     
     // Instantiate the text box style...
-    posStudentOutlet.layer.borderWidth = 1;
-    posStudentOutlet.layer.borderColor = posStudentOutlet.tintColor.CGColor;
-    negTeacherOutlet.layer.borderWidth = 1;
-    negTeacherOutlet.layer.borderColor = negTeacherOutlet.tintColor.CGColor;
-    negStudentOutlet.layer.borderWidth = 1;
-    negStudentOutlet.layer.borderColor = negStudentOutlet.tintColor.CGColor;
-    posTeacherOutlet.layer.borderWidth = 1;
-    posTeacherOutlet.layer.borderColor = posTeacherOutlet.tintColor.CGColor;
+    posStudentOutletWebView.layer.borderWidth = 1;
+    posStudentOutletWebView.layer.borderColor = posStudentOutletWebView.tintColor.CGColor;
+    negTeacherOutletWebView.layer.borderWidth = 1;
+    negTeacherOutletWebView.layer.borderColor = negTeacherOutletWebView.tintColor.CGColor;
+    negStudentOutletWebView.layer.borderWidth = 1;
+    negStudentOutletWebView.layer.borderColor = negStudentOutletWebView.tintColor.CGColor;
+    posTeacherOutletWebView.layer.borderWidth = 1;
+    posTeacherOutletWebView.layer.borderColor = posTeacherOutletWebView.tintColor.CGColor;
     
     // Initialise some memory
     detailViewData = [[NSMutableDictionary alloc] init];
@@ -55,10 +55,10 @@ NSMutableDictionary *detailViewData;
     // Get the 4 text fields values from the database for this code...
     detailViewData = [abstractionLayer runDictionaryReturnQuery:[NSString stringWithFormat:@"SELECT * FROM `domaindetail` WHERE `domaincode`='%@'", AppDelegate.nextDomain] :[[NSArray alloc] initWithObjects:@"neg_student", @"pos_student", @"neg_teacher", @"pos_teacher", nil]];
     
-    posTeacherOutlet.text = [detailViewData objectForKey:@"pos_teacher"];
-    posStudentOutlet.text = [detailViewData objectForKey:@"pos_student"];
-    negTeacherOutlet.text = [detailViewData objectForKey:@"neg_teacher"];
-    negStudentOutlet.text = [detailViewData objectForKey:@"neg_student"];
+    [self loadDocument:[detailViewData objectForKey:@"pos_teacher"] inView:posTeacherOutletWebView];
+    [self loadDocument:[detailViewData objectForKey:@"pos_student"] inView:posStudentOutletWebView];
+    [self loadDocument:[detailViewData objectForKey:@"neg_teacher"] inView:negTeacherOutletWebView];
+    [self loadDocument:[detailViewData objectForKey:@"neg_student"] inView:negStudentOutletWebView];
     
 }
 
@@ -69,6 +69,10 @@ NSMutableDictionary *detailViewData;
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)loadDocument:(NSString*)documentString inView:(UIWebView*)webView {
+    [webView loadHTMLString:documentString baseURL:nil];
 }
 
 @end
