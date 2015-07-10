@@ -36,43 +36,38 @@ bool shouldPopulateNydIwd;
     // Let's build a query, Obj-C is lovely in this way, where we can scaffold queries with actual data types...
     
     // Determine to present a default (clean) view, or the users reflection
+    // Using domaincode to create a clean state
+    [determineDetailForCode alloc];
+    NSMutableDictionary *userData = [[NSMutableDictionary alloc] init];
     if (AppDelegate.nvShouldRetrFromUserEntries == YES) {
         // Users reflection, needs to get some extra data for this view.
-        // Standard data...
-        [determineDetailForCode alloc];
-        NSMutableDictionary *domainDetailForCode = [determineDetailForCode domainDetailForCode:AppDelegate.nextDomain];
-        
         // Extra data
         nextQuery = [NSString stringWithFormat:@"SELECT * FROM 'userentries' WHERE `id`='%@'", AppDelegate.idForUserData];
         shouldPopulateNydIwd = YES;
         NSString *databasePath = [NSString stringWithFormat:@"%@/tfeluserdata.sqlite", [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]];
         // Database to get user data
         FMDatabase *db = [FMDatabase databaseWithPath:databasePath];
+        
         // Query runner to get user data..
         if (![db open]) {
             [self dataInconsistency:@"No database connection."];
         } else {
             FMResultSet *s = [db executeQuery:nextQuery];
             while ([s next]) {
-                [domainDetailForCode setValue:[s objectForColumnName:@"neg_notes"] forKey:@"notYet"];
-                [domainDetailForCode setValue:[s objectForColumnName:@"pos_notes"] forKey:@"wellDev"];
-                [domainDetailForCode setObject:[s objectForKeyedSubscript:@"slider_val"] forKey:@"sliderValue"];
-                [domainDetailForCode setObject:[NSNumber numberWithBool:YES] forKey:@"hasUserData"];
+                AppDelegate.nextDomain = [s objectForColumnName:@"domaincode"];
+                [userData setValue:[s objectForColumnName:@"neg_notes"] forKey:@"notYet"];
+                [userData setValue:[s objectForColumnName:@"pos_notes"] forKey:@"wellDev"];
+                [userData setObject:[s objectForKeyedSubscript:@"slider_val"] forKey:@"sliderValue"];
+                [userData setObject:[NSNumber numberWithBool:YES] forKey:@"hasUserData"];
             }
-            [self populateViewWithData:domainDetailForCode];
         }
-    } else {
-        // Using domaincode to create a clean state
-        [determineDetailForCode alloc];
-        NSMutableDictionary *domainDetailForCode = [determineDetailForCode domainDetailForCode:AppDelegate.nextDomain];
-        [self populateViewWithData:domainDetailForCode];
     }
+    NSMutableDictionary *domainDetailForCode = [determineDetailForCode domainDetailForCode:AppDelegate.nextDomain];
+    [self populateViewWithData:domainDetailForCode : userData];
 }
 
-- (void) populateViewWithData: (NSMutableDictionary *)dataToUse {
+- (void) populateViewWithData: (NSMutableDictionary *)dataToUse :(NSMutableDictionary *)userData {
     [determineDomainUIImageForReturn alloc];
-    
-    NSLog(@"%@", [dataToUse valueForKey:@"domainTitle"]);
     
     // Establish the view data from the database :)
     domainTitle.text = [dataToUse valueForKey:@"domainTitle"];
@@ -90,6 +85,9 @@ bool shouldPopulateNydIwd;
         iwdWhatMight.hidden = YES;
         nydTextOutlet.editable = NO;
         iwdTextOutlet.editable = NO;
+        sliderOutlet.enabled = NO;
+        
+        NSLog(@"%@", userData);
         
         nydTextOutlet.text = [userData valueForKey:@"notYet"];
         iwdTextOutlet.text = [userData valueForKey:@"wellDev"];
@@ -138,7 +136,6 @@ bool shouldPopulateNydIwd;
     
     // Unload the user entries values.
     AppDelegate.nvShouldRetrFromUserEntries = NO;
-    AppDelegate.nextDomain = [viewData objectForKey:@"code"];
     shouldPopulateNydIwd = NO;
 }
 
