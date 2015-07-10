@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "abstractionLayer.h"
 #import "getDataByCode.h"
+#import "determineDomainUIImageForReturn.h"
 
 // Quick access types...
 #define AppDelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])
@@ -35,6 +36,9 @@
     domainSubtitleOutlet.text = [presentationElements objectForKey:@"domainSubtitleOutlet"];
     subdomainTitleOutlet.text = [presentationElements objectForKey:@"subdomainTitleOutlet"];
     domainTitleSubdomainTitleOutlet.text = [presentationElements objectForKey:@"domainTitleSubdomainTitleOutlet"];
+    
+    [determineDomainUIImageForReturn alloc];
+    [compassImageOutlet setImage:[UIImage imageNamed:[determineDomainUIImageForReturn imageToWrapInImageView:[presentationElements objectForKey:@"domainTitleOutlet"]]]];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -73,7 +73,6 @@ bool shouldPopulateNydIwd;
         domainSubtitle.text = [viewData valueForKey:@"domainSubtitle"];
         subdomaintitle.text = [viewData valueForKey:@"subdomainTitle"];
         subdomainBody.text = [viewData valueForKey:@"subdomainBody"];
-        NSLog(@"%@", [determineDomainUIImageForReturn imageToWrapInImageView:[viewData valueForKey:@"domainTitle"]]);
         [domainImage setImage:[UIImage imageNamed:[determineDomainUIImageForReturn imageToWrapInImageView:[viewData valueForKey:@"domainTitle"]]]];
         subdomainGuidingQuestions.text = [NSString stringWithFormat:@"%@ %@ - Guiding Questions:", [viewData valueForKey:@"code"], [viewData valueForKey:@"subdomainTitle"]];
         
