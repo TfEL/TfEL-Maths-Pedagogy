@@ -12,6 +12,8 @@
 #import "abstractionLayer.h"
 #import "determineDomainUIImageForReturn.h"
 
+#import "determineDetailForCode.h"
+
 // Quick access types...
 #define AppDelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])
 
@@ -26,77 +28,71 @@
 // Some public variables
 NSString *nextQuery;
 NSMutableDictionary *viewData;
+NSMutableDictionary *userData;
 bool shouldPopulateNydIwd;
 
 - (void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-        
     // Let's build a query, Obj-C is lovely in this way, where we can scaffold queries with actual data types...
     
-    // Oh, and it should 'know' if it's going to be a retr or a clean slate.
-    
+    // Determine to present a default (clean) view, or the users reflection
+    // Using domaincode to create a clean state
+    [determineDetailForCode alloc];
+    NSMutableDictionary *userData = [[NSMutableDictionary alloc] init];
     if (AppDelegate.nvShouldRetrFromUserEntries == YES) {
-        // This one uses a SLIGHTLY different data source than the query below (ID rather than DomainCode), but it's not THAT hacky?
-        @try {
-            nextQuery = [NSString stringWithFormat:@"SELECT * FROM 'userentries' WHERE `id`='%@'", AppDelegate.nextDomain];
-            
-            if (nextQuery) {
-                shouldPopulateNydIwd = YES;
-            } else {
-                @throw nextQuery;
+        // Users reflection, needs to get some extra data for this view.
+        // Extra data
+        nextQuery = [NSString stringWithFormat:@"SELECT * FROM 'userentries' WHERE `id`='%@'", AppDelegate.idForUserData];
+        shouldPopulateNydIwd = YES;
+        NSString *databasePath = [NSString stringWithFormat:@"%@/tfeluserdata.sqlite", [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]];
+        // Database to get user data
+        FMDatabase *db = [FMDatabase databaseWithPath:databasePath];
+        
+        // Query runner to get user data..
+        if (![db open]) {
+            [self dataInconsistency:@"No database connection."];
+        } else {
+            FMResultSet *s = [db executeQuery:nextQuery];
+            while ([s next]) {
+                AppDelegate.nextDomain = [s objectForColumnName:@"domaincode"];
+                [userData setValue:[s objectForColumnName:@"neg_notes"] forKey:@"notYet"];
+                [userData setValue:[s objectForColumnName:@"pos_notes"] forKey:@"wellDev"];
+                [userData setObject:[s objectForKeyedSubscript:@"slider_val"] forKey:@"sliderValue"];
+                [userData setObject:[NSNumber numberWithBool:YES] forKey:@"hasUserData"];
             }
         }
-        @catch (NSException *exception) {
-            NSLog(@"That query did not present user data – defaulting to a clean state in panic. %@", nextQuery);
-            nextQuery = [NSString stringWithFormat:@"SELECT * FROM 'domains' WHERE `domaincode`='%@'", AppDelegate.nextDomain];
-            
-            AppDelegate.nvShouldRetrFromUserEntries = NO;
-            AppDelegate.nextDomain = [viewData objectForKey:@"code"];
-            shouldPopulateNydIwd = NO;
-        }
-        @finally {
-            
-        }
-    } else {
-        // Using domaincode to create a clean state
-        nextQuery = [NSString stringWithFormat:@"SELECT * FROM 'domains' WHERE `domaincode`='%@'", AppDelegate.nextDomain];
     }
+    NSMutableDictionary *domainDetailForCode = [determineDetailForCode domainDetailForCode:AppDelegate.nextDomain];
+    [self populateViewWithData:domainDetailForCode : userData];
+}
+
+- (void) populateViewWithData: (NSMutableDictionary *)dataToUse :(NSMutableDictionary *)userData {
+    [determineDomainUIImageForReturn alloc];
+    
+    // Establish the view data from the database :)
+    domainTitle.text = [dataToUse valueForKey:@"domainTitle"];
+    domainSubtitle.text = [dataToUse valueForKey:@"domainSubtitle"];
+    subdomaintitle.text = [dataToUse valueForKey:@"subdomainTitle"];
+    subdomainBody.text = [dataToUse valueForKey:@"subdomainBody"];
+    [domainImage setImage:[UIImage imageNamed:[determineDomainUIImageForReturn imageToWrapInImageView:[dataToUse valueForKey:@"domainTitle"]]]];
+    subdomainGuidingQuestions.text = [NSString stringWithFormat:@"%@ %@ - Guiding Questions:", [dataToUse valueForKey:@"code"], [dataToUse valueForKey:@"subdomainTitle"]];
+    
+    if (shouldPopulateNydIwd == YES) {
+        // The person doesn't need to do any more reflection...
+        myPastEntries.hidden = YES;
+        nextSteps.hidden = YES;
+        nydWhatMight.hidden = YES;
+        iwdWhatMight.hidden = YES;
+        nydTextOutlet.editable = NO;
+        iwdTextOutlet.editable = NO;
+        sliderOutlet.enabled = NO;
         
-    // Populate the views' data...
-    viewData = [self runQueryForDomainKey];
-    if ([viewData valueForKey:@"code"]) {
+        NSLog(@"%@", userData);
         
-        [determineDomainUIImageForReturn alloc];
+        nydTextOutlet.text = [userData valueForKey:@"notYet"];
+        iwdTextOutlet.text = [userData valueForKey:@"wellDev"];
         
-        // Establish the view data from the database :)
-        domainTitle.text = [viewData valueForKey:@"domainTitle"];
-        domainSubtitle.text = [viewData valueForKey:@"domainSubtitle"];
-        subdomaintitle.text = [viewData valueForKey:@"subdomainTitle"];
-        subdomainBody.text = [viewData valueForKey:@"subdomainBody"];
-        [domainImage setImage:[UIImage imageNamed:[determineDomainUIImageForReturn imageToWrapInImageView:[viewData valueForKey:@"domainTitle"]]]];
-        subdomainGuidingQuestions.text = [NSString stringWithFormat:@"%@ %@ - Guiding Questions:", [viewData valueForKey:@"code"], [viewData valueForKey:@"subdomainTitle"]];
-        
-        if (shouldPopulateNydIwd == YES) {
-            // The person doesn't need to do any more reflection...
-            myPastEntries.hidden = YES;
-            nextSteps.hidden = YES;
-            nydWhatMight.hidden = YES;
-            iwdWhatMight.hidden = YES;
-            nydTextOutlet.editable = NO;
-            iwdTextOutlet.editable = NO;
-            
-            nydTextOutlet.text = [viewData valueForKey:@"notYet"];
-            iwdTextOutlet.text = [viewData valueForKey:@"wellDev"];
-            
-            sliderOutlet.value = [[viewData valueForKey:@"sliderValue"] integerValue];
-        }
-        
-    } else {
-        // If we couldn't, let's throw something at someone.
-        [[[UIAlertView alloc] initWithTitle:@"Data Object Failure" message:@"TfEL Maths failed to access the data object and received a null return. Please reinstall the app." delegate:self cancelButtonTitle:@"Exception" otherButtonTitles: nil] show];
-        
-        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0ul);
-        dispatch_async(queue, ^{ [self dataInconsistency:@"Failed to access that data on the database requested."]; });
+        sliderOutlet.value = [[userData valueForKey:@"sliderValue"] integerValue];
     }
 }
 
@@ -140,7 +136,6 @@ bool shouldPopulateNydIwd;
     
     // Unload the user entries values.
     AppDelegate.nvShouldRetrFromUserEntries = NO;
-    AppDelegate.nextDomain = [viewData objectForKey:@"code"];
     shouldPopulateNydIwd = NO;
 }
 
@@ -151,7 +146,8 @@ bool shouldPopulateNydIwd;
     if (([iwdTextOutlet.text length] >= 2 || [nydTextOutlet.text length] >= 2 ) && shouldPopulateNydIwd == NO  && AppDelegate.nvShouldEnterToUserEntries == YES) {
         static BOOL shouldUpdate = YES;
         
-        NSString *saveDataQuery = [NSString stringWithFormat:@"INSERT INTO \"userentries\" (\"id\",\"datemodified\",\"domain_title\",\"domain_subtitle\",\"subdomain_title\",\"subdomain_body\",\"neg_notes\",\"pos_notes\",\"slider_val\",\"domaincode\") VALUES (NULL,time(),'%@','%@','%@','%@','%@','%@','%f', '%@')", [viewData valueForKey:@"domainTitle"], [viewData valueForKey:@"domainSubtitle"], [viewData valueForKey:@"subdomainTitle"], [viewData valueForKey:@"subdomainBody"], nydTextOutlet.text, iwdTextOutlet.text, sliderOutlet.value, [viewData valueForKey:@"code"]];
+        // clean
+        NSString *saveDataQuery = [NSString stringWithFormat:@"INSERT INTO \"userentries\" (\"id\",\"datemodified\",\"neg_notes\",\"pos_notes\",\"slider_val\",\"domaincode\") VALUES (NULL,time(),'%@','%@','%f', '%@')", nydTextOutlet.text, iwdTextOutlet.text, sliderOutlet.value, AppDelegate.nextDomain];
         
         if (shouldUpdate) {
             [abstractionLayer alloc];
@@ -171,50 +167,6 @@ bool shouldPopulateNydIwd;
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (NSMutableDictionary *) runQueryForDomainKey {
-    // Alternately we could provide nextQuery as an inbound, but we can just define it publically and make the query available to the masses.
-    // First, let's set the return value to the right type, so we don't break anything..
-    NSMutableDictionary *domainData = [[NSMutableDictionary alloc] init];
-    
-    if (AppDelegate.nvShouldRetrFromUserEntries == YES) {
-        // use UserData database
-        AppDelegate.databasePath = [NSString stringWithFormat:@"%@/tfeluserdata.sqlite", [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]];
-    } else {
-        // Now we can retreive the query and do something with that...
-        AppDelegate.databasePath = [[NSBundle mainBundle] pathForResource:@"tfelmped" ofType:@"sqlite"];
-    }
-    
-    FMDatabase* db = [FMDatabase databaseWithPath:AppDelegate.databasePath];
-    
-    if (![db open]) {
-        NSLog(@"TfEL Maths: Database Establishment Failed");
-        [self dataInconsistency:@"No database connection."];
-    } else {
-        NSLog(@"TfEL Maths: Database Establishment Succeeded");
-        
-        // Executes the query from the pub 'nextQuery', could be set in a method if it suits better?
-        FMResultSet *s = [db executeQuery:nextQuery];
-        
-        while ([s next]) {
-            // Let's pull the neccessary data, we can probably just ignore the id and mod date.
-            
-            [domainData setValue:[s objectForColumnName:@"domaincode"] forKey:@"code"];
-            [domainData setValue:[s objectForColumnName:@"domain_title"] forKey:@"domainTitle"];
-            [domainData setValue:[s objectForColumnName:@"domain_subtitle"] forKey:@"domainSubtitle"];
-            [domainData setValue:[s objectForColumnName:@"subdomain_title"] forKey:@"subdomainTitle"];
-            [domainData setValue:[s objectForColumnName:@"subdomain_body"] forKey:@"subdomainBody"];
-            
-            if (shouldPopulateNydIwd == YES) {
-                [domainData setValue:[s objectForColumnName:@"neg_notes"] forKey:@"notYet"];
-                [domainData setValue:[s objectForColumnName:@"pos_notes"] forKey:@"wellDev"];
-                [domainData setObject:[s objectForKeyedSubscript:@"slider_val"] forKey:@"sliderValue"];
-            }
-        }
-    }
-    
-    return domainData;
 }
 
 - (void) dataInconsistency: (NSString *)throwReason {

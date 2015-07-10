@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1219C7811B4F51460017EC52 /* determineDetailForCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1219C7801B4F51460017EC52 /* determineDetailForCode.m */; };
 		122727B31B1560750050768B /* tfel_compass_lg.png in Resources */ = {isa = PBXBuildFile; fileRef = 122727B01B1560750050768B /* tfel_compass_lg.png */; };
 		122727B41B1560750050768B /* tfel_compass_lg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 122727B11B1560750050768B /* tfel_compass_lg@2x.png */; };
 		122727B51B1560750050768B /* tfel_compass_lg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 122727B21B1560750050768B /* tfel_compass_lg@3x.png */; };
@@ -115,6 +116,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1219C77F1B4F51460017EC52 /* determineDetailForCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = determineDetailForCode.h; sourceTree = "<group>"; };
+		1219C7801B4F51460017EC52 /* determineDetailForCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = determineDetailForCode.m; sourceTree = "<group>"; };
 		122727B01B1560750050768B /* tfel_compass_lg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tfel_compass_lg.png; sourceTree = "<group>"; };
 		122727B11B1560750050768B /* tfel_compass_lg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tfel_compass_lg@2x.png"; sourceTree = "<group>"; };
 		122727B21B1560750050768B /* tfel_compass_lg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tfel_compass_lg@3x.png"; sourceTree = "<group>"; };
@@ -260,6 +263,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1219C77D1B4F511E0017EC52 /* 06. Determine detail for code */ = {
+			isa = PBXGroup;
+			children = (
+				1219C77F1B4F51460017EC52 /* determineDetailForCode.h */,
+				1219C7801B4F51460017EC52 /* determineDetailForCode.m */,
+			);
+			name = "06. Determine detail for code";
+			sourceTree = "<group>";
+		};
 		122727AF1B155FD90050768B /* 03. TfEL Compass Logo */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,6 +405,7 @@
 				124ABA7C1B2A67D700435632 /* 03. Database Abstraction */,
 				124ABA801B2A762900435632 /* 04. Get View By Code */,
 				128912281B44DEFC00765785 /* 05. Image Return */,
+				1219C77D1B4F511E0017EC52 /* 06. Determine detail for code */,
 			);
 			name = "Custom Classes";
 			sourceTree = "<group>";
@@ -899,6 +912,7 @@
 				12C30D031B3BC134008A28A1 /* dropMenuTableViewController.m in Sources */,
 				124ABA7F1B2A67F700435632 /* abstractionLayer.m in Sources */,
 				12929ACD1B1E905900E6E029 /* FMDatabaseQueue.m in Sources */,
+				1219C7811B4F51460017EC52 /* determineDetailForCode.m in Sources */,
 				122727CC1B156EB80050768B /* domainsListTableViewController.m in Sources */,
 				12929ACA1B1E905900E6E029 /* FMDatabase.m in Sources */,
 				124ABA871B2A994400435632 /* dataCreatorViewController.m in Sources */,

@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "FMDatabase.h"
 #import "abstractionLayer.h"
+#import "determineDetailForCode.h"
 
 // Quick access types...
 #define AppDelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])
@@ -51,7 +52,10 @@ NSMutableArray *tableViewPopulationIdentifier;
         while ([s next]) {
             // Let's pull the neccessary data, we can probably just ignore the id and mod date.
             
-            [tableViewPopulationDomains addObject:[NSString stringWithFormat:@"My entry to: %@ %@", [s objectForColumnName:@"domaincode"], [s objectForColumnName:@"subdomain_title"]]];
+            [determineDetailForCode alloc];
+            NSMutableDictionary *domainDetailForCode = [determineDetailForCode domainDetailForCode:AppDelegate.nextDomain];
+            
+            [tableViewPopulationDomains addObject:[NSString stringWithFormat:@"My entry to: %@ %@", [s objectForColumnName:@"domaincode"], [domainDetailForCode objectForKey:@"subdomainTitle"]]];
             [tableViewPopulationTimes addObject:[NSString stringWithFormat:@"Added: %@", [s objectForColumnName:@"datemodified"]]];
             [tableViewPopulationIdentifier addObject:[s objectForColumnName:@"id"]];
         }
@@ -87,8 +91,6 @@ NSMutableArray *tableViewPopulationIdentifier;
     
     cell.tag = cellTag;
     
-    NSLog(@"TfEL Maths: [+] %@ %@ ID: %ld", [tableViewPopulationDomains objectAtIndex:indexPath.row], [tableViewPopulationTimes objectAtIndex:indexPath.row], (long)cellTag);
-    
     return cell;
 }
 
@@ -117,8 +119,7 @@ NSMutableArray *tableViewPopulationIdentifier;
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    
-    AppDelegate.nextDomain = [NSString stringWithFormat:@"%ld", (long)[sender tag]];
+    AppDelegate.idForUserData = [NSString stringWithFormat:@"%ld", (long)[sender tag]];
     AppDelegate.nvShouldRetrFromUserEntries = YES;
 }
 
