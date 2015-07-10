@@ -30,6 +30,7 @@
 
 // Inter-view porperty
 @property (strong, nonatomic) NSString *nextDomain;
+@property (strong, nonatomic) NSString *idForUserData;
 
 // Gosh this one is nasty lookin' isn't it! (Should I get the data from user entries, or from the standard db)
 @property (nonatomic) BOOL nvShouldRetrFromUserEntries;
