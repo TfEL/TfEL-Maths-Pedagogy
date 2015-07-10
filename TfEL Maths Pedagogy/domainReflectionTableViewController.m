@@ -92,7 +92,7 @@ bool shouldPopulateNydIwd;
         nydTextOutlet.text = [userData valueForKey:@"notYet"];
         iwdTextOutlet.text = [userData valueForKey:@"wellDev"];
         
-        sliderOutlet.value = [[userData valueForKey:@"sliderValue"] integerValue];
+        sliderOutlet.value = [[userData valueForKey:@"sliderValue"] floatValue];
     }
 }
 
@@ -145,6 +145,8 @@ bool shouldPopulateNydIwd;
     // Now we need to save the values of the text in use
     if (([iwdTextOutlet.text length] >= 2 || [nydTextOutlet.text length] >= 2 ) && shouldPopulateNydIwd == NO  && AppDelegate.nvShouldEnterToUserEntries == YES) {
         static BOOL shouldUpdate = YES;
+        
+        NSLog(@"sliderOutlet.value: %f", sliderOutlet.value);
         
         // clean
         NSString *saveDataQuery = [NSString stringWithFormat:@"INSERT INTO \"userentries\" (\"id\",\"datemodified\",\"neg_notes\",\"pos_notes\",\"slider_val\",\"domaincode\") VALUES (NULL,time(),'%@','%@','%f', '%@')", nydTextOutlet.text, iwdTextOutlet.text, sliderOutlet.value, AppDelegate.nextDomain];
