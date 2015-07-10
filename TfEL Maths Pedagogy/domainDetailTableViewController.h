@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface domainDetailTableViewController : UITableViewController
+@interface domainDetailTableViewController : UITableViewController <UIWebViewDelegate>
 
 // Domain setup outlets
 @property (weak, nonatomic) IBOutlet UIImageView *compassImageOutlet;
@@ -22,5 +22,10 @@
 @property (weak, nonatomic) IBOutlet UITextView *negTeacherOutlet;
 @property (weak, nonatomic) IBOutlet UITextView *posStudentOutlet;
 @property (weak, nonatomic) IBOutlet UITextView *posTeacherOutlet;
+
+@property (weak, nonatomic) IBOutlet UIWebView *negStudentOutletWebView;
+@property (weak, nonatomic) IBOutlet UIWebView *negTeacherOutletWebView;
+@property (weak, nonatomic) IBOutlet UIWebView *posStudentOutletWebView;
+@property (weak, nonatomic) IBOutlet UIWebView *posTeacherOutletWebView;
 
 @end

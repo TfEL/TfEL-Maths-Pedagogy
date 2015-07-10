@@ -742,7 +742,7 @@ modes</string>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="110" id="ZDx-iD-a1S">
+                                    <tableViewCell hidden="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="110" id="ZDx-iD-a1S">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZDx-iD-a1S" id="8oe-nP-dU5">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -1585,6 +1585,26 @@ Evidence that suggests this  element is developed:</string>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy-face.png" translatesAutoresizingMaskIntoConstraints="NO" id="PhG-8l-Yhn">
                                                     <rect key="frame" x="946" y="141" width="42" height="42"/>
                                                 </imageView>
+                                                <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9wF-G0-158">
+                                                    <rect key="frame" x="33" y="183" width="475" height="169"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="tintColor" red="0.34901960780000002" green="0.26274509800000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                </webView>
+                                                <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gdi-L1-SSC">
+                                                    <rect key="frame" x="33" y="351" width="475" height="169"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="tintColor" red="0.34901960780000002" green="0.26274509800000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                </webView>
+                                                <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ogw-Ke-22Q">
+                                                    <rect key="frame" x="516" y="351" width="475" height="169"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="tintColor" red="0.34901960780000002" green="0.26274509800000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                </webView>
+                                                <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JLI-vb-cn4">
+                                                    <rect key="frame" x="516" y="183" width="475" height="169"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="tintColor" red="0.34901960780000002" green="0.26274509800000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                </webView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -1607,9 +1627,13 @@ Evidence that suggests this  element is developed:</string>
                         <outlet property="domainTitleOutlet" destination="Kle-aA-84r" id="BbD-bM-bum"/>
                         <outlet property="domainTitleSubdomainTitleOutlet" destination="rnO-Xx-TWH" id="oIz-pM-kk4"/>
                         <outlet property="negStudentOutlet" destination="nUg-SF-COa" id="XCq-Zz-cpz"/>
+                        <outlet property="negStudentOutletWebView" destination="9wF-G0-158" id="lsQ-O9-22U"/>
                         <outlet property="negTeacherOutlet" destination="BeI-ND-ZBl" id="FEX-ms-PSf"/>
+                        <outlet property="negTeacherOutletWebView" destination="Gdi-L1-SSC" id="G07-Fa-agE"/>
                         <outlet property="posStudentOutlet" destination="2D1-eP-JIZ" id="fNj-zJ-YNp"/>
+                        <outlet property="posStudentOutletWebView" destination="JLI-vb-cn4" id="6qf-Uq-IuE"/>
                         <outlet property="posTeacherOutlet" destination="nhM-gK-bC5" id="kTT-It-IYf"/>
+                        <outlet property="posTeacherOutletWebView" destination="ogw-Ke-22Q" id="nGg-h6-qPo"/>
                         <outlet property="subdomainTitleOutlet" destination="uCa-YG-0PS" id="nFc-kF-Qik"/>
                     </connections>
                 </tableViewController>
