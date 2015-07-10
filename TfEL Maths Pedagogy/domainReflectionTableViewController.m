@@ -151,7 +151,7 @@ bool shouldPopulateNydIwd;
     if (([iwdTextOutlet.text length] >= 2 || [nydTextOutlet.text length] >= 2 ) && shouldPopulateNydIwd == NO  && AppDelegate.nvShouldEnterToUserEntries == YES) {
         static BOOL shouldUpdate = YES;
         
-        NSString *saveDataQuery = [NSString stringWithFormat:@"INSERT INTO \"userentries\" (\"id\",\"datemodified\",\"domain_title\",\"domain_subtitle\",\"subdomain_title\",\"subdomain_body\",\"neg_notes\",\"pos_notes\",\"slider_val\",\"domaincode\") VALUES (NULL,time(),'%@','%@','%@','%@','%@','%@','%f', '%@')", [viewData valueForKey:@"domainTitle"], [viewData valueForKey:@"domainSubtitle"], [viewData valueForKey:@"subdomainTitle"], [viewData valueForKey:@"subdomainBody"], nydTextOutlet.text, iwdTextOutlet.text, sliderOutlet.value, [viewData valueForKey:@"code"]];
+        NSString *saveDataQuery = [NSString stringWithFormat:@"INSERT INTO \"userentries\" (\"id\",\"datemodified\",\"neg_notes\",\"pos_notes\",\"slider_val\",\"domaincode\") VALUES (NULL,time(),'%@','%@','%f', '%@')", nydTextOutlet.text, iwdTextOutlet.text, sliderOutlet.value, [viewData valueForKey:@"code"]];
         
         if (shouldUpdate) {
             [abstractionLayer alloc];
@@ -179,37 +179,61 @@ bool shouldPopulateNydIwd;
     NSMutableDictionary *domainData = [[NSMutableDictionary alloc] init];
     
     if (AppDelegate.nvShouldRetrFromUserEntries == YES) {
-        // use UserData database
+        // We are getting data from the users entry, we are also going to need the main db.
+        
+        // First, let's populate the view with the appropriate data.
         AppDelegate.databasePath = [NSString stringWithFormat:@"%@/tfeluserdata.sqlite", [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]];
+        
+        NSString *mainDatabasePath = [[NSBundle mainBundle] pathForResource:@"tfelmped" ofType:@"sqlite"];
+        
+        FMDatabase *db = [FMDatabase databaseWithPath:AppDelegate.databasePath];
+        
+        FMDatabase *maindb = [FMDatabase databaseWithPath:mainDatabasePath];
+        
+        if (![db open] || ![maindb open]) {
+            [self dataInconsistency:@"No database connection."];
+        } else {
+            // We have established connections to both databases.
+            FMResultSet *s = [db executeQuery:nextQuery];
+            while ([s next]) {
+                if (shouldPopulateNydIwd == YES) {
+                    [domainData setValue:[s objectForColumnName:@"neg_notes"] forKey:@"notYet"];
+                    [domainData setValue:[s objectForColumnName:@"pos_notes"] forKey:@"wellDev"];
+                    [domainData setObject:[s objectForKeyedSubscript:@"slider_val"] forKey:@"sliderValue"];
+                }
+            }
+            
+            FMResultSet *d = [maindb executeQuery:nextQuery];
+            
+            while ([d next]) {
+                [domainData setValue:[s objectForColumnName:@"domaincode"] forKey:@"code"];
+                [domainData setValue:[s objectForColumnName:@"domain_title"] forKey:@"domainTitle"];
+                [domainData setValue:[s objectForColumnName:@"domain_subtitle"] forKey:@"domainSubtitle"];
+                [domainData setValue:[s objectForColumnName:@"subdomain_title"] forKey:@"subdomainTitle"];
+                [domainData setValue:[s objectForColumnName:@"subdomain_body"] forKey:@"subdomainBody"];
+            }
+        }
+        
     } else {
-        // Now we can retreive the query and do something with that...
+        // We are getting data from the blank VC
+        
         AppDelegate.databasePath = [[NSBundle mainBundle] pathForResource:@"tfelmped" ofType:@"sqlite"];
-    }
-    
-    FMDatabase* db = [FMDatabase databaseWithPath:AppDelegate.databasePath];
-    
-    if (![db open]) {
-        NSLog(@"TfEL Maths: Database Establishment Failed");
-        [self dataInconsistency:@"No database connection."];
-    } else {
-        NSLog(@"TfEL Maths: Database Establishment Succeeded");
+        FMDatabase *db = [FMDatabase databaseWithPath:AppDelegate.databasePath];
         
-        // Executes the query from the pub 'nextQuery', could be set in a method if it suits better?
-        FMResultSet *s = [db executeQuery:nextQuery];
-        
-        while ([s next]) {
-            // Let's pull the neccessary data, we can probably just ignore the id and mod date.
+        if (![db open]) {
+            [self dataInconsistency:@"No database connection."];
+        } else {
+            FMResultSet *s = [db executeQuery:nextQuery];
             
-            [domainData setValue:[s objectForColumnName:@"domaincode"] forKey:@"code"];
-            [domainData setValue:[s objectForColumnName:@"domain_title"] forKey:@"domainTitle"];
-            [domainData setValue:[s objectForColumnName:@"domain_subtitle"] forKey:@"domainSubtitle"];
-            [domainData setValue:[s objectForColumnName:@"subdomain_title"] forKey:@"subdomainTitle"];
-            [domainData setValue:[s objectForColumnName:@"subdomain_body"] forKey:@"subdomainBody"];
-            
-            if (shouldPopulateNydIwd == YES) {
-                [domainData setValue:[s objectForColumnName:@"neg_notes"] forKey:@"notYet"];
-                [domainData setValue:[s objectForColumnName:@"pos_notes"] forKey:@"wellDev"];
-                [domainData setObject:[s objectForKeyedSubscript:@"slider_val"] forKey:@"sliderValue"];
+            while ([s next]) {
+                // Let's pull the neccessary data, we can probably just ignore the id and mod date.
+                
+                [domainData setValue:[s objectForColumnName:@"domaincode"] forKey:@"code"];
+                [domainData setValue:[s objectForColumnName:@"domain_title"] forKey:@"domainTitle"];
+                [domainData setValue:[s objectForColumnName:@"domain_subtitle"] forKey:@"domainSubtitle"];
+                [domainData setValue:[s objectForColumnName:@"subdomain_title"] forKey:@"subdomainTitle"];
+                [domainData setValue:[s objectForColumnName:@"subdomain_body"] forKey:@"subdomainBody"];
+                
             }
         }
     }
