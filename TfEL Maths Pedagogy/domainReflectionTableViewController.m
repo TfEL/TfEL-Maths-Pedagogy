@@ -146,14 +146,19 @@ bool shouldPopulateNydIwd;
     if (([iwdTextOutlet.text length] >= 2 || [nydTextOutlet.text length] >= 2 ) && shouldPopulateNydIwd == NO  && AppDelegate.nvShouldEnterToUserEntries == YES) {
         static BOOL shouldUpdate = YES;
         
-        NSLog(@"sliderOutlet.value: %f", sliderOutlet.value);
-        
-        // clean
-        NSString *saveDataQuery = [NSString stringWithFormat:@"INSERT INTO \"userentries\" (\"id\",\"datemodified\",\"neg_notes\",\"pos_notes\",\"slider_val\",\"domaincode\") VALUES (NULL,time(),'%@','%@','%f', '%@')", nydTextOutlet.text, iwdTextOutlet.text, sliderOutlet.value, AppDelegate.nextDomain];
-        
         if (shouldUpdate) {
             [abstractionLayer alloc];
-            if ( [abstractionLayer runBoolReturnQuery:saveDataQuery] ) { NSLog(@"TfEL Maths: Added new data"); AppDelegate.nvShouldEnterToUserEntries = NO; }
+            
+            AppDelegate.databasePath = [NSString stringWithFormat:@"%@/tfeluserdata.sqlite", [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]];
+            FMDatabase* db = [FMDatabase databaseWithPath:AppDelegate.databasePath];
+            if (![db open]) {
+                
+            } else {
+                // Run the insert sparky...
+                if( [db executeUpdate:@"INSERT INTO \"userentries\" (\"id\",\"datemodified\",\"neg_notes\",\"pos_notes\",\"slider_val\",\"domaincode\") VALUES (NULL,time(),?,?,?,?)", nydTextOutlet.text, iwdTextOutlet.text, [NSNumber numberWithFloat:sliderOutlet.value], AppDelegate.nextDomain] ) {
+                    NSLog(@"TfEL Maths: Added new data"); AppDelegate.nvShouldEnterToUserEntries = NO;
+                }
+            }
         }
     } else {
         // Resume, nothing here...

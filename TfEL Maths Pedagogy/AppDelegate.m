@@ -24,7 +24,9 @@
     } else if ([[[NSProcessInfo processInfo] environment] objectForKey:@"synciCloud"]) {
         NSLog(@"TfEL Maths: is starting to uploadToiCloud");
         [self uploadToiCloud];
-    } else {
+    } else if ([[[NSProcessInfo processInfo] environment] objectForKey:@"dataDirectory"]) {
+        NSLog(@"TfEL Maths: Directory %@",[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject]);
+    }else {
         NSLog(@"TfEL Maths: didFinishLaunchingWithOptions: ev: nil (or unhandled)");
     }
         
