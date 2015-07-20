@@ -11,6 +11,7 @@
 #import "FMDatabase.h"
 #import "abstractionLayer.h"
 #import "determineDomainUIImageForReturn.h"
+#import "AFNetworking.h"
 
 #import "determineDetailForCode.h"
 
@@ -30,6 +31,9 @@ NSString *nextQuery;
 NSMutableDictionary *viewData;
 NSMutableDictionary *userData;
 bool shouldPopulateNydIwd;
+
+// API KEY
+NSString *apiKey = @"f2e155da-849cdf";
 
 - (void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -98,6 +102,13 @@ bool shouldPopulateNydIwd;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        NSLog(@"TfEL Maths @Reachability: %@", AFStringFromNetworkReachabilityStatus(status));
+    }];
+    
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    
     
     nydWhatMight.layer.borderWidth = 1;
     nydWhatMight.layer.borderColor = nydWhatMight.tintColor.CGColor;
@@ -180,6 +191,46 @@ bool shouldPopulateNydIwd;
     [NSThread sleepForTimeInterval:2.0f];
     NSLog(@"TfEL Maths Pedagogy Crashed: %@", throwReason);
     @throw NSInternalInconsistencyException;
+}
+
+- (IBAction)shareButton:(id)sender {
+    
+    if ([nydTextOutlet.text length] <= 5 || [iwdTextOutlet.text length] <= 5) {
+        [[[UIAlertView alloc] initWithTitle:@"Not Avaliable" message:@"TfEL Maths was not able to create a share URL for your reflection at this time. Please ensure you have entered text into both reflection boxes and try again." delegate:self cancelButtonTitle:@"Okay" otherButtonTitles: nil] show];
+    } else {
+        // Set up the exchange with das server
+        AFJSONRequestSerializer *serializer = [AFJSONRequestSerializer serializer];
+        AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+        
+        [serializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+        [serializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+        
+        
+        NSDictionary *parameters = @{ @"source":@"tmp", @"apptoken":apiKey, @"appdata":@{ @"nyd":nydTextOutlet.text, @"iwd":iwdTextOutlet.text }};
+        
+        manager.requestSerializer = serializer;
+        
+        NSString *requestUrl = [NSString stringWithFormat:@"https://maths.tfel.edu.au/a/v1/%@", apiKey];
+        
+        [manager POST:requestUrl parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+            NSLog(@"JSON: %@", responseObject);
+            
+            if ([responseObject objectForKey:@"url"]) {
+                NSString *sheetDescription = [NSString stringWithFormat:@"Sharing my TfEL Maths Pedagogy reflection. %@ #TfEL #TfELTalk", [responseObject objectForKey:@"url"]];
+                NSArray *shareSheetItems = @[sheetDescription];
+                
+                UIActivityViewController *controller = [[UIActivityViewController alloc] initWithActivityItems:shareSheetItems applicationActivities:nil];
+                
+                UIPopoverController *popup = [[UIPopoverController alloc] initWithContentViewController:controller];
+                
+                [popup presentPopoverFromRect:[[self.shareButtonRef valueForKey:@"view"] frame] inView:self.view permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+            }
+            
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            NSLog(@"Error: %@", error);
+            [[[UIAlertView alloc] initWithTitle:@"Not Avalialbe" message:@"TfEL Maths was not able to create a share URL for your reflection at this time. Please ensure you have internet access and try again." delegate:self cancelButtonTitle:@"Okay" otherButtonTitles: nil] show];
+        }];
+    }
 }
 
 

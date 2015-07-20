@@ -10,7 +10,6 @@
 #import <XCTest/XCTest.h>
 
 #import "FMDatabase.h"
-#import "sqlAdminTableViewController.h"
 
 @interface databaseDumperTest : XCTestCase
 

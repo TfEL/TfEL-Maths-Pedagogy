@@ -32,4 +32,10 @@
 
 @property (weak, nonatomic) IBOutlet UISlider *sliderOutlet;
 
+
+- (IBAction)shareButton:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *shareButtonRef;
+
+
 @end

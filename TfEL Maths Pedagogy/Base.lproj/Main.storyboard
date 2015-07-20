@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qxc-su-Wwm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qxc-su-Wwm">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="88"/>
                                 <color key="backgroundColor" red="0.34901960780000002" green="0.26274509800000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
@@ -27,14 +27,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4S5-n9-AOw">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4S5-n9-AOw">
                                 <rect key="frame" x="16" y="96" width="568" height="484"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment content="TfEL Maths Pedagogy is still in the key stages of development">
                                         <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeueCE-Medium"/>
-                                            <font key="NSOriginalFont" size="14" name="HelveticaNeueCE-Medium"/>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="14"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
@@ -42,6 +42,26 @@
                                         <string key="content">, as such many features may be incomplete or may totally break things. You have been invited to test this application in order to help us determine the issues with the development of the app.
 
 In this version we have fixed the following issues:
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">  • Added ShareKit support for reflections
+  • Added validation of reflection views and data added
+  • Added "social" capacities to various ShareKit toolkits
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Previously:
 
   • UITextView needs replacing by UIWebView
   • TableViewCell needs to be hidden on DL All Content for 1.0 
@@ -117,6 +137,10 @@ Cgo
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4S5-n9-AOw" firstAttribute="top" secondItem="qxc-su-Wwm" secondAttribute="bottom" constant="8" id="4Le-Bl-yF0"/>
+                            <constraint firstItem="oyG-pw-NlQ" firstAttribute="top" secondItem="4S5-n9-AOw" secondAttribute="bottom" constant="20" id="BbD-ir-aLA"/>
+                        </constraints>
                     </view>
                     <value key="contentSizeForViewInPopover" type="size" width="600" height="500"/>
                 </viewController>
@@ -341,18 +365,6 @@ Your Mathematics Classroom</string>
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
-                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eyu-f9-nS5">
-                            <rect key="frame" x="-23" y="-15" width="667" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                            <state key="normal" title="TfEL Maths Pedagogy v1.0">
-                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="versionButton:" destination="khn-vP-hhO" eventType="touchUpInside" id="Sda-xi-M73"/>
-                            </connections>
-                        </button>
                         <sections>
                             <tableViewSection headerTitle="TfEL Maths" id="ueG-ZM-v6x">
                                 <cells>
@@ -373,12 +385,12 @@ Your Mathematics Classroom</string>
                                             <segue destination="aO0-Rm-Hdg" kind="show" id="JpY-hv-Bmv"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="bQu-eC-gfQ" rowHeight="50" style="IBUITableViewCellStyleDefault" id="YuR-7a-ay1">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="fX1-Ws-nqR" rowHeight="50" style="IBUITableViewCellStyleDefault" id="c8G-nZ-Pgj">
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YuR-7a-ay1" id="M2W-dN-rMv">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c8G-nZ-Pgj" id="bFC-YH-ymN">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Administrator" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bQu-eC-gfQ">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="About" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fX1-Ws-nqR">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -387,8 +399,8 @@ Your Mathematics Classroom</string>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="rWp-vo-Cok" kind="popoverPresentation" popoverAnchorView="YuR-7a-ay1" id="yPi-vk-Z7H">
-                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES"/>
+                                            <segue destination="b4P-cl-G0b" kind="popoverPresentation" popoverAnchorView="c8G-nZ-Pgj" id="4Tq-AE-Soh">
+                                                <popoverArrowDirection key="popoverArrowDirection" left="YES"/>
                                             </segue>
                                         </connections>
                                     </tableViewCell>
@@ -401,125 +413,10 @@ Your Mathematics Classroom</string>
                         </connections>
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="adminButton" destination="YuR-7a-ay1" id="WU8-Cp-KIP"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6u-Gk-uW8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2498.5" y="-356.5"/>
-        </scene>
-        <!--Sql Admin Table View Controller-->
-        <scene sceneID="S38-ed-m8Z">
-            <objects>
-                <tableViewController id="rWp-vo-Cok" customClass="sqlAdminTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="zwO-ck-inq">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <sections>
-                            <tableViewSection id="sZX-J4-Nof">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellri" textLabel="IWR-u1-6I3" detailTextLabel="THi-AL-ehC" style="IBUITableViewCellStyleValue1" id="PLL-g3-iQP">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PLL-g3-iQP" id="S8f-0K-ItJ">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Probe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IWR-u1-6I3">
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="THi-AL-ehC">
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellri" id="pvU-mS-WJz">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pvU-mS-WJz" id="UpR-Fx-gqi">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="SELECT * FROM &quot;where&quot;" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8lR-8R-MPB">
-                                                    <rect key="frame" x="8" y="7" width="651" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="8lR-8R-MPB" firstAttribute="top" secondItem="UpR-Fx-gqi" secondAttribute="topMargin" constant="-1" id="bCH-JG-ly9"/>
-                                                <constraint firstItem="8lR-8R-MPB" firstAttribute="leading" secondItem="UpR-Fx-gqi" secondAttribute="leadingMargin" id="hBq-Gu-nrh"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="8lR-8R-MPB" secondAttribute="trailing" id="iwv-HJ-k91"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellri" rowHeight="215" id="wMA-3c-8pn">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wMA-3c-8pn" id="exL-N1-bRm">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CeV-At-lBx">
-                                                    <rect key="frame" x="0.0" y="0.0" width="667" height="214"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="CeV-At-lBx" secondAttribute="bottom" constant="-8" id="BTI-Kz-RMB"/>
-                                                <constraint firstItem="CeV-At-lBx" firstAttribute="top" secondItem="exL-N1-bRm" secondAttribute="topMargin" constant="-8" id="FGr-pW-PXQ"/>
-                                                <constraint firstItem="CeV-At-lBx" firstAttribute="leading" secondItem="exL-N1-bRm" secondAttribute="leadingMargin" constant="-8" id="Icx-6F-8R6"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="CeV-At-lBx" secondAttribute="trailing" constant="-8" id="PeI-cQ-8n5"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellri" id="6we-1O-jIg">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6we-1O-jIg" id="ont-pb-jUs">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oQ-02-Agv">
-                                                    <rect key="frame" x="8" y="7" width="651" height="30"/>
-                                                    <state key="normal" title="Run the query, Sparky.">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="runNextQuery:" destination="rWp-vo-Cok" eventType="touchUpInside" id="3Nj-2Q-dpW"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="0oQ-02-Agv" secondAttribute="trailing" id="0mQ-HQ-6xh"/>
-                                                <constraint firstItem="0oQ-02-Agv" firstAttribute="leading" secondItem="ont-pb-jUs" secondAttribute="leadingMargin" id="2vs-29-fQP"/>
-                                                <constraint firstItem="0oQ-02-Agv" firstAttribute="top" secondItem="ont-pb-jUs" secondAttribute="topMargin" constant="-1" id="5XP-9s-2Vy"/>
-                                                <constraint firstItem="0oQ-02-Agv" firstAttribute="leading" secondItem="ont-pb-jUs" secondAttribute="leadingMargin" id="inB-DE-yNx"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="rWp-vo-Cok" id="7gz-sJ-gt2"/>
-                            <outlet property="delegate" destination="rWp-vo-Cok" id="Zmo-f5-2mR"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="5hq-Gd-94p"/>
-                    <connections>
-                        <outlet property="nextQuery" destination="8lR-8R-MPB" id="TQo-lk-HWj"/>
-                        <outlet property="probeStatus" destination="THi-AL-ehC" id="eOk-Xd-d9T"/>
-                        <outlet property="resultQuery" destination="CeV-At-lBx" id="hRd-4O-S9N"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NUG-mk-HlS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3291.5" y="-356.5"/>
         </scene>
         <!--Domains List Table View Controller-->
         <scene sceneID="8wl-o2-pza">
@@ -1251,6 +1148,13 @@ support materials</string>
                             <outlet property="delegate" destination="ZDM-P1-4nj" id="Yq3-1A-fjy"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="oYN-kV-cDy">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="Yl0-Ig-QA7">
+                            <connections>
+                                <action selector="shareButton:" destination="ZDM-P1-4nj" id="cun-SG-eAa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
@@ -1264,6 +1168,7 @@ support materials</string>
                         <outlet property="nextSteps" destination="YVe-qO-hbh" id="Ode-sp-SuR"/>
                         <outlet property="nydTextOutlet" destination="WLX-XO-VQQ" id="Ol7-3o-RoH"/>
                         <outlet property="nydWhatMight" destination="lNk-bZ-W97" id="Olb-hk-L42"/>
+                        <outlet property="shareButtonRef" destination="Yl0-Ig-QA7" id="1IK-Nx-mMH"/>
                         <outlet property="sliderOutlet" destination="S99-x8-Z4n" id="iju-an-aOl"/>
                         <outlet property="subdomainBody" destination="JVf-PL-qPu" id="LAs-0D-WLj"/>
                         <outlet property="subdomainGuidingQuestions" destination="Sqq-zF-koj" id="ijv-g2-7gJ"/>
@@ -1760,6 +1665,216 @@ Evidence that suggests this  element is developed:</string>
             </objects>
             <point key="canvasLocation" x="5228" y="772"/>
         </scene>
+        <!--Drop Menu Table View Controller-->
+        <scene sceneID="oOR-Sa-rI0">
+            <objects>
+                <tableViewController id="b4P-cl-G0b" customClass="dropMenuTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="zer-j0-01m">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="TfEL Maths Pedagogy" id="Wrl-lU-SOF">
+                                <mutableString key="footerTitle">© 2015 the Department for Education and Child Development, and the Government of South Australia. All Rights Reserved.
+
+Designed by Margot Foster, Val Westwell, and Sam Nicholas. Developed by Aidan Cornelius-Bell.
+
+The Government of South Australia supports and encourages the dissemination and exchange of public sector information, and endorses the use of the Australian Governments Open Access and Licensing Framework by its agencies. 
+
+The Government of South Australia has undertaken reasonable enquiries to identify material owned by third parties and secure permission for its reproduction. Permission may need to be obtained from third parties to re-use their material.
+
+The National Education Access Licence for Schools (NEALS) is a copying licence for schools in Australia. Under the NEALS licence, schools can copy and communicate materials from each other’s websites and publications for educational purposes without incurring the usual copyright fees. Schools will be entitled to copy as much of an item, as many times as required for educational purposes, and it will not be remunerable under the Copyright Act.
+
+Acceptable for use on Apple iPad only. Please see /license on https://maths.tfel.edu.au.</mutableString>
+                                <cells>
+                                    <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="4ju-Dc-VMR" detailTextLabel="gkS-JP-A12" style="IBUITableViewCellStyleValue1" id="lfR-Wa-eOI">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lfR-Wa-eOI" id="MY5-Ms-NBo">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="TfEL Maths Pedagogy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4ju-Dc-VMR">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="v1.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gkS-JP-A12">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="OqI-8b-xhI">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OqI-8b-xhI" id="x7w-He-ueG">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="neals_gs.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="u6q-dL-zfZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="667" height="84.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="u6q-dL-zfZ" firstAttribute="leading" secondItem="x7w-He-ueG" secondAttribute="leadingMargin" constant="-8" id="Ude-ef-q2s"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="u6q-dL-zfZ" secondAttribute="trailing" constant="-8" id="iWz-HD-J91"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="u6q-dL-zfZ" secondAttribute="bottom" constant="-8" id="xbi-Pp-Fdi"/>
+                                                <constraint firstItem="u6q-dL-zfZ" firstAttribute="top" secondItem="x7w-He-ueG" secondAttribute="topMargin" constant="-8" id="zad-JD-4QY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="AFNetworking Components" id="OaV-1e-Fte">
+                                <mutableString key="footerTitle">© 2011–2015 Alamofire Software Foundation (http://alamofire.org/)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</mutableString>
+                                <cells>
+                                    <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="wHE-Pw-9LO" detailTextLabel="jeJ-KF-AIv" style="IBUITableViewCellStyleValue1" id="wGE-6z-J5y">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wGE-6z-J5y" id="emy-Hb-bWY">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="AFNetworking" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wHE-Pw-9LO">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="v2.5.4" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jeJ-KF-AIv">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="PHP Components" id="GrP-Nh-XsQ">
+                                <mutableString key="footerTitle">
+This product includes PHP software, freely available from &lt;http://www.php.net/software/&gt;
+
+Copyright (c) 1999 - 2014 The PHP Group. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, is permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+3. The name "PHP" must not be used to endorse or promote products derived from this software without prior written permission. For written permission, please contact group@php.net.
+
+4. Products derived from this software may not be called "PHP", nor may "PHP" appear in their name, without prior written permission from group@php.net.  You may indicate that your software works in conjunction with PHP by saying "Foo for PHP" instead of calling it "PHP Foo" or "phpfoo"
+
+5. The PHP Group may publish revised and/or new versions of the license from time to time. Each version will be given a distinguishing version number. Once covered code has been published under a particular version of the license, you may always continue to use it under the terms of that version. You may also choose to use such covered code under the terms of any subsequent version of the license published by the PHP Group. No one other than the PHP Group has the right to modify the terms applicable to covered code created under this License.
+
+6. Redistributions of any form whatsoever must retain the following acknowledgment: "This product includes PHP software, freely available from &lt;http://www.php.net/software/&gt;".
+
+THIS SOFTWARE IS PROVIDED BY THE PHP DEVELOPMENT TEAM ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE PHP DEVELOPMENT TEAM OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+This software consists of voluntary contributions made by many individuals on behalf of the PHP Group.</mutableString>
+                                <cells>
+                                    <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="m7Z-3Y-68H" detailTextLabel="VrY-nI-bOA" style="IBUITableViewCellStyleValue1" id="ed8-2S-hQ6">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ed8-2S-hQ6" id="8xF-Sy-swR">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Version" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m7Z-3Y-68H">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="5.3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VrY-nI-bOA">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="FMDB Components" id="Led-g0-ruH">
+                                <mutableString key="footerTitle">Copyright (c) 2008-2014 Flying Meat Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</mutableString>
+                                <cells>
+                                    <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="tbr-lj-VEz" detailTextLabel="5sL-gG-2tf" style="IBUITableViewCellStyleValue1" id="Qpz-s3-akr">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qpz-s3-akr" id="HUX-yk-ig6">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Version" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tbr-lj-VEz">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="2.5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5sL-gG-2tf">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="SQLite Components" id="EHI-Fj-jd4">
+                                <string key="footerTitle">The author or authors of this code dedicate any and all copyright interest in this code to the public domain. We make this dedication for the benefit of the public at large and to the detriment of our heirs and successors. We intend this dedication to be an overt act of relinquishment in perpetuity of all present and future rights to this code under copyright law.</string>
+                                <cells>
+                                    <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="VN5-8i-sBe" detailTextLabel="vv4-eb-hN4" style="IBUITableViewCellStyleValue1" id="lwX-r3-Ucf">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lwX-r3-Ucf" id="eoc-D9-rcP">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Version" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VN5-8i-sBe">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="3.8" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vv4-eb-hN4">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="b4P-cl-G0b" id="alw-xD-aoy"/>
+                            <outlet property="delegate" destination="b4P-cl-G0b" id="WJq-Xv-Kba"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pD2-bh-EhA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3263.5" y="-356.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="72@2x-152.png" width="152" height="152"/>
@@ -1771,6 +1886,7 @@ Evidence that suggests this  element is developed:</string>
         <image name="compass_bg.png" width="85" height="82"/>
         <image name="green-tt.png" width="800" height="801"/>
         <image name="happy-face.png" width="116" height="116"/>
+        <image name="neals_gs.jpg" width="91" height="32"/>
         <image name="red-tt.png" width="800" height="801"/>
         <image name="sad-face.png" width="116" height="116"/>
         <image name="tfel_compass_lg.png" width="316" height="295"/>

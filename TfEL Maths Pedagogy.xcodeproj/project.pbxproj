@@ -23,6 +23,7 @@
 		122727CC1B156EB80050768B /* domainsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 122727CB1B156EB80050768B /* domainsListTableViewController.m */; };
 		122727CF1B1586EA0050768B /* show-lines.png in Resources */ = {isa = PBXBuildFile; fileRef = 122727CD1B1586EA0050768B /* show-lines.png */; };
 		122727D01B1586EA0050768B /* show-lines@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 122727CE1B1586EA0050768B /* show-lines@2x.png */; };
+		1237598C1B5CB06A007F5F79 /* neals_gs@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1237598B1B5CB06A007F5F79 /* neals_gs@2x.jpg */; };
 		124ABA501B292C0200435632 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124ABA4F1B292C0200435632 /* CloudKit.framework */; };
 		124ABA561B2935B100435632 /* backImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 124ABA541B2935B100435632 /* backImage.png */; };
 		124ABA571B2935B100435632 /* backImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 124ABA551B2935B100435632 /* backImage@2x.png */; };
@@ -53,7 +54,6 @@
 		12929ACC1B1E905900E6E029 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 12929AC41B1E905900E6E029 /* FMDatabasePool.m */; };
 		12929ACD1B1E905900E6E029 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 12929AC61B1E905900E6E029 /* FMDatabaseQueue.m */; };
 		12929ACE1B1E905900E6E029 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 12929AC91B1E905900E6E029 /* FMResultSet.m */; };
-		12929AD31B1E91A600E6E029 /* sqlAdminTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12929AD21B1E91A600E6E029 /* sqlAdminTableViewController.m */; };
 		12C30CC21B3A331B008A28A1 /* compass_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C30CC01B3A331A008A28A1 /* compass_bg.png */; };
 		12C30CC31B3A331B008A28A1 /* compass_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C30CC11B3A331A008A28A1 /* compass_bg@2x.png */; };
 		12C30CD01B3A4F64008A28A1 /* resourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C30CCF1B3A4F64008A28A1 /* resourceViewController.m */; };
@@ -103,6 +103,7 @@
 		12F719151B1EC4BF00B9F7FB /* databaseDumperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F719141B1EC4BF00B9F7FB /* databaseDumperTest.m */; };
 		12F719171B1EC5C000B9F7FB /* fileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F719161B1EC5C000B9F7FB /* fileManager.m */; };
 		12F719181B1ECE9200B9F7FB /* tfelmped.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 12929ACF1B1E90DA00E6E029 /* tfelmped.sqlite */; };
+		AB590F8A097F1BEB0B6D88B2 /* libPods-TfEL Maths Pedagogy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC6BA4C597E582E0439E0A6 /* libPods-TfEL Maths Pedagogy.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +135,7 @@
 		122727CB1B156EB80050768B /* domainsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = domainsListTableViewController.m; sourceTree = "<group>"; };
 		122727CD1B1586EA0050768B /* show-lines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "show-lines.png"; sourceTree = "<group>"; };
 		122727CE1B1586EA0050768B /* show-lines@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "show-lines@2x.png"; sourceTree = "<group>"; };
+		1237598B1B5CB06A007F5F79 /* neals_gs@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "neals_gs@2x.jpg"; sourceTree = "<group>"; };
 		124ABA4E1B29273100435632 /* TfEL Maths Pedagogy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "TfEL Maths Pedagogy.entitlements"; sourceTree = "<group>"; };
 		124ABA4F1B292C0200435632 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		124ABA541B2935B100435632 /* backImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backImage.png; sourceTree = "<group>"; };
@@ -182,8 +184,6 @@
 		12929AC81B1E905900E6E029 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		12929AC91B1E905900E6E029 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		12929ACF1B1E90DA00E6E029 /* tfelmped.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = tfelmped.sqlite; path = "TfEL Maths Pedagogy/tfelmped.sqlite"; sourceTree = "<group>"; };
-		12929AD11B1E91A600E6E029 /* sqlAdminTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlAdminTableViewController.h; sourceTree = "<group>"; };
-		12929AD21B1E91A600E6E029 /* sqlAdminTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sqlAdminTableViewController.m; sourceTree = "<group>"; };
 		12C30CC01B3A331A008A28A1 /* compass_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass_bg.png; sourceTree = "<group>"; };
 		12C30CC11B3A331A008A28A1 /* compass_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass_bg@2x.png"; sourceTree = "<group>"; };
 		12C30CCE1B3A4F64008A28A1 /* resourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resourceViewController.h; sourceTree = "<group>"; };
@@ -241,6 +241,9 @@
 		12F712151B0F0A0F0059C263 /* 72@2x-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "72@2x-152.png"; sourceTree = "<group>"; };
 		12F719141B1EC4BF00B9F7FB /* databaseDumperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = databaseDumperTest.m; sourceTree = "<group>"; };
 		12F719161B1EC5C000B9F7FB /* fileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fileManager.m; sourceTree = "<group>"; };
+		4F016A6515AF8A016228C236 /* Pods-TfEL Maths Pedagogy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TfEL Maths Pedagogy.release.xcconfig"; path = "Pods/Target Support Files/Pods-TfEL Maths Pedagogy/Pods-TfEL Maths Pedagogy.release.xcconfig"; sourceTree = "<group>"; };
+		5541FA69178DE0BABC6BB760 /* Pods-TfEL Maths Pedagogy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TfEL Maths Pedagogy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TfEL Maths Pedagogy/Pods-TfEL Maths Pedagogy.debug.xcconfig"; sourceTree = "<group>"; };
+		DFC6BA4C597E582E0439E0A6 /* libPods-TfEL Maths Pedagogy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TfEL Maths Pedagogy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +253,7 @@
 			files = (
 				12929AAA1B1E862F00E6E029 /* libsqlite3.dylib in Frameworks */,
 				124ABA501B292C0200435632 /* CloudKit.framework in Frameworks */,
+				AB590F8A097F1BEB0B6D88B2 /* libPods-TfEL Maths Pedagogy.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,15 +441,6 @@
 			name = "02. FMDB";
 			sourceTree = "<group>";
 		};
-		12929AD01B1E919000E6E029 /* 00. Admin SQL */ = {
-			isa = PBXGroup;
-			children = (
-				12929AD11B1E91A600E6E029 /* sqlAdminTableViewController.h */,
-				12929AD21B1E91A600E6E029 /* sqlAdminTableViewController.m */,
-			);
-			name = "00. Admin SQL";
-			sourceTree = "<group>";
-		};
 		12C30CC41B3A4E89008A28A1 /* 07. PDF Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -482,6 +477,7 @@
 			children = (
 				124ABA4F1B292C0200435632 /* CloudKit.framework */,
 				12929AA91B1E862F00E6E029 /* libsqlite3.dylib */,
+				DFC6BA4C597E582E0439E0A6 /* libPods-TfEL Maths Pedagogy.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -550,6 +546,7 @@
 				12F711D41B0EF4030059C263 /* TfEL Maths Pedagogy */,
 				12F711EE1B0EF4040059C263 /* TfEL Maths PedagogyTests */,
 				12F711D31B0EF4030059C263 /* Products */,
+				343D551DAA215516AD5057D9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -615,7 +612,6 @@
 		12F711FC1B0EF4E80059C263 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				12929AD01B1E919000E6E029 /* 00. Admin SQL */,
 				12F711FD1B0EF4EF0059C263 /* 01. Master View Controller */,
 				12F711FE1B0EF5130059C263 /* 02. Home Screen */,
 				122727C91B156E920050768B /* 03. Domains Screen */,
@@ -709,6 +705,7 @@
 		12F712081B0EFF820059C263 /* 02. Styling */ = {
 			isa = PBXGroup;
 			children = (
+				1237598B1B5CB06A007F5F79 /* neals_gs@2x.jpg */,
 				124ABA5D1B2A56E600435632 /* DECS SATfEL FG_Cover_A4.png */,
 				124ABA5E1B2A56E600435632 /* DECS SATfEL FG_Cover_A4@2x.png */,
 				124ABA5F1B2A56E600435632 /* DECS SATfEL FG_Cover_A4@3x.png */,
@@ -722,6 +719,15 @@
 			name = "02. Styling";
 			sourceTree = "<group>";
 		};
+		343D551DAA215516AD5057D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5541FA69178DE0BABC6BB760 /* Pods-TfEL Maths Pedagogy.debug.xcconfig */,
+				4F016A6515AF8A016228C236 /* Pods-TfEL Maths Pedagogy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -729,9 +735,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12F711F51B0EF4040059C263 /* Build configuration list for PBXNativeTarget "TfEL Maths Pedagogy" */;
 			buildPhases = (
+				36C7A908F2090611A7CA7B40 /* Check Pods Manifest.lock */,
 				12F711CE1B0EF4030059C263 /* Sources */,
 				12F711CF1B0EF4030059C263 /* Frameworks */,
 				12F711D01B0EF4030059C263 /* Resources */,
+				0011B5491E68B992DA179F90 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -873,6 +881,7 @@
 				12C30D1B1B3BCE43008A28A1 /* 4.2_fg.pdf in Resources */,
 				122727C31B1568000050768B /* TfEL-Compass-graphic_Domain-3_small-yellow.png in Resources */,
 				12C30CFC1B3BA9BD008A28A1 /* 2.4.pdf in Resources */,
+				1237598C1B5CB06A007F5F79 /* neals_gs@2x.jpg in Resources */,
 				12C30CE41B3B771E008A28A1 /* sad-face@2x.png in Resources */,
 				12F712101B0F01CF0059C263 /* OE_Header@2x.png in Resources */,
 				124ABA731B2A5D4D00435632 /* yellow-tt@2x.png in Resources */,
@@ -888,6 +897,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0011B5491E68B992DA179F90 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TfEL Maths Pedagogy/Pods-TfEL Maths Pedagogy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36C7A908F2090611A7CA7B40 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		12F711CE1B0EF4030059C263 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -900,7 +942,6 @@
 				12929A9F1B1E793900E6E029 /* domainReflectionTableViewController.m in Sources */,
 				12F711D81B0EF4030059C263 /* main.m in Sources */,
 				12929AA81B1E832E00E6E029 /* SZTextView.m in Sources */,
-				12929AD31B1E91A600E6E029 /* sqlAdminTableViewController.m in Sources */,
 				124ABA5C1B294E6200435632 /* myEntriesTableViewController.m in Sources */,
 				1289122B1B44DF6D00765785 /* determineDomainUIImageForReturn.m in Sources */,
 				124ABA771B2A630000435632 /* nextStepsTableViewController.m in Sources */,
@@ -1043,6 +1084,7 @@
 		};
 		12F711F61B0EF4040059C263 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5541FA69178DE0BABC6BB760 /* Pods-TfEL Maths Pedagogy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "TfEL Maths Pedagogy/TfEL Maths Pedagogy.entitlements";
@@ -1057,6 +1099,7 @@
 		};
 		12F711F71B0EF4040059C263 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F016A6515AF8A016228C236 /* Pods-TfEL Maths Pedagogy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "TfEL Maths Pedagogy/TfEL Maths Pedagogy.entitlements";
