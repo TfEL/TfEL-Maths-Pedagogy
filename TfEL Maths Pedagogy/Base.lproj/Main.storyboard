@@ -43,25 +43,11 @@
 
 In this version we have fixed the following issues:
 
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">  • Added ShareKit support for reflections
+  • Added ShareKit support for reflections
   • Added validation of reflection views and data added
   • Added "social" capacities to various ShareKit toolkits
 
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">Previously:
+Previously:
 
   • UITextView needs replacing by UIWebView
   • TableViewCell needs to be hidden on DL All Content for 1.0 
@@ -1675,7 +1661,7 @@ Evidence that suggests this  element is developed:</string>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection headerTitle="TfEL Maths Pedagogy" id="Wrl-lU-SOF">
-                                <mutableString key="footerTitle">© 2015 the Department for Education and Child Development, and the Government of South Australia. All Rights Reserved.
+                                <string key="footerTitle">© 2015 the Department for Education and Child Development, and the Government of South Australia. All Rights Reserved.
 
 Designed by Margot Foster, Val Westwell, and Sam Nicholas. Developed by Aidan Cornelius-Bell.
 
@@ -1685,7 +1671,7 @@ The Government of South Australia has undertaken reasonable enquiries to identif
 
 The National Education Access Licence for Schools (NEALS) is a copying licence for schools in Australia. Under the NEALS licence, schools can copy and communicate materials from each other’s websites and publications for educational purposes without incurring the usual copyright fees. Schools will be entitled to copy as much of an item, as many times as required for educational purposes, and it will not be remunerable under the Copyright Act.
 
-Acceptable for use on Apple iPad only. Please see /license on https://maths.tfel.edu.au.</mutableString>
+Acceptable for use on Apple iPad only. Please see /license on https://maths.tfel.edu.au.</string>
                                 <cells>
                                     <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="4ju-Dc-VMR" detailTextLabel="gkS-JP-A12" style="IBUITableViewCellStyleValue1" id="lfR-Wa-eOI">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1729,14 +1715,14 @@ Acceptable for use on Apple iPad only. Please see /license on https://maths.tfel
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="AFNetworking Components" id="OaV-1e-Fte">
-                                <mutableString key="footerTitle">© 2011–2015 Alamofire Software Foundation (http://alamofire.org/)
+                                <string key="footerTitle">© 2011–2015 Alamofire Software Foundation (http://alamofire.org/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-</mutableString>
+</string>
                                 <cells>
                                     <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="wHE-Pw-9LO" detailTextLabel="jeJ-KF-AIv" style="IBUITableViewCellStyleValue1" id="wGE-6z-J5y">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1762,7 +1748,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="PHP Components" id="GrP-Nh-XsQ">
-                                <mutableString key="footerTitle">
+                                <string key="footerTitle">
 This product includes PHP software, freely available from &lt;http://www.php.net/software/&gt;
 
 Copyright (c) 1999 - 2014 The PHP Group. All rights reserved.
@@ -1783,7 +1769,7 @@ Redistribution and use in source and binary forms, with or without modification,
 
 THIS SOFTWARE IS PROVIDED BY THE PHP DEVELOPMENT TEAM ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE PHP DEVELOPMENT TEAM OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-This software consists of voluntary contributions made by many individuals on behalf of the PHP Group.</mutableString>
+This software consists of voluntary contributions made by many individuals on behalf of the PHP Group.</string>
                                 <cells>
                                     <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="m7Z-3Y-68H" detailTextLabel="VrY-nI-bOA" style="IBUITableViewCellStyleValue1" id="ed8-2S-hQ6">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -1808,13 +1794,13 @@ This software consists of voluntary contributions made by many individuals on be
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="FMDB Components" id="Led-g0-ruH">
-                                <mutableString key="footerTitle">Copyright (c) 2008-2014 Flying Meat Inc.
+                                <string key="footerTitle">Copyright (c) 2008-2014 Flying Meat Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</mutableString>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</string>
                                 <cells>
                                     <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="tbr-lj-VEz" detailTextLabel="5sL-gG-2tf" style="IBUITableViewCellStyleValue1" id="Qpz-s3-akr">
                                         <autoresizingMask key="autoresizingMask"/>
