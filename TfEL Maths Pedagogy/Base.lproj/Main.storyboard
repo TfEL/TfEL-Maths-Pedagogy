@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4S5-n9-AOw">
-                                <rect key="frame" x="16" y="96" width="568" height="484"/>
+                                <rect key="frame" x="16" y="96" width="568" height="500"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment content="TfEL Maths Pedagogy is still in the key stages of development">
@@ -41,13 +41,23 @@
                                     <fragment>
                                         <string key="content">, as such many features may be incomplete or may totally break things. You have been invited to test this application in order to help us determine the issues with the development of the app.
 
+Issues not yet resolved:
+
+  • Domain Reflection View Text Too Small [ENH]
+  • Domain Reflection View Descriptive Icon [ENH]
+
 In this version we have fixed the following issues:
+
+  • PDF's do not load to correct page on nextStepsVC / resourceVC [BUG - HW]
+  • My Past Entries does not group by domain [ENH]
+  • Unable to access iTunes Connect for TF BT Dist [BUG - HW - APPLE]
+  • Some 'this might look like' did not provide context for bullets [ENH] 
+
+Previously:
 
   • Added ShareKit support for reflections
   • Added validation of reflection views and data added
   • Added "social" capacities to various ShareKit toolkits
-
-Previously:
 
   • UITextView needs replacing by UIWebView
   • TableViewCell needs to be hidden on DL All Content for 1.0 
