@@ -1379,11 +1379,19 @@ The links below are excerpts relevant to this TfEL element.</string>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
+                        <outlet property="blueButtonOutlet" destination="RdD-vx-jsr" id="vcQ-A0-BCD"/>
                         <outlet property="compassImageOutlet" destination="XMA-WC-5dw" id="cDv-ew-BaC"/>
                         <outlet property="domainSubtitleOutlet" destination="HDR-aH-r5n" id="nyi-qa-SPh"/>
                         <outlet property="domainTitleOutlet" destination="2gh-sG-HKr" id="KYK-dd-2Hg"/>
                         <outlet property="domainTitleSubdomainTitleOutlet" destination="o1V-hC-AmJ" id="KsF-fo-Rwv"/>
+                        <outlet property="greenButtonOutlet" destination="8Z8-1T-cmv" id="QdC-BW-EI4"/>
+                        <outlet property="greenImageOutlet" destination="LN6-i6-UO6" id="l1u-Yt-oeC"/>
+                        <outlet property="redButtonOutlet" destination="kXa-13-14C" id="g9D-9n-XAK"/>
+                        <outlet property="redImageOutlet" destination="Nrz-NH-R6Y" id="OwT-bk-jNj"/>
                         <outlet property="subdomainTitleOutlet" destination="Els-ei-M6a" id="aSB-CP-cYm"/>
+                        <outlet property="yellowButtonOutlet" destination="sth-tC-hMX" id="UGV-7h-TtS"/>
+                        <outlet property="yellowImageOutlet" destination="DWB-k2-ZLd" id="0N7-rz-ZW7"/>
+                        <outletCollection property="blueImageOutlet" destination="zjd-gF-YEP" id="kuO-q3-NG9"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qdj-S5-IhF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1610,7 +1618,7 @@ Evidence that suggests this  element is developed:</string>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="0.34901960780000002" green="0.26274509800000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 </webView>
-                                                <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JLI-vb-cn4">
+                                                <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JLI-vb-cn4">
                                                     <rect key="frame" x="516" y="183" width="475" height="169"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="0.34901960780000002" green="0.26274509800000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>

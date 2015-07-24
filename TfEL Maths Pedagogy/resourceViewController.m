@@ -39,6 +39,7 @@
 {
     //now traverse to specific page
     int pages = AppDelegate.nextPDFPage;
+    NSLog(@"%d", pages);
     [self performSelector:@selector(traverseInWebViewWithPage:) withObject:[NSNumber numberWithInt:pages] afterDelay:0.1];
 }
 

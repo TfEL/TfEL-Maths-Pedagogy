@@ -23,5 +23,16 @@
 - (IBAction)transformingTasksFour:(id)sender;
 - (IBAction)frameworkGuideOne:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UIButton *blueButtonOutlet;
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *blueImageOutlet;
+
+@property (weak, nonatomic) IBOutlet UIButton *greenButtonOutlet;
+@property (weak, nonatomic) IBOutlet UIImageView *greenImageOutlet;
+
+@property (weak, nonatomic) IBOutlet UIButton *redButtonOutlet;
+@property (weak, nonatomic) IBOutlet UIImageView *redImageOutlet;
+
+@property (weak, nonatomic) IBOutlet UIButton *yellowButtonOutlet;
+@property (weak, nonatomic) IBOutlet UIImageView *yellowImageOutlet;
 
 @end
