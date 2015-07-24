@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4S5-n9-AOw">
-                                <rect key="frame" x="16" y="96" width="568" height="500"/>
+                                <rect key="frame" x="16" y="96" width="568" height="684.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment content="TfEL Maths Pedagogy is still in the key stages of development">
@@ -40,6 +40,8 @@
                                     </fragment>
                                     <fragment>
                                         <string key="content">, as such many features may be incomplete or may totally break things. You have been invited to test this application in order to help us determine the issues with the development of the app.
+
+Fill in a survey: https://qtrial2015az1.az1.qualtrics.com/jfe/form/SV_6SiH6TRE8GLg98h
 
 Issues not yet resolved:
 
@@ -104,7 +106,7 @@ Please see the GitHub (issue tracker) for details on open and closed issues here
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="https://github.com/aidancornelius/TfEL-Maths-Pedagogy/issues ">
+                                    <fragment content="https://github.com/tfel/TfEL-Maths-Pedagogy/issues ">
                                         <attributes>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
                                             <url key="NSLink" string="https://github.com/aidancornelius/TfEL-Maths-Pedagogy/issues"/>
@@ -131,6 +133,9 @@ Cgo
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ok.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ctm-Ke-pHs">
+                                <rect key="frame" x="542" y="23" width="42" height="42"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -904,7 +909,7 @@ support materials</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WLX-XO-VQQ" customClass="SZTextView">
-                                                    <rect key="frame" x="33" y="228" width="475" height="235"/>
+                                                    <rect key="frame" x="33" y="233" width="475" height="235"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -914,7 +919,7 @@ support materials</string>
                                                     </connections>
                                                 </textView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MtW-av-KPI" customClass="SZTextView">
-                                                    <rect key="frame" x="516" y="228" width="475" height="235"/>
+                                                    <rect key="frame" x="516" y="233" width="475" height="235"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -955,7 +960,7 @@ support materials</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVf-PL-qPu">
-                                                    <rect key="frame" x="16" y="113" width="992" height="52"/>
+                                                    <rect key="frame" x="16" y="113" width="992" height="60"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="• ">
@@ -995,14 +1000,14 @@ support materials</string>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hEs-tG-cQr">
-                                                    <rect key="frame" x="33" y="184" width="475" height="45"/>
+                                                    <rect key="frame" x="33" y="189" width="475" height="45"/>
                                                     <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sad-face.png" translatesAutoresizingMaskIntoConstraints="NO" id="HWh-Jo-gbZ">
-                                                    <rect key="frame" x="463" y="186" width="42" height="42"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thumbside.png" translatesAutoresizingMaskIntoConstraints="NO" id="HWh-Jo-gbZ">
+                                                    <rect key="frame" x="463" y="191" width="42" height="42"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNk-bZ-W97">
-                                                    <rect key="frame" x="33" y="462" width="475" height="32"/>
+                                                    <rect key="frame" x="33" y="467" width="475" height="32"/>
                                                     <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" title="What might this look like?">
                                                         <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1013,11 +1018,11 @@ support materials</string>
                                                     </connections>
                                                 </button>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Am1-WH-IUe">
-                                                    <rect key="frame" x="516" y="184" width="475" height="45"/>
+                                                    <rect key="frame" x="516" y="189" width="475" height="45"/>
                                                     <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKS-VX-hNH">
-                                                    <rect key="frame" x="46" y="184" width="409" height="45"/>
+                                                    <rect key="frame" x="46" y="189" width="409" height="45"/>
                                                     <attributedString key="attributedText">
                                                         <fragment>
                                                             <string key="content">Things that suggest this element is
@@ -1047,7 +1052,7 @@ support materials</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVk-NF-idJ">
-                                                    <rect key="frame" x="529" y="184" width="409" height="45"/>
+                                                    <rect key="frame" x="529" y="189" width="409" height="45"/>
                                                     <attributedString key="attributedText">
                                                         <fragment>
                                                             <string key="content">Things that suggest this element
@@ -1077,7 +1082,7 @@ support materials</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZ6-GA-l7N">
-                                                    <rect key="frame" x="516" y="462" width="475" height="32"/>
+                                                    <rect key="frame" x="516" y="467" width="475" height="32"/>
                                                     <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" title="What might this look like?">
                                                         <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1087,8 +1092,8 @@ support materials</string>
                                                         <segue destination="mPA-iN-tim" kind="show" id="vOg-oX-Dxr"/>
                                                     </connections>
                                                 </button>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy-face.png" translatesAutoresizingMaskIntoConstraints="NO" id="f1Y-A6-DYD">
-                                                    <rect key="frame" x="946" y="186" width="42" height="42"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thumbup.png" translatesAutoresizingMaskIntoConstraints="NO" id="f1Y-A6-DYD">
+                                                    <rect key="frame" x="946" y="191" width="42" height="42"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -1544,7 +1549,7 @@ The links below are excerpts relevant to this TfEL element.</string>
                                                     <rect key="frame" x="33" y="139" width="475" height="45"/>
                                                     <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sad-face.png" translatesAutoresizingMaskIntoConstraints="NO" id="q9B-hv-Kjf">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thumbside.png" translatesAutoresizingMaskIntoConstraints="NO" id="q9B-hv-Kjf">
                                                     <rect key="frame" x="463" y="141" width="42" height="42"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6gN-Lt-jii">
@@ -1610,7 +1615,7 @@ Evidence that suggests this  element is developed:</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy-face.png" translatesAutoresizingMaskIntoConstraints="NO" id="PhG-8l-Yhn">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thumbup.png" translatesAutoresizingMaskIntoConstraints="NO" id="PhG-8l-Yhn">
                                                     <rect key="frame" x="946" y="141" width="42" height="42"/>
                                                 </imageView>
                                                 <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9wF-G0-158">
@@ -1889,15 +1894,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         <image name="blue-tt.png" width="800" height="801"/>
         <image name="compass_bg.png" width="85" height="82"/>
         <image name="green-tt.png" width="800" height="801"/>
-        <image name="happy-face.png" width="116" height="116"/>
         <image name="neals_gs.jpg" width="91" height="32"/>
+        <image name="ok.png" width="133" height="133"/>
         <image name="red-tt.png" width="800" height="801"/>
-        <image name="sad-face.png" width="116" height="116"/>
         <image name="tfel_compass_lg.png" width="316" height="295"/>
+        <image name="thumbside.png" width="133" height="133"/>
+        <image name="thumbup.png" width="133" height="133"/>
         <image name="yellow-tt.png" width="800" height="801"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="eKb-q0-CK8"/>
-        <segue reference="Xvw-xV-gdU"/>
+        <segue reference="vOg-oX-Dxr"/>
     </inferredMetricsTieBreakers>
 </document>
