@@ -51,7 +51,7 @@ class shareData {
 					$prepared = $this->pdo->prepare($this->insert);
 					$prepared->execute(array($shareid, $createdtoken, $sharedata));
 					
-					$shareurl = "http://maths.tfel.edu.au/s/" . $shareid;
+					$shareurl = array("url"=>"https://maths.tfel.edu.au/s/" . $shareid);
 					$this->return = $shareurl;
 				}
 			} else {
@@ -77,7 +77,7 @@ class shareData {
 		if ($result) {
 			$this->contents = json_decode($result[0][4], true);
 		} else {
-			$this->contents = flase;
+			$this->contents = false;
 		}
 		
 		return $this; 

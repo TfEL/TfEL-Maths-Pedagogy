@@ -25,3 +25,11 @@ body {
 	background: rgba(88, 93, 164, 1) url("/img/sad-face@3x.png") no-repeat center right;
 	background-size: 7%;
 }
+
+pre {
+	background: #fff;
+	border: 0px;
+	font-family: "Helvetica Neue", Helvetiaca, Arial, sans-serif;
+	white-space: pre-line;
+	word-wrap: break-word;
+}

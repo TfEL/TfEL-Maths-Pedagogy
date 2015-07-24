@@ -14,7 +14,7 @@ $router = new AltoRouter();
 // Index
 $router->map( 'GET', '/', function() {
     $tmpPresentation = new tmpPresentation();
-    echo $tmpPresentation->generatePage("TfEL Maths Pedagogy", "<h4>Application Programming Interface for TMP</h4><p>Expects arguments on <code>/s/</code> or <code>/a/</code>.</p><p><strong>Here by accident?</strong><br>You probably followed a broken link to someone's shared observation. Ask them to send you the link again.</p><p><strong>Still totally lost?</strong><br>We can help you figure out where you need to go, email <code>DECD.TfEL@sa.gov.au</code>.")->page;
+    echo $tmpPresentation->generatePage("TfEL Maths Pedagogy", "<h3>TfEL Maths Pedagogy <small>Shared Reflection API</small></h3> <p>Expects arguments on <code>/s/</code> or <code>/a/</code>.</p><p><strong>Here by accident?</strong><br>You probably followed a broken link to someone's shared observation. Ask them to send you the link again.</p><p><strong>Still totally lost?</strong><br>We can help you figure out where you need to go, email <code>DECD.TfEL@sa.gov.au</code>.")->page;
 });
 
 // Addition
@@ -53,6 +53,8 @@ if( $match && is_callable( $match['target'] ) ) {
 } else {
 	// no route was matched
 	header( $_SERVER["SERVER_PROTOCOL"] . ' 404 Not Found');
+	$tmpPresentation = new tmpPresentation();
+	echo $tmpPresentation->generatePage("TfEL Maths Pedagogy", false)->page;
 }
 
 ?>

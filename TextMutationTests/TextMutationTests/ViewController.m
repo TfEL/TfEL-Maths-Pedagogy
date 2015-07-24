@@ -14,9 +14,21 @@
 
 @implementation ViewController
 
+@synthesize textView;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSAttributedString *textViewValue = textView.attributedText;
+    NSLog(@"%@", textViewValue);
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+    NSString *settingsPlistPath = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"settings.plist"];
+    
+    NSMutableArray *arr = [[NSMutableArray alloc] initWithContentsOfFile:settingsPlistPath];
+    
+    textView.attributedText = [arr objectAtIndex:0];
 }
 
 - (void)didReceiveMemoryWarning {

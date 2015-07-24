@@ -14,9 +14,18 @@
 
 @implementation webViewController
 
+@synthesize webView;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+    NSString *settingsPlistPath = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"settings.plist"];
+    
+    NSMutableArray *arr = [[NSMutableArray alloc] initWithContentsOfFile:settingsPlistPath];
+    
+    [webView loadHTMLString:[arr objectAtIndex:1] baseURL:[[NSBundle mainBundle] bundleURL]];
 }
 
 - (void)didReceiveMemoryWarning {

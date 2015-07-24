@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface settingsTableViewController : UITableViewController
+@property (weak, nonatomic) IBOutlet UITextField *stringValue;
+@property (weak, nonatomic) IBOutlet UITextField *htmlValue;
+
+- (IBAction)saveButton:(id)sender;
 
 @end
