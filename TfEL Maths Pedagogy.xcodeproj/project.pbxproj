@@ -45,6 +45,15 @@
 		124ABA831B2A765800435632 /* getDataByCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 124ABA821B2A765800435632 /* getDataByCode.m */; };
 		124ABA871B2A994400435632 /* dataCreatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124ABA861B2A994400435632 /* dataCreatorViewController.m */; };
 		124ABA891B2AA3E600435632 /* tfeluserdata.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 124ABA881B2AA3E600435632 /* tfeluserdata.sqlite */; };
+		126692BB1B65C2F000D41477 /* thumbside-blk.png in Resources */ = {isa = PBXBuildFile; fileRef = 126692B51B65C2F000D41477 /* thumbside-blk.png */; };
+		126692BC1B65C2F000D41477 /* thumbside-blk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 126692B61B65C2F000D41477 /* thumbside-blk@2x.png */; };
+		126692BD1B65C2F000D41477 /* thumbside-blk@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 126692B71B65C2F000D41477 /* thumbside-blk@3x.png */; };
+		126692BE1B65C2F000D41477 /* thumbup-blk.png in Resources */ = {isa = PBXBuildFile; fileRef = 126692B81B65C2F000D41477 /* thumbup-blk.png */; };
+		126692BF1B65C2F000D41477 /* thumbup-blk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 126692B91B65C2F000D41477 /* thumbup-blk@2x.png */; };
+		126692C01B65C2F000D41477 /* thumbup-blk@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 126692BA1B65C2F000D41477 /* thumbup-blk@3x.png */; };
+		126692C41B65C38200D41477 /* thumbdwn-blk.png in Resources */ = {isa = PBXBuildFile; fileRef = 126692C11B65C38200D41477 /* thumbdwn-blk.png */; };
+		126692C51B65C38200D41477 /* thumbdwn-blk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 126692C21B65C38200D41477 /* thumbdwn-blk@2x.png */; };
+		126692C61B65C38200D41477 /* thumbdwn-blk@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 126692C31B65C38200D41477 /* thumbdwn-blk@3x.png */; };
 		1289122B1B44DF6D00765785 /* determineDomainUIImageForReturn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1289122A1B44DF6D00765785 /* determineDomainUIImageForReturn.m */; };
 		12929A9F1B1E793900E6E029 /* domainReflectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12929A9E1B1E793900E6E029 /* domainReflectionTableViewController.m */; };
 		12929AA81B1E832E00E6E029 /* SZTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12929AA71B1E832E00E6E029 /* SZTextView.m */; };
@@ -174,6 +183,15 @@
 		124ABA851B2A994400435632 /* dataCreatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataCreatorViewController.h; sourceTree = "<group>"; };
 		124ABA861B2A994400435632 /* dataCreatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dataCreatorViewController.m; sourceTree = "<group>"; };
 		124ABA881B2AA3E600435632 /* tfeluserdata.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = tfeluserdata.sqlite; path = "TfEL Maths Pedagogy/tfeluserdata.sqlite"; sourceTree = "<group>"; };
+		126692B51B65C2F000D41477 /* thumbside-blk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbside-blk.png"; sourceTree = "<group>"; };
+		126692B61B65C2F000D41477 /* thumbside-blk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbside-blk@2x.png"; sourceTree = "<group>"; };
+		126692B71B65C2F000D41477 /* thumbside-blk@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbside-blk@3x.png"; sourceTree = "<group>"; };
+		126692B81B65C2F000D41477 /* thumbup-blk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbup-blk.png"; sourceTree = "<group>"; };
+		126692B91B65C2F000D41477 /* thumbup-blk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbup-blk@2x.png"; sourceTree = "<group>"; };
+		126692BA1B65C2F000D41477 /* thumbup-blk@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbup-blk@3x.png"; sourceTree = "<group>"; };
+		126692C11B65C38200D41477 /* thumbdwn-blk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbdwn-blk.png"; sourceTree = "<group>"; };
+		126692C21B65C38200D41477 /* thumbdwn-blk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbdwn-blk@2x.png"; sourceTree = "<group>"; };
+		126692C31B65C38200D41477 /* thumbdwn-blk@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbdwn-blk@3x.png"; sourceTree = "<group>"; };
 		128912291B44DF6D00765785 /* determineDomainUIImageForReturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = determineDomainUIImageForReturn.h; sourceTree = "<group>"; };
 		1289122A1B44DF6D00765785 /* determineDomainUIImageForReturn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = determineDomainUIImageForReturn.m; sourceTree = "<group>"; };
 		12929A9D1B1E793900E6E029 /* domainReflectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = domainReflectionTableViewController.h; sourceTree = "<group>"; };
@@ -480,6 +498,15 @@
 		12C30CD91B3B7709008A28A1 /* 08. Emotions */ = {
 			isa = PBXGroup;
 			children = (
+				126692C11B65C38200D41477 /* thumbdwn-blk.png */,
+				126692C21B65C38200D41477 /* thumbdwn-blk@2x.png */,
+				126692C31B65C38200D41477 /* thumbdwn-blk@3x.png */,
+				126692B51B65C2F000D41477 /* thumbside-blk.png */,
+				126692B61B65C2F000D41477 /* thumbside-blk@2x.png */,
+				126692B71B65C2F000D41477 /* thumbside-blk@3x.png */,
+				126692B81B65C2F000D41477 /* thumbup-blk.png */,
+				126692B91B65C2F000D41477 /* thumbup-blk@2x.png */,
+				126692BA1B65C2F000D41477 /* thumbup-blk@3x.png */,
 				12C46D871B6209CB000C8BC4 /* ok.png */,
 				12C46D881B6209CB000C8BC4 /* ok@2x.png */,
 				12C46D891B6209CB000C8BC4 /* ok@3x.png */,
@@ -851,6 +878,7 @@
 				124ABA6F1B2A5D4D00435632 /* green-tt@2x.png in Resources */,
 				12C30CC21B3A331B008A28A1 /* compass_bg.png in Resources */,
 				12C30CF91B3BA9BD008A28A1 /* 3.3.pdf in Resources */,
+				126692C61B65C38200D41477 /* thumbdwn-blk@3x.png in Resources */,
 				122727C51B1568000050768B /* TfEL-Compass-graphic_Domain-3_small-yellow@3x.png in Resources */,
 				122727C21B1568000050768B /* TfEL-Compass-graphic_Domain-2_small-yellow@3x.png in Resources */,
 				124ABA6C1B2A5D4D00435632 /* blue-tt.png in Resources */,
@@ -864,20 +892,25 @@
 				12C30CF51B3BA9BD008A28A1 /* 4.3.pdf in Resources */,
 				12C46D8C1B6209CB000C8BC4 /* ok@3x.png in Resources */,
 				12C30CF81B3BA9BD008A28A1 /* 3.4.pdf in Resources */,
+				126692C51B65C38200D41477 /* thumbdwn-blk@2x.png in Resources */,
 				124ABA621B2A56E600435632 /* DECS SATfEL FG_Cover_A4@3x.png in Resources */,
 				12C30CF61B3BA9BD008A28A1 /* 4.2.pdf in Resources */,
 				12C30D171B3BCE43008A28A1 /* 3.2_fg.pdf in Resources */,
 				124ABA611B2A56E600435632 /* DECS SATfEL FG_Cover_A4@2x.png in Resources */,
 				12C46D861B620496000C8BC4 /* thumbup@3x.png in Resources */,
 				12C46D851B620496000C8BC4 /* thumbup@2x.png in Resources */,
+				126692C01B65C2F000D41477 /* thumbup-blk@3x.png in Resources */,
+				126692BB1B65C2F000D41477 /* thumbside-blk.png in Resources */,
 				12C30D161B3BCE43008A28A1 /* 3.1_fg.pdf in Resources */,
 				12F712161B0F0A0F0059C263 /* 72.png in Resources */,
 				122727B51B1560750050768B /* tfel_compass_lg@3x.png in Resources */,
+				126692BE1B65C2F000D41477 /* thumbup-blk.png in Resources */,
 				12C30D181B3BCE43008A28A1 /* 3.3_fg.pdf in Resources */,
 				12C30CF71B3BA9BD008A28A1 /* 4.1.pdf in Resources */,
 				12C30CFB1B3BA9BD008A28A1 /* 3.1.pdf in Resources */,
 				12C30CFA1B3BA9BD008A28A1 /* 3.2.pdf in Resources */,
 				124ABA701B2A5D4D00435632 /* red-tt.png in Resources */,
+				126692BF1B65C2F000D41477 /* thumbup-blk@2x.png in Resources */,
 				12F7120F1B0F01CF0059C263 /* OE_Header.png in Resources */,
 				122727C61B1568000050768B /* TfEL-Compass-graphic_Domain-4_small-yellow.png in Resources */,
 				122727C01B1568000050768B /* TfEL-Compass-graphic_Domain-2_small-yellow.png in Resources */,
@@ -890,6 +923,7 @@
 				12C46D8A1B6209CB000C8BC4 /* ok.png in Resources */,
 				12C46D8B1B6209CB000C8BC4 /* ok@2x.png in Resources */,
 				12C30CE21B3B771E008A28A1 /* happy-face@3x.png in Resources */,
+				126692BD1B65C2F000D41477 /* thumbside-blk@3x.png in Resources */,
 				122727C11B1568000050768B /* TfEL-Compass-graphic_Domain-2_small-yellow@2x.png in Resources */,
 				124ABA561B2935B100435632 /* backImage.png in Resources */,
 				12C30CC31B3A331B008A28A1 /* compass_bg@2x.png in Resources */,
@@ -898,10 +932,12 @@
 				12C30CE11B3B771E008A28A1 /* happy-face@2x.png in Resources */,
 				124ABA6E1B2A5D4D00435632 /* green-tt.png in Resources */,
 				124ABA721B2A5D4D00435632 /* yellow-tt.png in Resources */,
+				126692C41B65C38200D41477 /* thumbdwn-blk.png in Resources */,
 				12C30CFE1B3BA9BD008A28A1 /* 2.2.pdf in Resources */,
 				12C30D1D1B3BCE43008A28A1 /* 4.4_fg.pdf in Resources */,
 				12F711E31B0EF4040059C263 /* Images.xcassets in Resources */,
 				124ABA571B2935B100435632 /* backImage@2x.png in Resources */,
+				126692BC1B65C2F000D41477 /* thumbside-blk@2x.png in Resources */,
 				122727B41B1560750050768B /* tfel_compass_lg@2x.png in Resources */,
 				122727C41B1568000050768B /* TfEL-Compass-graphic_Domain-3_small-yellow@2x.png in Resources */,
 				122727C81B1568000050768B /* TfEL-Compass-graphic_Domain-4_small-yellow@3x.png in Resources */,

@@ -17,18 +17,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qxc-su-Wwm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qxc-su-Wwm">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="88"/>
                                 <color key="backgroundColor" red="0.34901960780000002" green="0.26274509800000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="77U-uE-beq"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TfEL Maths Pedagogy Beta" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmw-5J-hE3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TfEL Maths Pedagogy Beta" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmw-5J-hE3">
                                 <rect key="frame" x="192" y="29" width="216" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="Kwe-dd-5Kk"/>
+                                    <constraint firstAttribute="height" constant="30" id="Rrg-YM-bfv"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4S5-n9-AOw">
-                                <rect key="frame" x="16" y="96" width="568" height="684.5"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4S5-n9-AOw">
+                                <rect key="frame" x="16" y="96" width="568" height="484"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment content="TfEL Maths Pedagogy is still in the key stages of development">
@@ -133,14 +140,27 @@ Cgo
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ok.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ctm-Ke-pHs">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ok.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ctm-Ke-pHs">
                                 <rect key="frame" x="542" y="23" width="42" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="V27-WL-YTD"/>
+                                    <constraint firstAttribute="height" constant="42" id="iXK-fI-0ID"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="4S5-n9-AOw" firstAttribute="trailing" secondItem="Ctm-Ke-pHs" secondAttribute="trailing" id="0ta-q2-aPY"/>
                             <constraint firstItem="4S5-n9-AOw" firstAttribute="top" secondItem="qxc-su-Wwm" secondAttribute="bottom" constant="8" id="4Le-Bl-yF0"/>
+                            <constraint firstItem="qxc-su-Wwm" firstAttribute="top" secondItem="cOO-nr-kjb" secondAttribute="top" id="9O1-KE-VTA"/>
                             <constraint firstItem="oyG-pw-NlQ" firstAttribute="top" secondItem="4S5-n9-AOw" secondAttribute="bottom" constant="20" id="BbD-ir-aLA"/>
+                            <constraint firstItem="qxc-su-Wwm" firstAttribute="leading" secondItem="cOO-nr-kjb" secondAttribute="leading" id="Ega-HV-Hds"/>
+                            <constraint firstItem="qxc-su-Wwm" firstAttribute="centerY" secondItem="Ctm-Ke-pHs" secondAttribute="centerY" id="K27-r2-WRK"/>
+                            <constraint firstItem="qxc-su-Wwm" firstAttribute="centerX" secondItem="4S5-n9-AOw" secondAttribute="centerX" id="YDT-87-aWF"/>
+                            <constraint firstItem="qxc-su-Wwm" firstAttribute="centerY" secondItem="kmw-5J-hE3" secondAttribute="centerY" id="fJA-Ps-Vox"/>
+                            <constraint firstItem="qxc-su-Wwm" firstAttribute="centerX" secondItem="kmw-5J-hE3" secondAttribute="centerX" id="iks-hG-CGd"/>
+                            <constraint firstAttribute="trailing" secondItem="qxc-su-Wwm" secondAttribute="trailing" id="qmr-O9-jtj"/>
+                            <constraint firstItem="4S5-n9-AOw" firstAttribute="leading" secondItem="cOO-nr-kjb" secondAttribute="leadingMargin" id="vFJ-ux-C4E"/>
                         </constraints>
                     </view>
                     <value key="contentSizeForViewInPopover" type="size" width="600" height="500"/>
@@ -283,12 +303,6 @@ your Mathematics Classroom</string>
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SINGLE RUNTIME VERSION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3v-Y4-yVD">
-                                <rect key="frame" x="788" y="739" width="220" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1T9-Tf-Usw">
                                 <rect key="frame" x="367" y="174" width="290" height="30"/>
                                 <constraints>
@@ -334,13 +348,11 @@ your Mathematics Classroom</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="1T9-Tf-Usw" firstAttribute="leading" secondItem="FIZ-vg-wjs" secondAttribute="leading" constant="4" id="7cZ-1i-ARU"/>
-                            <constraint firstItem="b3v-Y4-yVD" firstAttribute="trailing" secondItem="bwz-Pb-mg4" secondAttribute="trailingMargin" id="8f8-Rf-shi"/>
                             <constraint firstItem="FIZ-vg-wjs" firstAttribute="centerX" secondItem="3n1-yP-iYI" secondAttribute="centerX" constant="-4" id="9cH-Wl-VDo"/>
                             <constraint firstItem="whl-fu-erI" firstAttribute="top" secondItem="O7Y-Gx-P8t" secondAttribute="bottom" constant="55" id="BBO-Vz-Xkh"/>
                             <constraint firstItem="FIZ-vg-wjs" firstAttribute="trailing" secondItem="1T9-Tf-Usw" secondAttribute="trailing" constant="-4" id="JGu-EH-8Zg"/>
                             <constraint firstItem="whl-fu-erI" firstAttribute="centerX" secondItem="1T9-Tf-Usw" secondAttribute="centerX" id="JJR-kf-jgJ"/>
                             <constraint firstItem="1T9-Tf-Usw" firstAttribute="top" secondItem="whl-fu-erI" secondAttribute="bottom" constant="24" id="Jxo-4J-kcc"/>
-                            <constraint firstItem="kFF-Ih-41t" firstAttribute="top" secondItem="b3v-Y4-yVD" secondAttribute="bottom" constant="8" id="LVK-gW-Atz"/>
                             <constraint firstItem="1T9-Tf-Usw" firstAttribute="top" secondItem="O7Y-Gx-P8t" secondAttribute="bottom" constant="110" id="PdA-ZN-M8r"/>
                             <constraint firstItem="3n1-yP-iYI" firstAttribute="top" secondItem="FIZ-vg-wjs" secondAttribute="bottom" constant="-75" id="T3u-Fb-dJb"/>
                             <constraint firstItem="FIZ-vg-wjs" firstAttribute="top" secondItem="1T9-Tf-Usw" secondAttribute="bottom" constant="81" id="ghr-eQ-faa"/>
@@ -959,44 +971,12 @@ support materials</string>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVf-PL-qPu">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVf-PL-qPu">
                                                     <rect key="frame" x="16" y="113" width="992" height="60"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="• ">
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="Do all my students have a wide range of peers">
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment>
-                                                            <string key="content"> with diverse strengths that they seek out to learn maths from and with?
-• </string>
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="Do I embed collaborative maths activities">
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content=" where all learners share thinking, clarify ideas and inspire each others maths learning?">
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <string key="text">• Do all my students have a wide range of peers with diverse strengths that they seek out to learn maths from and with?
+• Do I embed collaborative maths activities where all learners share thinking, clarify ideas and inspire each others maths learning?</string>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hEs-tG-cQr">
@@ -1099,7 +1079,7 @@ support materials</string>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" rowHeight="89" id="UBG-Wi-mrU">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" rowHeight="100" id="UBG-Wi-mrU">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UBG-Wi-mrU" id="Ssi-Yi-Ll6">
@@ -1108,6 +1088,9 @@ support materials</string>
                                                 <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="S99-x8-Z4n">
                                                     <rect key="frame" x="35" y="43" width="604" height="31"/>
                                                     <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <connections>
+                                                        <action selector="sliderValueChanged:" destination="ZDM-P1-4nj" eventType="valueChanged" id="5yn-CA-S93"/>
+                                                    </connections>
                                                 </slider>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Use the slider to note your balance judgement about how well you are currently enacting this element" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRN-Sh-9Ir">
                                                     <rect key="frame" x="37" y="14" width="600" height="21"/>
@@ -1723,8 +1706,8 @@ Acceptable for use on Apple iPad only. Please see /license on https://maths.tfel
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OqI-8b-xhI" id="x7w-He-ueG">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="neals_gs.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="u6q-dL-zfZ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="667" height="84.5"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neals_gs.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="u6q-dL-zfZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="667" height="43.5"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>

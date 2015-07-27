@@ -21,9 +21,15 @@
 
 @implementation domainDetailTableViewController
 
-@synthesize posStudentOutlet, negStudentOutlet, posTeacherOutlet, negTeacherOutlet, subdomainTitleOutlet, domainSubtitleOutlet, domainTitleOutlet, domainTitleSubdomainTitleOutlet, compassImageOutlet, negStudentOutletWebView, negTeacherOutletWebView, posStudentOutletWebView, posTeacherOutletWebView;
+@synthesize subdomainTitleOutlet, domainSubtitleOutlet, domainTitleOutlet, domainTitleSubdomainTitleOutlet, compassImageOutlet, negStudentOutletWebView, negTeacherOutletWebView, posStudentOutletWebView, posTeacherOutletWebView;
 
 NSMutableDictionary *detailViewData;
+
+NSData *posStuViewObj;
+NSData *posTeaViewObj;
+NSData *negStuViewObj;
+NSData *negTeaViewObj;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -64,15 +70,66 @@ NSMutableDictionary *detailViewData;
     [self loadDocument:[detailViewData objectForKey:@"neg_teacher"] inView:negTeacherOutletWebView];
     [self loadDocument:[detailViewData objectForKey:@"neg_student"] inView:negStudentOutletWebView];
     
+    posStuViewObj = [posStudentOutletWebView valueForKey:@"layer"];
+    posTeaViewObj = [posTeacherOutletWebView valueForKey:@"layer"];
+    negStuViewObj = [negStudentOutletWebView valueForKey:@"layer"];
+    negTeaViewObj = [negTeacherOutletWebView valueForKey:@"layer"];
+    
+    [posStudentOutletWebView addObserver:self forKeyPath:@"scrollView.contentOffset" options:NSKeyValueObservingOptionNew context:NULL];
+    [negStudentOutletWebView addObserver:self forKeyPath:@"scrollView.contentOffset" options:NSKeyValueObservingOptionNew context:NULL];
+    [posTeacherOutletWebView addObserver:self forKeyPath:@"scrollView.contentOffset" options:NSKeyValueObservingOptionNew context:NULL];
+    [negTeacherOutletWebView addObserver:self forKeyPath:@"scrollView.contentOffset" options:NSKeyValueObservingOptionNew context:NULL];
+}
+
+- (void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    if([object isKindOfClass:[UIWebView class]]
+       && [keyPath isEqualToString:@"scrollView.contentOffset"]) {
+        
+        static BOOL isChanging = NO;
+        
+        CGPoint offset = [[change valueForKey:NSKeyValueChangeNewKey] CGPointValue];
+        
+        if ([object valueForKey:@"layer"] == posStuViewObj && !CGPointEqualToPoint(offset, CGPointZero) && isChanging == NO) {
+            isChanging = YES;
+            negStudentOutletWebView.scrollView.contentOffset = offset;
+            isChanging = NO;
+        }
+        if ([object valueForKey:@"layer"] == negStuViewObj && !CGPointEqualToPoint(offset, CGPointZero) && isChanging == NO) {
+            isChanging = YES;
+            posStudentOutletWebView.scrollView.contentOffset = offset;
+            isChanging = NO;
+        }
+        
+        if ([object valueForKey:@"layer"] == posTeaViewObj && !CGPointEqualToPoint(offset, CGPointZero) && isChanging == NO) {
+            isChanging = YES;
+            negTeacherOutletWebView.scrollView.contentOffset = offset;
+            isChanging = NO;
+        }
+        if ([object valueForKey:@"layer"] == negTeaViewObj && !CGPointEqualToPoint(offset, CGPointZero) && isChanging == NO) {
+            isChanging = YES;
+            posTeacherOutletWebView.scrollView.contentOffset = offset;
+            isChanging = NO;
+        }
+    }
 }
 
 - (void) viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
+    
+    [posStudentOutletWebView removeObserver:self forKeyPath:@"scrollView.contentOffset"];
+    [negStudentOutletWebView removeObserver:self forKeyPath:@"scrollView.contentOffset"];
+    [posTeacherOutletWebView removeObserver:self forKeyPath:@"scrollView.contentOffset"];
+    [negTeacherOutletWebView removeObserver:self forKeyPath:@"scrollView.contentOffset"];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+    [posStudentOutletWebView removeObserver:self forKeyPath:@"scrollView.contentOffset"];
+    [negStudentOutletWebView removeObserver:self forKeyPath:@"scrollView.contentOffset"];
+    [posTeacherOutletWebView removeObserver:self forKeyPath:@"scrollView.contentOffset"];
+    [negTeacherOutletWebView removeObserver:self forKeyPath:@"scrollView.contentOffset"];
 }
 
 -(void)loadDocument:(NSString*)documentString inView:(UIWebView*)webView {

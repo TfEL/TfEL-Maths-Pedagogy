@@ -68,6 +68,15 @@ NSString *apiKey = @"f2e155da-849cdf";
     }
     NSMutableDictionary *domainDetailForCode = [determineDetailForCode domainDetailForCode:AppDelegate.nextDomain];
     [self populateViewWithData:domainDetailForCode : userData];
+    
+    // Set slider image for recall...
+    if (sliderOutlet.value > 0.66) {
+        [sliderOutlet setThumbImage:[[UIImage imageNamed:@"thumbup-blk.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 17, 0, 0)] forState:UIControlStateNormal];
+    } else if (sliderOutlet.value > 0.33) {
+        [sliderOutlet setThumbImage:[[UIImage imageNamed:@"thumbside-blk.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 17, 0, 0)] forState:UIControlStateNormal];
+    } else {
+        [sliderOutlet setThumbImage:[[UIImage imageNamed:@"thumbdwn-blk.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 17, 0, 0)] forState:UIControlStateNormal];
+    }
 }
 
 - (void) populateViewWithData: (NSMutableDictionary *)dataToUse :(NSMutableDictionary *)userData {
@@ -139,7 +148,18 @@ NSString *apiKey = @"f2e155da-849cdf";
     
     iwdTextOutlet.placeholder = @"Note student and teacher actions that suggest that this elemet is well developed...";
     iwdTextOutlet.placeholderTextColor = [UIColor lightGrayColor];
-    
+
+    [sliderOutlet setThumbImage:[[UIImage imageNamed:@"thumbside-blk.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 17, 0, 0)] forState:UIControlStateNormal];
+}
+
+- (IBAction) sliderValueChanged:(UISlider *)sender {
+    if (sliderOutlet.value > 0.66) {
+        [sliderOutlet setThumbImage:[[UIImage imageNamed:@"thumbup-blk.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 17, 0, 0)] forState:UIControlStateNormal];
+    } else if (sliderOutlet.value > 0.33) {
+        [sliderOutlet setThumbImage:[[UIImage imageNamed:@"thumbside-blk.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 17, 0, 0)] forState:UIControlStateNormal];
+    } else {
+        [sliderOutlet setThumbImage:[[UIImage imageNamed:@"thumbdwn-blk.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 17, 0, 0)] forState:UIControlStateNormal];
+    }
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
