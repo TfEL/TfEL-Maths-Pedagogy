@@ -1,1 +1,3 @@
 web/vendor/* linguist-vendored=true
+web/vendor/twbs/bootstrap/dist/css/* linguist-vendored=true
+
