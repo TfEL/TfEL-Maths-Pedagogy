@@ -1,3 +1,4 @@
-web/vendor/* linguist-vendored=true
-web/vendor/twbs/bootstrap/dist/css/* linguist-vendored=true
+web/vendor/* linguist-vendored
+web/vendor/twbs/bootstrap/dist/css/* linguist-vendored
 web/vendor/twbs/bootstrap/docs/* linguist-documentation 
+TfEL[[:space:]]Maths[[:space:]]Pedagogy/phpliteadmin.php linguist-vendored
