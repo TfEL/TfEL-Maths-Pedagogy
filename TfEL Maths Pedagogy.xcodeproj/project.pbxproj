@@ -54,6 +54,7 @@
 		126692C41B65C38200D41477 /* thumbdwn-blk.png in Resources */ = {isa = PBXBuildFile; fileRef = 126692C11B65C38200D41477 /* thumbdwn-blk.png */; };
 		126692C51B65C38200D41477 /* thumbdwn-blk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 126692C21B65C38200D41477 /* thumbdwn-blk@2x.png */; };
 		126692C61B65C38200D41477 /* thumbdwn-blk@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 126692C31B65C38200D41477 /* thumbdwn-blk@3x.png */; };
+		127AE57F1B6B11880054BDAC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 127AE57D1B6B11880054BDAC /* Model.xcdatamodeld */; };
 		1289122B1B44DF6D00765785 /* determineDomainUIImageForReturn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1289122A1B44DF6D00765785 /* determineDomainUIImageForReturn.m */; };
 		12929A9F1B1E793900E6E029 /* domainReflectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12929A9E1B1E793900E6E029 /* domainReflectionTableViewController.m */; };
 		12929AA81B1E832E00E6E029 /* SZTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12929AA71B1E832E00E6E029 /* SZTextView.m */; };
@@ -192,6 +193,7 @@
 		126692C11B65C38200D41477 /* thumbdwn-blk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbdwn-blk.png"; sourceTree = "<group>"; };
 		126692C21B65C38200D41477 /* thumbdwn-blk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbdwn-blk@2x.png"; sourceTree = "<group>"; };
 		126692C31B65C38200D41477 /* thumbdwn-blk@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbdwn-blk@3x.png"; sourceTree = "<group>"; };
+		127AE57E1B6B11880054BDAC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		128912291B44DF6D00765785 /* determineDomainUIImageForReturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = determineDomainUIImageForReturn.h; sourceTree = "<group>"; };
 		1289122A1B44DF6D00765785 /* determineDomainUIImageForReturn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = determineDomainUIImageForReturn.m; sourceTree = "<group>"; };
 		12929A9D1B1E793900E6E029 /* domainReflectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = domainReflectionTableViewController.h; sourceTree = "<group>"; };
@@ -541,6 +543,7 @@
 			children = (
 				124ABA881B2AA3E600435632 /* tfeluserdata.sqlite */,
 				12929ACF1B1E90DA00E6E029 /* tfelmped.sqlite */,
+				127AE57D1B6B11880054BDAC /* Model.xcdatamodeld */,
 			);
 			name = "Data Sets";
 			sourceTree = "<group>";
@@ -1008,6 +1011,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				124ABA831B2A765800435632 /* getDataByCode.m in Sources */,
+				127AE57F1B6B11880054BDAC /* Model.xcdatamodeld in Sources */,
 				12F711DB1B0EF4030059C263 /* AppDelegate.m in Sources */,
 				12C30CD01B3A4F64008A28A1 /* resourceViewController.m in Sources */,
 				12F712071B0EFCB80059C263 /* navigationViewController.m in Sources */,
@@ -1249,6 +1253,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		127AE57D1B6B11880054BDAC /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				127AE57E1B6B11880054BDAC /* Model.xcdatamodel */,
+			);
+			currentVersion = 127AE57E1B6B11880054BDAC /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 12F711CA1B0EF4030059C263 /* Project object */;
 }
