@@ -44,6 +44,8 @@ $router->map( 'GET', '/s/[i:shareid]', function($shareid) {
     echo $tmpPresentation->generatePage("TfEL Maths - Shared URL", $return->contents)->page;
 });
 
+$router->map( 'GET', '/get', function() { header("Location: https://itunes.apple.com/us/app/tfel-maths-pedagogy-audit/id1011669675?ls=1&mt=8"); });
+
 // Router features
 $match = $router->match();
 
