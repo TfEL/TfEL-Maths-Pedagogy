@@ -31,14 +31,18 @@
     createAccountButton.layer.cornerRadius = 3;
     createAccountButton.layer.borderWidth = 1;
     createAccountButton.layer.borderColor = getStartedButton.tintColor.CGColor;
-
+    
+    /*
+    
+     PRAGMA: Development mode
+     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     
     UIViewController *controller = [storyboard instantiateViewControllerWithIdentifier:@"beta"];
     
     UIPopoverController *popup = [[UIPopoverController alloc] initWithContentViewController:controller];
     
-    [popup presentPopoverFromRect:CGRectMake(CGRectGetMidX([self.view bounds]), CGRectGetMidY([self.view bounds])-50, 0, 0)  inView:self.view permittedArrowDirections:0 animated:YES];
+    [popup presentPopoverFromRect:CGRectMake(CGRectGetMidX([self.view bounds]), CGRectGetMidY([self.view bounds])-50, 0, 0)  inView:self.view permittedArrowDirections:0 animated:YES]; */
 }
 
 - (void)viewWillAppear:(BOOL)animated {

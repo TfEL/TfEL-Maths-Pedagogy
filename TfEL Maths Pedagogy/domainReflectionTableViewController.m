@@ -90,6 +90,8 @@ NSString *apiKey = @"f2e155da-849cdf";
     [domainImage setImage:[UIImage imageNamed:[determineDomainUIImageForReturn imageToWrapInImageView:[dataToUse valueForKey:@"domainTitle"]]]];
     subdomainGuidingQuestions.text = [NSString stringWithFormat:@"%@ %@ - Guiding Questions:", [dataToUse valueForKey:@"code"], [dataToUse valueForKey:@"subdomainTitle"]];
     
+    [subdomainBody setFont:[UIFont systemFontOfSize:15]];
+    
     if (shouldPopulateNydIwd == YES) {
         // The person doesn't need to do any more reflection...
         myPastEntries.hidden = YES;
@@ -150,6 +152,8 @@ NSString *apiKey = @"f2e155da-849cdf";
     iwdTextOutlet.placeholderTextColor = [UIColor lightGrayColor];
 
     [sliderOutlet setThumbImage:[[UIImage imageNamed:@"thumbside-blk.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 17, 0, 0)] forState:UIControlStateNormal];
+    
+    [subdomainBody setFont:[UIFont systemFontOfSize:15]];
 }
 
 - (IBAction) sliderValueChanged:(UISlider *)sender {
