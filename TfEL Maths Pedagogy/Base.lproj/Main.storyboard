@@ -1423,7 +1423,7 @@ The links below are excerpts relevant to this TfEL element.</string>
                                                     <animations/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxO-R4-E0G">
-                                                    <rect key="frame" x="609" y="28" width="159" height="30"/>
+                                                    <rect key="frame" x="609" y="28" width="176" height="30"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="TfEL Framework Guide »">
@@ -1495,7 +1495,7 @@ The links below are excerpts relevant to this TfEL element.</string>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXa-13-14C">
-                                                    <rect key="frame" x="244" y="134" width="238" height="30"/>
+                                                    <rect key="frame" x="244" y="134" width="244" height="30"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="From Information to Understanding »">
