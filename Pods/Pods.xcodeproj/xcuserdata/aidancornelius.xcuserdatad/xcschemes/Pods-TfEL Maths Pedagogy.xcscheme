@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F08CBD15268BEED9051551F0"
+               BlueprintIdentifier = "F6AF691A471040ABF93D0DE8"
                BuildableName = "libPods-TfEL Maths Pedagogy.a"
                BlueprintName = "Pods-TfEL Maths Pedagogy"
                ReferencedContainer = "container:Pods.xcodeproj">

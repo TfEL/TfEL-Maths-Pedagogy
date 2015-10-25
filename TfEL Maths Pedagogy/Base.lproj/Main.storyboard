@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aO0-Rm-Hdg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aO0-Rm-Hdg">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -19,6 +20,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qxc-su-Wwm">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="88"/>
+                                <animations/>
                                 <color key="backgroundColor" red="0.34901960780000002" green="0.26274509800000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="88" id="77U-uE-beq"/>
@@ -26,6 +28,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TfEL Maths Pedagogy Beta" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmw-5J-hE3">
                                 <rect key="frame" x="192" y="29" width="216" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="216" id="Kwe-dd-5Kk"/>
                                     <constraint firstAttribute="height" constant="30" id="Rrg-YM-bfv"/>
@@ -34,8 +37,9 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4S5-n9-AOw">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4S5-n9-AOw">
                                 <rect key="frame" x="16" y="96" width="568" height="484"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment content="TfEL Maths Pedagogy is still in the key stages of development">
@@ -140,14 +144,16 @@ Cgo
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ok.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ctm-Ke-pHs">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ok.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ctm-Ke-pHs">
                                 <rect key="frame" x="542" y="23" width="42" height="42"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="V27-WL-YTD"/>
                                     <constraint firstAttribute="height" constant="42" id="iXK-fI-0ID"/>
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="4S5-n9-AOw" firstAttribute="trailing" secondItem="Ctm-Ke-pHs" secondAttribute="trailing" id="0ta-q2-aPY"/>
@@ -183,12 +189,14 @@ Cgo
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="72@2x-152.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZUS-vn-4P8">
                                 <rect key="frame" x="0.0" y="696" width="72" height="72"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="72" id="LA3-Am-XEu"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mathematics Pedagogy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chy-of-ZBF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mathematics Pedagogy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chy-of-ZBF">
                                 <rect key="frame" x="421" y="195" width="182" height="21"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="GxR-VZ-kK6"/>
                                 </constraints>
@@ -198,6 +206,7 @@ Cgo
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7FU-uC-oAF">
                                 <rect key="frame" x="333" y="271" width="358" height="65"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="Hfd-Ny-cM8"/>
                                     <constraint firstAttribute="width" constant="358" id="bbV-F9-iGk"/>
@@ -210,12 +219,14 @@ your Mathematics Classroom</string>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tfel_compass_lg.png" translatesAutoresizingMaskIntoConstraints="NO" id="V4N-0z-VE8">
                                 <rect key="frame" x="382" y="353" width="264" height="247"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="264" id="Cfc-2s-gJ7"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audit to Action" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6i3-Cb-kg9">
                                 <rect key="frame" x="337" y="142" width="350" height="45"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="cCy-hq-y0R"/>
                                     <constraint firstAttribute="height" constant="45" id="idK-17-Q28"/>
@@ -226,6 +237,7 @@ your Mathematics Classroom</string>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyL-XC-kIM">
                                 <rect key="frame" x="387" y="627" width="250" height="45"/>
+                                <animations/>
                                 <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Whs-l1-U2v"/>
@@ -243,6 +255,7 @@ your Mathematics Classroom</string>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V85-pF-ihY">
                                 <rect key="frame" x="387" y="680" width="250" height="45"/>
+                                <animations/>
                                 <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="FGp-sH-SSQ"/>
@@ -259,6 +272,7 @@ your Mathematics Classroom</string>
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="V4N-0z-VE8" firstAttribute="top" secondItem="7FU-uC-oAF" secondAttribute="bottom" constant="17" id="25y-eg-1cL"/>
@@ -305,6 +319,7 @@ your Mathematics Classroom</string>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1T9-Tf-Usw">
                                 <rect key="frame" x="367" y="174" width="290" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="290" id="cEr-oZ-gBV"/>
                                     <constraint firstAttribute="height" constant="30" id="cPv-gG-qDf"/>
@@ -314,6 +329,7 @@ your Mathematics Classroom</string>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3n1-yP-iYI">
                                 <rect key="frame" x="422" y="240" width="180" height="35"/>
+                                <animations/>
                                 <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="rNB-Ec-GCa"/>
@@ -329,6 +345,7 @@ your Mathematics Classroom</string>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To begin, tell us your first name." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whl-fu-erI">
                                 <rect key="frame" x="371" y="119" width="282" height="31"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="282" id="Vaw-ry-7C4"/>
                                 </constraints>
@@ -338,6 +355,7 @@ your Mathematics Classroom</string>
                             </label>
                             <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data Set To Copy" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FIZ-vg-wjs">
                                 <rect key="frame" x="363" y="285" width="290" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="LZE-Sv-Xva"/>
                                 </constraints>
@@ -345,6 +363,7 @@ your Mathematics Classroom</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="1T9-Tf-Usw" firstAttribute="leading" secondItem="FIZ-vg-wjs" secondAttribute="leading" constant="4" id="7cZ-1i-ARU"/>
@@ -377,40 +396,53 @@ your Mathematics Classroom</string>
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="zkS-a8-JxQ">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection headerTitle="TfEL Maths" id="ueG-ZM-v6x">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="I7i-rs-9vh" rowHeight="50" style="IBUITableViewCellStyleDefault" id="8b9-r8-e77">
+                                        <rect key="frame" x="0.0" y="49.5" width="667" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8b9-r8-e77" id="6N6-gO-dlS">
+                                            <rect key="frame" x="0.0" y="0.0" width="631.5" height="49.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Home Screen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I7i-rs-9vh">
+                                                    <rect key="frame" x="17.5" y="0.0" width="614" height="49.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                         <connections>
                                             <segue destination="aO0-Rm-Hdg" kind="show" id="JpY-hv-Bmv"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="fX1-Ws-nqR" rowHeight="50" style="IBUITableViewCellStyleDefault" id="c8G-nZ-Pgj">
+                                        <rect key="frame" x="0.0" y="99.5" width="667" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c8G-nZ-Pgj" id="bFC-YH-ymN">
+                                            <rect key="frame" x="0.0" y="0.0" width="631.5" height="49.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="About" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fX1-Ws-nqR">
+                                                    <rect key="frame" x="17.5" y="0.0" width="614" height="49.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                         <connections>
                                             <segue destination="b4P-cl-G0b" kind="popoverPresentation" popoverAnchorView="c8G-nZ-Pgj" id="4Tq-AE-Soh">
                                                 <popoverArrowDirection key="popoverArrowDirection" left="YES"/>
@@ -438,10 +470,12 @@ your Mathematics Classroom</string>
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="9xw-gs-pDE">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XgB-Hr-0Hk">
-                            <rect key="frame" x="0.0" y="-21" width="1024" height="44"/>
+                            <rect key="frame" x="0.0" y="844" width="1024" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -450,21 +484,26 @@ your Mathematics Classroom</string>
                             <tableViewSection id="MpY-dq-cEK">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="230" id="BPs-1N-zQa">
+                                        <rect key="frame" x="0.0" y="64" width="1024" height="230"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BPs-1N-zQa" id="RO2-V4-ImX">
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="229.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TfEL-Compass-graphic_Domain-2_small-yellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="fgq-Qr-JCr">
                                                     <rect key="frame" x="8" y="79" width="129" height="119"/>
+                                                    <animations/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DOMAIN 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rxz-dU-Mi9">
                                                     <rect key="frame" x="158" y="95" width="133" height="26"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LjZ-iH-eC1">
                                                     <rect key="frame" x="158" y="129" width="162" height="53"/>
+                                                    <animations/>
                                                     <string key="text">Create safe conditions
 for rigorous mathematics
 learning</string>
@@ -474,15 +513,18 @@ learning</string>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DOMAIN 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4L-KP-MMO">
                                                     <rect key="frame" x="854" y="95" width="133" height="29"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TfEL-Compass-graphic_Domain-4_small-yellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="e3w-8n-JjY">
                                                     <rect key="frame" x="712" y="80" width="129" height="119"/>
+                                                    <animations/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R60-Ae-fWV">
                                                     <rect key="frame" x="854" y="132" width="162" height="53"/>
+                                                    <animations/>
                                                     <string key="text">Personalise and connect
 mathematics learning</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -491,15 +533,18 @@ mathematics learning</string>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TfEL-Compass-graphic_Domain-3_small-yellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="TPA-6Z-Dh1">
                                                     <rect key="frame" x="356" y="82" width="129" height="119"/>
+                                                    <animations/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DOMAIN 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZW-Xe-ftG">
                                                     <rect key="frame" x="506" y="98" width="133" height="29"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEO-P6-9xw">
                                                     <rect key="frame" x="506" y="132" width="162" height="53"/>
+                                                    <animations/>
                                                     <string key="text">Develop expert
 mathematics learners</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -508,38 +553,47 @@ mathematics learners</string>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a TfEL element you are interested in exploring." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jac-uF-UGP">
                                                     <rect key="frame" x="23" y="24" width="587" height="29"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="110" id="TlC-Po-wos">
+                                        <rect key="frame" x="0.0" y="294" width="1024" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TlC-Po-wos" id="ynO-hU-Wld">
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="109.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPB-yB-4ba">
                                                     <rect key="frame" x="16" y="42" width="34" height="29"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3.1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfb-uB-8sw">
                                                     <rect key="frame" x="381" y="42" width="34" height="29"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4.1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98P-Tg-SEG">
                                                     <rect key="frame" x="731" y="42" width="34" height="29"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZR-Jn-l4p">
                                                     <rect key="frame" x="51" y="30" width="229" height="53"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="Develop democratic relationships">
                                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -552,6 +606,7 @@ mathematics learners</string>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lTh-G1-KMV">
                                                     <rect key="frame" x="417" y="30" width="229" height="53"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="Teach teachers how to learn">
                                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -564,6 +619,7 @@ mathematics learners</string>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rq-9W-I8Q">
                                                     <rect key="frame" x="767" y="30" width="229" height="53"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="Build on learners' understandings">
                                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -575,33 +631,41 @@ mathematics learners</string>
                                                     </connections>
                                                 </button>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="110" id="jZs-rI-A3D">
+                                        <rect key="frame" x="0.0" y="404" width="1024" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jZs-rI-A3D" id="mWV-3s-nay">
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="109.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9a-dB-vMo">
-                                                    <rect key="frame" x="16" y="42" width="34" height="29"/>
+                                                    <rect key="frame" x="16" y="42" width="36" height="29"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3.2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZO-DI-HNJ">
-                                                    <rect key="frame" x="381" y="42" width="34" height="29"/>
+                                                    <rect key="frame" x="381" y="42" width="38" height="29"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4.2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7HB-JV-o09">
-                                                    <rect key="frame" x="731" y="42" width="34" height="29"/>
+                                                    <rect key="frame" x="731" y="42" width="38" height="29"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vV4-zn-skm">
                                                     <rect key="frame" x="52" y="30" width="229" height="53"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="Build a community of learners">
                                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -614,6 +678,7 @@ mathematics learners</string>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="aeJ-qX-ubg">
                                                     <rect key="frame" x="432" y="30" width="229" height="53"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="Foster deep understanding and skillful action">
                                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -626,6 +691,7 @@ mathematics learners</string>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="X4e-KI-2gF">
                                                     <rect key="frame" x="769" y="30" width="229" height="53"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal">
                                                         <string key="title">Connect learning to learner's lives
@@ -639,33 +705,41 @@ and aspirations</string>
                                                     </connections>
                                                 </button>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="110" id="V6A-Sq-xQ1">
+                                        <rect key="frame" x="0.0" y="514" width="1024" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V6A-Sq-xQ1" id="xFQ-ep-Pp6">
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="109.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdS-fG-Qf1">
-                                                    <rect key="frame" x="16" y="42" width="34" height="29"/>
+                                                    <rect key="frame" x="16" y="42" width="38" height="29"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3.3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SjC-UC-yQb">
-                                                    <rect key="frame" x="381" y="42" width="34" height="29"/>
+                                                    <rect key="frame" x="381" y="42" width="38" height="29"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4.3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6t-mX-lhX">
-                                                    <rect key="frame" x="731" y="42" width="34" height="29"/>
+                                                    <rect key="frame" x="731" y="42" width="38" height="29"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zwm-cG-GQB">
                                                     <rect key="frame" x="58" y="30" width="229" height="53"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="Negotiate learning">
                                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -678,6 +752,7 @@ and aspirations</string>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="iDs-Ck-jvp">
                                                     <rect key="frame" x="433" y="30" width="249" height="53"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="Explore the construction of knowledge">
                                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -690,6 +765,7 @@ and aspirations</string>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9bD-HL-fGD">
                                                     <rect key="frame" x="773" y="30" width="249" height="53"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal">
                                                         <string key="title">Apply and assess learning in 
@@ -703,33 +779,41 @@ authentic contexts</string>
                                                     </connections>
                                                 </button>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="110" id="gY8-wb-xmn">
+                                        <rect key="frame" x="0.0" y="624" width="1024" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gY8-wb-xmn" id="vE1-gs-qNZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="109.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YaB-m4-SD7">
-                                                    <rect key="frame" x="16" y="42" width="34" height="29"/>
+                                                    <rect key="frame" x="16" y="42" width="38" height="29"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3.4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqy-Ns-1le">
-                                                    <rect key="frame" x="381" y="42" width="34" height="29"/>
+                                                    <rect key="frame" x="381" y="42" width="38" height="29"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4.4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YaH-J7-2R5">
-                                                    <rect key="frame" x="731" y="42" width="34" height="29"/>
+                                                    <rect key="frame" x="731" y="42" width="39" height="29"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="66j-Ue-Ies">
                                                     <rect key="frame" x="58" y="30" width="249" height="53"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal">
                                                         <string key="title">Challenge learners to acheive high
@@ -744,6 +828,7 @@ standards with appropriate support</string>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="siH-aA-kMT">
                                                     <rect key="frame" x="431" y="28" width="264" height="53"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="Promote dialogue as a means of learning">
                                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -756,6 +841,7 @@ standards with appropriate support</string>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="WFN-tX-m83">
                                                     <rect key="frame" x="773" y="30" width="249" height="53"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal">
                                                         <string key="title">Communicate learning in multiple
@@ -769,33 +855,41 @@ modes</string>
                                                     </connections>
                                                 </button>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                     <tableViewCell hidden="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="110" id="ZDx-iD-a1S">
+                                        <rect key="frame" x="0.0" y="734" width="1024" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZDx-iD-a1S" id="8oe-nP-dU5">
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="109.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="V" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6HE-qJ-DCj">
                                                     <rect key="frame" x="16" y="42" width="34" height="29"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="V" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="661-wA-C6x">
                                                     <rect key="frame" x="381" y="42" width="34" height="29"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="V" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zag-dv-XkV">
                                                     <rect key="frame" x="731" y="42" width="34" height="29"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhR-Wv-AcL">
                                                     <rect key="frame" x="58" y="30" width="266" height="53"/>
+                                                    <animations/>
                                                     <string key="text">View all Domain 2
 support materials</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -804,6 +898,7 @@ support materials</string>
                                                 </label>
                                                 <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8V3-dP-6Ik">
                                                     <rect key="frame" x="423" y="30" width="266" height="53"/>
+                                                    <animations/>
                                                     <string key="text">View all Domain 3
 support materials</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -812,6 +907,7 @@ support materials</string>
                                                 </label>
                                                 <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8R-1y-g37">
                                                     <rect key="frame" x="773" y="30" width="266" height="53"/>
+                                                    <animations/>
                                                     <string key="text">View all Domain 4
 support materials</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -819,7 +915,9 @@ support materials</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -856,27 +954,36 @@ support materials</string>
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="TE9-cy-AI5">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="standard" textLabel="16e-od-oNW" detailTextLabel="OWH-RO-OLk" style="IBUITableViewCellStyleValue1" id="NnV-Uw-lTG">
+                                <rect key="frame" x="0.0" y="86" width="1024" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NnV-Uw-lTG" id="8ZV-Rb-eGl">
+                                    <rect key="frame" x="0.0" y="0.0" width="810" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="2.1 Develop democratic relationships" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="16e-od-oNW">
+                                            <rect key="frame" x="196" y="12" width="266" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="28-05-2015 8:40 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OWH-RO-OLk">
+                                            <rect key="frame" x="655" y="12" width="155" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <animations/>
                                 </tableViewCellContentView>
+                                <animations/>
                                 <connections>
                                     <segue destination="ZDM-P1-4nj" kind="show" id="CiE-wf-CmZ"/>
                                 </connections>
@@ -904,10 +1011,12 @@ support materials</string>
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="RDT-fK-shM">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qdH-Zc-WZg">
-                            <rect key="frame" x="0.0" y="627" width="1024" height="44"/>
+                            <rect key="frame" x="0.0" y="702" width="1024" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -916,12 +1025,15 @@ support materials</string>
                             <tableViewSection id="xHP-R5-69e">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" rowHeight="538" id="flF-q1-IAm">
+                                        <rect key="frame" x="0.0" y="64" width="1024" height="538"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="flF-q1-IAm" id="UgL-1l-mny">
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="537.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WLX-XO-VQQ" customClass="SZTextView">
                                                     <rect key="frame" x="33" y="233" width="475" height="235"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -932,6 +1044,7 @@ support materials</string>
                                                 </textView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MtW-av-KPI" customClass="SZTextView">
                                                     <rect key="frame" x="516" y="233" width="475" height="235"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -942,37 +1055,44 @@ support materials</string>
                                                 </textView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pGU-6x-uAU">
                                                     <rect key="frame" x="0.0" y="0.0" width="1024" height="80"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TfEL-Compass-graphic_Domain-2_small-yellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="MTQ-mW-GK8">
                                                     <rect key="frame" x="8" y="0.0" width="80" height="80"/>
+                                                    <animations/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DOMAIN 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rj-Nu-kCK">
                                                     <rect key="frame" x="96" y="19" width="99" height="21"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CREATE SAFE CONDITIONS FOR RIGOROUS MATEMATICS LEARNING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hmi-8G-sxn">
                                                     <rect key="frame" x="190" y="19" width="826" height="21"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Two minute data collecting using just two guiding questions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCV-Xc-dfr">
                                                     <rect key="frame" x="96" y="40" width="530" height="21"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.2 BUILD A COMMUNITY OF LEARNERS - Guiding Questions:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sqq-zF-koj">
                                                     <rect key="frame" x="16" y="88" width="909" height="29"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVf-PL-qPu">
                                                     <rect key="frame" x="16" y="113" width="992" height="68"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <string key="text">• Do all my students have a wide range of peers with diverse strengths that they seek out to learn maths from and with?
 • Do I embed collaborative maths activities where all learners share thinking, clarify ideas and inspire each others maths learning?</string>
@@ -981,13 +1101,16 @@ support materials</string>
                                                 </textView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hEs-tG-cQr">
                                                     <rect key="frame" x="33" y="189" width="475" height="45"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thumbside.png" translatesAutoresizingMaskIntoConstraints="NO" id="HWh-Jo-gbZ">
                                                     <rect key="frame" x="463" y="191" width="42" height="42"/>
+                                                    <animations/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNk-bZ-W97">
                                                     <rect key="frame" x="33" y="467" width="475" height="32"/>
+                                                    <animations/>
                                                     <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" title="What might this look like?">
                                                         <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -999,10 +1122,12 @@ support materials</string>
                                                 </button>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Am1-WH-IUe">
                                                     <rect key="frame" x="516" y="189" width="475" height="45"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKS-VX-hNH">
                                                     <rect key="frame" x="46" y="189" width="409" height="45"/>
+                                                    <animations/>
                                                     <attributedString key="attributedText">
                                                         <fragment>
                                                             <string key="content">Things that suggest this element is
@@ -1033,6 +1158,7 @@ support materials</string>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVk-NF-idJ">
                                                     <rect key="frame" x="529" y="189" width="409" height="45"/>
+                                                    <animations/>
                                                     <attributedString key="attributedText">
                                                         <fragment>
                                                             <string key="content">Things that suggest this element
@@ -1063,6 +1189,7 @@ support materials</string>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZ6-GA-l7N">
                                                     <rect key="frame" x="516" y="467" width="475" height="32"/>
+                                                    <animations/>
                                                     <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" title="What might this look like?">
                                                         <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1074,19 +1201,24 @@ support materials</string>
                                                 </button>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thumbup.png" translatesAutoresizingMaskIntoConstraints="NO" id="f1Y-A6-DYD">
                                                     <rect key="frame" x="946" y="191" width="42" height="42"/>
+                                                    <animations/>
                                                 </imageView>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" rowHeight="100" id="UBG-Wi-mrU">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="602" width="1024" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UBG-Wi-mrU" id="Ssi-Yi-Ll6">
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="S99-x8-Z4n">
                                                     <rect key="frame" x="35" y="43" width="604" height="31"/>
+                                                    <animations/>
                                                     <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <connections>
                                                         <action selector="sliderValueChanged:" destination="ZDM-P1-4nj" eventType="valueChanged" id="5yn-CA-S93"/>
@@ -1094,12 +1226,14 @@ support materials</string>
                                                 </slider>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Use the slider to note your balance judgement about how well you are currently enacting this element" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRN-Sh-9Ir">
                                                     <rect key="frame" x="37" y="14" width="600" height="21"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVe-qO-hbh">
                                                     <rect key="frame" x="854" y="29" width="150" height="30"/>
+                                                    <animations/>
                                                     <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" title="Next Steps">
                                                         <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1111,6 +1245,7 @@ support materials</string>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bi7-1X-vhD">
                                                     <rect key="frame" x="691" y="29" width="150" height="30"/>
+                                                    <animations/>
                                                     <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" title="My Past Entries">
                                                         <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1121,7 +1256,9 @@ support materials</string>
                                                     </connections>
                                                 </button>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </cells>
@@ -1170,10 +1307,12 @@ support materials</string>
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="vY5-tf-AhQ">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eM2-UL-GWV">
-                            <rect key="frame" x="0.0" y="-21" width="1024" height="44"/>
+                            <rect key="frame" x="0.0" y="724" width="1024" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -1182,55 +1321,66 @@ support materials</string>
                             <tableViewSection id="92l-OA-I8y">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="410" id="3i9-jG-bCF">
+                                        <rect key="frame" x="0.0" y="64" width="1024" height="410"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3i9-jG-bCF" id="ZuR-9d-z7e">
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="409.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nfZ-Uf-CdZ">
                                                     <rect key="frame" x="0.0" y="0.0" width="1024" height="80"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TfEL-Compass-graphic_Domain-2_small-yellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="XMA-WC-5dw">
                                                     <rect key="frame" x="8" y="0.0" width="80" height="80"/>
+                                                    <animations/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DOMAIN 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gh-sG-HKr">
                                                     <rect key="frame" x="96" y="19" width="99" height="21"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CREATE SAFE CONDITIONS FOR RIGOROUS MATEMATICS LEARNING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDR-aH-r5n">
                                                     <rect key="frame" x="190" y="19" width="826" height="21"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Two minute data collecting using just two guiding questions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Els-ei-M6a">
                                                     <rect key="frame" x="96" y="40" width="530" height="21"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.2 BUILD A COMMUNITY OF LEARNERS - Guiding Questions:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1V-hC-AmJ">
                                                     <rect key="frame" x="16" y="88" width="666" height="29"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Transforming Tasks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAG-8j-0g0">
                                                     <rect key="frame" x="149" y="125" width="380" height="29"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TfEL Resources" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIL-JS-VGV">
                                                     <rect key="frame" x="495" y="125" width="380" height="29"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u67-F3-1rs">
                                                     <rect key="frame" x="192" y="162" width="295" height="220"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <string key="text">The transforming tasks module on the Leading Learning resource supports teachers to transform traditional textbook tasks for greater intellectual challenge.
 
@@ -1242,6 +1392,7 @@ The links below are excerpts from the transforming tasks module. These excerpts 
                                                 </textView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfw-uI-lXd">
                                                     <rect key="frame" x="538" y="162" width="295" height="234"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <string key="text">The Teaching for Effective Learning framework is the mandated pedagogy for South Australian DECD schools. It draws together the research evidence, the voices of educational experts from around the world and South Australian expertise.
 
@@ -1252,22 +1403,28 @@ The links below are excerpts relevant to this TfEL element.</string>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="250" id="QHE-F3-8kg">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="474" width="1024" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QHE-F3-8kg" id="4PS-QB-Tty">
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="249.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DECS SATfEL FG_Cover_A4.png" translatesAutoresizingMaskIntoConstraints="NO" id="By5-PK-2Jc">
                                                     <rect key="frame" x="546" y="28" width="55" height="77"/>
+                                                    <animations/>
                                                 </imageView>
                                                 <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="compass_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="EZK-1K-I4D">
                                                     <rect key="frame" x="546" y="144" width="55" height="77"/>
+                                                    <animations/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxO-R4-E0G">
-                                                    <rect key="frame" x="609" y="28" width="159" height="30"/>
+                                                    <rect key="frame" x="609" y="28" width="176" height="30"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="TfEL Framework Guide »">
                                                         <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1279,6 +1436,7 @@ The links below are excerpts relevant to this TfEL element.</string>
                                                 </button>
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsO-Kb-WoF">
                                                     <rect key="frame" x="609" y="52" width="158" height="30"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="TfEL in Action Cards »">
                                                         <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1287,6 +1445,7 @@ The links below are excerpts relevant to this TfEL element.</string>
                                                 </button>
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byL-p9-gKp">
                                                     <rect key="frame" x="609" y="75" width="158" height="30"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="Learning Progressions »">
                                                         <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1295,30 +1454,37 @@ The links below are excerpts relevant to this TfEL element.</string>
                                                 </button>
                                                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TfEL Compass Numeracy Survey" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkr-3Y-fcq">
                                                     <rect key="frame" x="612" y="144" width="153" height="39"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login and open template 7." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJS-aG-nCr">
                                                     <rect key="frame" x="610" y="182" width="156" height="39"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue-tt.png" translatesAutoresizingMaskIntoConstraints="NO" id="zjd-gF-YEP">
                                                     <rect key="frame" x="191" y="20" width="45" height="45"/>
+                                                    <animations/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green-tt.png" translatesAutoresizingMaskIntoConstraints="NO" id="LN6-i6-UO6">
                                                     <rect key="frame" x="191" y="73" width="45" height="45"/>
+                                                    <animations/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red-tt.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nrz-NH-R6Y">
                                                     <rect key="frame" x="191" y="126" width="45" height="45"/>
+                                                    <animations/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yellow-tt.png" translatesAutoresizingMaskIntoConstraints="NO" id="DWB-k2-ZLd">
                                                     <rect key="frame" x="191" y="179" width="45" height="45"/>
+                                                    <animations/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Z8-1T-cmv">
                                                     <rect key="frame" x="244" y="81" width="159" height="30"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="From Tell to Ask »">
                                                         <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1329,7 +1495,8 @@ The links below are excerpts relevant to this TfEL element.</string>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXa-13-14C">
-                                                    <rect key="frame" x="244" y="134" width="238" height="30"/>
+                                                    <rect key="frame" x="244" y="134" width="244" height="30"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="From Information to Understanding »">
                                                         <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1341,6 +1508,7 @@ The links below are excerpts relevant to this TfEL element.</string>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sth-tC-hMX">
                                                     <rect key="frame" x="244" y="187" width="238" height="30"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="From Procedural to Problem Based »">
                                                         <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1352,6 +1520,7 @@ The links below are excerpts relevant to this TfEL element.</string>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RdD-vx-jsr">
                                                     <rect key="frame" x="244" y="28" width="159" height="30"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="From Closed to Open »">
                                                         <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1362,7 +1531,9 @@ The links below are excerpts relevant to this TfEL element.</string>
                                                     </connections>
                                                 </button>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1408,14 +1579,16 @@ The links below are excerpts relevant to this TfEL element.</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView multipleTouchEnabled="YES" contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ghc-WT-qwF">
+                            <webView multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ghc-WT-qwF">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="delegate" destination="iuh-E6-Eh0" id="ws8-45-eKe"/>
                                 </connections>
                             </webView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Ghc-WT-qwF" firstAttribute="leading" secondItem="g9g-5c-s4z" secondAttribute="leadingMargin" constant="-16" id="7wG-bq-Po4"/>
@@ -1450,6 +1623,7 @@ The links below are excerpts relevant to this TfEL element.</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2rQ-mN-h97">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1467,10 +1641,12 @@ The links below are excerpts relevant to this TfEL element.</string>
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="F7v-Sg-t7j">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="q1X-mq-PKy">
-                            <rect key="frame" x="0.0" y="691" width="1024" height="44"/>
+                            <rect key="frame" x="0.0" y="694" width="1024" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -1479,43 +1655,52 @@ The links below are excerpts relevant to this TfEL element.</string>
                             <tableViewSection id="pdg-wE-Gbq">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" rowHeight="630" id="xw9-UQ-gdk">
+                                        <rect key="frame" x="0.0" y="64" width="1024" height="630"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xw9-UQ-gdk" id="eaV-kE-HvO">
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="629.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J68-OZ-Q78">
                                                     <rect key="frame" x="0.0" y="0.0" width="1024" height="80"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TfEL-Compass-graphic_Domain-2_small-yellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="ICa-Dt-6ed">
                                                     <rect key="frame" x="8" y="0.0" width="80" height="80"/>
+                                                    <animations/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DOMAIN 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kle-aA-84r">
                                                     <rect key="frame" x="96" y="19" width="99" height="21"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CREATE SAFE CONDITIONS FOR RIGOROUS MATEMATICS LEARNING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADc-zC-mct">
                                                     <rect key="frame" x="190" y="19" width="826" height="21"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Two minute data collecting using just two guiding questions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCa-YG-0PS">
                                                     <rect key="frame" x="96" y="40" width="530" height="21"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.2 BUILD A COMMUNITY OF LEARNERS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnO-Xx-TWH">
                                                     <rect key="frame" x="16" y="88" width="666" height="29"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUg-SF-COa">
                                                     <rect key="frame" x="33" y="183" width="475" height="169"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1523,6 +1708,7 @@ The links below are excerpts relevant to this TfEL element.</string>
                                                 </textView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2D1-eP-JIZ">
                                                     <rect key="frame" x="516" y="183" width="475" height="169"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1530,17 +1716,21 @@ The links below are excerpts relevant to this TfEL element.</string>
                                                 </textView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0g7-R6-7Ru">
                                                     <rect key="frame" x="33" y="139" width="475" height="45"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thumbside.png" translatesAutoresizingMaskIntoConstraints="NO" id="q9B-hv-Kjf">
                                                     <rect key="frame" x="463" y="141" width="42" height="42"/>
+                                                    <animations/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6gN-Lt-jii">
                                                     <rect key="frame" x="516" y="139" width="475" height="45"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99I-Pz-uhv">
                                                     <rect key="frame" x="46" y="139" width="409" height="45"/>
+                                                    <animations/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="What it isn't.">
                                                             <attributes>
@@ -1563,6 +1753,7 @@ Evidence that suggests this element is not developed:</string>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R03-gN-xD5">
                                                     <rect key="frame" x="529" y="139" width="409" height="45"/>
+                                                    <animations/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="What it is.">
                                                             <attributes>
@@ -1586,6 +1777,7 @@ Evidence that suggests this  element is developed:</string>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeI-ND-ZBl">
                                                     <rect key="frame" x="33" y="351" width="475" height="169"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1593,6 +1785,7 @@ Evidence that suggests this  element is developed:</string>
                                                 </textView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhM-gK-bC5">
                                                     <rect key="frame" x="516" y="351" width="475" height="169"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1600,29 +1793,36 @@ Evidence that suggests this  element is developed:</string>
                                                 </textView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thumbup.png" translatesAutoresizingMaskIntoConstraints="NO" id="PhG-8l-Yhn">
                                                     <rect key="frame" x="946" y="141" width="42" height="42"/>
+                                                    <animations/>
                                                 </imageView>
                                                 <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9wF-G0-158">
                                                     <rect key="frame" x="33" y="183" width="475" height="169"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="0.34901960780000002" green="0.26274509800000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 </webView>
                                                 <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gdi-L1-SSC">
                                                     <rect key="frame" x="33" y="351" width="475" height="169"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="0.34901960780000002" green="0.26274509800000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 </webView>
                                                 <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ogw-Ke-22Q">
                                                     <rect key="frame" x="516" y="351" width="475" height="169"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="0.34901960780000002" green="0.26274509800000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 </webView>
                                                 <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JLI-vb-cn4">
                                                     <rect key="frame" x="516" y="183" width="475" height="169"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="0.34901960780000002" green="0.26274509800000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 </webView>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </cells>
@@ -1664,6 +1864,7 @@ Evidence that suggests this  element is developed:</string>
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="zer-j0-01m">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection headerTitle="TfEL Maths Pedagogy" id="Wrl-lU-SOF">
@@ -1680,36 +1881,46 @@ The National Education Access Licence for Schools (NEALS) is a copying licence f
 Acceptable for use on Apple iPad only. Please see /license on https://maths.tfel.edu.au.</string>
                                 <cells>
                                     <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="4ju-Dc-VMR" detailTextLabel="gkS-JP-A12" style="IBUITableViewCellStyleValue1" id="lfR-Wa-eOI">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="49.5" width="667" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lfR-Wa-eOI" id="MY5-Ms-NBo">
+                                            <rect key="frame" x="0.0" y="0.0" width="667" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="TfEL Maths Pedagogy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4ju-Dc-VMR">
+                                                    <rect key="frame" x="17.5" y="12" width="160" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="v1.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gkS-JP-A12">
+                                                    <rect key="frame" x="620.5" y="12" width="29" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                     <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="OqI-8b-xhI">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="93.5" width="667" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OqI-8b-xhI" id="x7w-He-ueG">
+                                            <rect key="frame" x="0.0" y="0.0" width="667" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neals_gs.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="u6q-dL-zfZ">
                                                     <rect key="frame" x="0.0" y="0.0" width="667" height="43.5"/>
+                                                    <animations/>
                                                 </imageView>
                                             </subviews>
+                                            <animations/>
                                             <constraints>
                                                 <constraint firstItem="u6q-dL-zfZ" firstAttribute="leading" secondItem="x7w-He-ueG" secondAttribute="leadingMargin" constant="-8" id="Ude-ef-q2s"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="u6q-dL-zfZ" secondAttribute="trailing" constant="-8" id="iWz-HD-J91"/>
@@ -1717,6 +1928,7 @@ Acceptable for use on Apple iPad only. Please see /license on https://maths.tfel
                                                 <constraint firstItem="u6q-dL-zfZ" firstAttribute="top" secondItem="x7w-He-ueG" secondAttribute="topMargin" constant="-8" id="zad-JD-4QY"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1731,25 +1943,32 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 </string>
                                 <cells>
                                     <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="wHE-Pw-9LO" detailTextLabel="jeJ-KF-AIv" style="IBUITableViewCellStyleValue1" id="wGE-6z-J5y">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="508" width="667" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wGE-6z-J5y" id="emy-Hb-bWY">
+                                            <rect key="frame" x="0.0" y="0.0" width="667" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="AFNetworking" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wHE-Pw-9LO">
+                                                    <rect key="frame" x="17.5" y="12" width="102.5" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="v2.5.4" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jeJ-KF-AIv">
+                                                    <rect key="frame" x="605" y="12" width="44.5" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1778,24 +1997,32 @@ THIS SOFTWARE IS PROVIDED BY THE PHP DEVELOPMENT TEAM ``AS IS'' AND ANY EXPRESSE
 This software consists of voluntary contributions made by many individuals on behalf of the PHP Group.</string>
                                 <cells>
                                     <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="m7Z-3Y-68H" detailTextLabel="VrY-nI-bOA" style="IBUITableViewCellStyleValue1" id="ed8-2S-hQ6">
+                                        <rect key="frame" x="0.0" y="874.5" width="667" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ed8-2S-hQ6" id="8xF-Sy-swR">
+                                            <rect key="frame" x="0.0" y="0.0" width="667" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Version" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m7Z-3Y-68H">
+                                                    <rect key="frame" x="17.5" y="12" width="54" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="5.3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VrY-nI-bOA">
+                                                    <rect key="frame" x="626.5" y="12" width="23" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1809,24 +2036,32 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</string>
                                 <cells>
                                     <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="tbr-lj-VEz" detailTextLabel="5sL-gG-2tf" style="IBUITableViewCellStyleValue1" id="Qpz-s3-akr">
+                                        <rect key="frame" x="0.0" y="1641" width="667" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qpz-s3-akr" id="HUX-yk-ig6">
+                                            <rect key="frame" x="0.0" y="0.0" width="667" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Version" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tbr-lj-VEz">
+                                                    <rect key="frame" x="17.5" y="12" width="54" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="2.5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5sL-gG-2tf">
+                                                    <rect key="frame" x="626.5" y="12" width="23" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1834,24 +2069,32 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                                 <string key="footerTitle">The author or authors of this code dedicate any and all copyright interest in this code to the public domain. We make this dedication for the benefit of the public at large and to the detriment of our heirs and successors. We intend this dedication to be an overt act of relinquishment in perpetuity of all present and future rights to this code under copyright law.</string>
                                 <cells>
                                     <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="VN5-8i-sBe" detailTextLabel="vv4-eb-hN4" style="IBUITableViewCellStyleValue1" id="lwX-r3-Ucf">
+                                        <rect key="frame" x="0.0" y="1991.5" width="667" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lwX-r3-Ucf" id="eoc-D9-rcP">
+                                            <rect key="frame" x="0.0" y="0.0" width="667" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Version" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VN5-8i-sBe">
+                                                    <rect key="frame" x="17.5" y="12" width="54" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="3.8" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vv4-eb-hN4">
+                                                    <rect key="frame" x="626.5" y="12" width="23" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
