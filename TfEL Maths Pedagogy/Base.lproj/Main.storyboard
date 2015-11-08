@@ -1,180 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aO0-Rm-Hdg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15C31f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aO0-Rm-Hdg">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="11A-KG-IWT">
-            <objects>
-                <viewController storyboardIdentifier="beta" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6ZC-Hs-Lt9" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KAJ-3j-GJK"/>
-                        <viewControllerLayoutGuide type="bottom" id="oyG-pw-NlQ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" restorationIdentifier="beta" id="cOO-nr-kjb">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qxc-su-Wwm">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="88"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.34901960780000002" green="0.26274509800000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="77U-uE-beq"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TfEL Maths Pedagogy Beta" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmw-5J-hE3">
-                                <rect key="frame" x="192" y="29" width="216" height="30"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="216" id="Kwe-dd-5Kk"/>
-                                    <constraint firstAttribute="height" constant="30" id="Rrg-YM-bfv"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4S5-n9-AOw">
-                                <rect key="frame" x="16" y="96" width="568" height="484"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="TfEL Maths Pedagogy is still in the key stages of development">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="14"/>
-                                            <font key="NSOriginalFont" metaFont="system" size="14"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">, as such many features may be incomplete or may totally break things. You have been invited to test this application in order to help us determine the issues with the development of the app.
-
-Fill in a survey: https://qtrial2015az1.az1.qualtrics.com/jfe/form/SV_6SiH6TRE8GLg98h
-
-Issues not yet resolved:
-
-  • Domain Reflection View Text Too Small [ENH]
-  • Domain Reflection View Descriptive Icon [ENH]
-
-In this version we have fixed the following issues:
-
-  • PDF's do not load to correct page on nextStepsVC / resourceVC [BUG - HW]
-  • My Past Entries does not group by domain [ENH]
-  • Unable to access iTunes Connect for TF BT Dist [BUG - HW - APPLE]
-  • Some 'this might look like' did not provide context for bullets [ENH] 
-
-Previously:
-
-  • Added ShareKit support for reflections
-  • Added validation of reflection views and data added
-  • Added "social" capacities to various ShareKit toolkits
-
-  • UITextView needs replacing by UIWebView
-  • TableViewCell needs to be hidden on DL All Content for 1.0 
-  • Content in tfelmped.sqlite </string>
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="→">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="LucidaGrande"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content"> domaindetail needs to be updated to HTML 
-  • Content in tfelmped.sqlite </string>
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="→">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="LucidaGrande"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content"> domaindetail is multi-lined 
-  • Domain image does not change past reflectionVC [BUG]
-  • Slider does not save value correctly (0, 1) [BUG]
-  • BLOCKING: Data is not saved when VC has speech functions in dataVC [BUG]
-  • Query saves 'tfelmped.sqlite' data to 'tfeluserdata.sqlite' [BUG - ENH]
-  • Domain code is lost in data entry [BUG]
-  • Data insert does not properly escape query strings [BUG]
-
-Please see the GitHub (issue tracker) for details on open and closed issues here:
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="https://github.com/tfel/TfEL-Maths-Pedagogy/issues ">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <url key="NSLink" string="https://github.com/aidancornelius/TfEL-Maths-Pedagogy/issues"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cgo
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Tap anywhere outside this window to close it.">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ok.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ctm-Ke-pHs">
-                                <rect key="frame" x="542" y="23" width="42" height="42"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="V27-WL-YTD"/>
-                                    <constraint firstAttribute="height" constant="42" id="iXK-fI-0ID"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="4S5-n9-AOw" firstAttribute="trailing" secondItem="Ctm-Ke-pHs" secondAttribute="trailing" id="0ta-q2-aPY"/>
-                            <constraint firstItem="4S5-n9-AOw" firstAttribute="top" secondItem="qxc-su-Wwm" secondAttribute="bottom" constant="8" id="4Le-Bl-yF0"/>
-                            <constraint firstItem="qxc-su-Wwm" firstAttribute="top" secondItem="cOO-nr-kjb" secondAttribute="top" id="9O1-KE-VTA"/>
-                            <constraint firstItem="oyG-pw-NlQ" firstAttribute="top" secondItem="4S5-n9-AOw" secondAttribute="bottom" constant="20" id="BbD-ir-aLA"/>
-                            <constraint firstItem="qxc-su-Wwm" firstAttribute="leading" secondItem="cOO-nr-kjb" secondAttribute="leading" id="Ega-HV-Hds"/>
-                            <constraint firstItem="qxc-su-Wwm" firstAttribute="centerY" secondItem="Ctm-Ke-pHs" secondAttribute="centerY" id="K27-r2-WRK"/>
-                            <constraint firstItem="qxc-su-Wwm" firstAttribute="centerX" secondItem="4S5-n9-AOw" secondAttribute="centerX" id="YDT-87-aWF"/>
-                            <constraint firstItem="qxc-su-Wwm" firstAttribute="centerY" secondItem="kmw-5J-hE3" secondAttribute="centerY" id="fJA-Ps-Vox"/>
-                            <constraint firstItem="qxc-su-Wwm" firstAttribute="centerX" secondItem="kmw-5J-hE3" secondAttribute="centerX" id="iks-hG-CGd"/>
-                            <constraint firstAttribute="trailing" secondItem="qxc-su-Wwm" secondAttribute="trailing" id="qmr-O9-jtj"/>
-                            <constraint firstItem="4S5-n9-AOw" firstAttribute="leading" secondItem="cOO-nr-kjb" secondAttribute="leadingMargin" id="vFJ-ux-C4E"/>
-                        </constraints>
-                    </view>
-                    <value key="contentSizeForViewInPopover" type="size" width="600" height="500"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BlP-N3-ffa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1483" y="-476"/>
-        </scene>
         <!--TfEL Maths Pedagogy-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -280,16 +111,21 @@ your Mathematics Classroom</string>
                             <constraint firstItem="6i3-Cb-kg9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="78" id="DPe-Ki-KzZ"/>
                             <constraint firstItem="V4N-0z-VE8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="382" id="Gha-VJ-YSc"/>
                             <constraint firstItem="V85-pF-ihY" firstAttribute="leading" secondItem="hyL-XC-kIM" secondAttribute="leading" id="JIA-fr-RQ3"/>
+                            <constraint firstItem="ZUS-vn-4P8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="632" id="NFu-Qd-ufh"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hyL-XC-kIM" secondAttribute="bottom" constant="96" id="P43-a1-5rK"/>
                             <constraint firstItem="hyL-XC-kIM" firstAttribute="top" secondItem="V4N-0z-VE8" secondAttribute="bottom" constant="27" id="Tj2-Or-x3g"/>
                             <constraint firstItem="ZUS-vn-4P8" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Uwe-Ew-3zF"/>
                             <constraint firstItem="7FU-uC-oAF" firstAttribute="centerX" secondItem="Chy-of-ZBF" secondAttribute="centerX" id="cxW-In-JlU"/>
                             <constraint firstItem="ZUS-vn-4P8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dr5-US-RpH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZUS-vn-4P8" secondAttribute="bottom" id="h2b-dG-qxW"/>
+                            <constraint firstItem="ZUS-vn-4P8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="hBr-V7-NLQ"/>
                             <constraint firstItem="V85-pF-ihY" firstAttribute="top" secondItem="hyL-XC-kIM" secondAttribute="bottom" constant="8" symbolic="YES" id="n2E-6K-zAp"/>
                             <constraint firstItem="6i3-Cb-kg9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pIf-dZ-995"/>
                             <constraint firstItem="Chy-of-ZBF" firstAttribute="top" secondItem="6i3-Cb-kg9" secondAttribute="bottom" constant="8" symbolic="YES" id="uQT-UP-lke"/>
                             <constraint firstItem="hyL-XC-kIM" firstAttribute="centerX" secondItem="7FU-uC-oAF" secondAttribute="centerX" id="uhj-gv-Yef"/>
                             <constraint firstItem="ZUS-vn-4P8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="632" id="wMy-hY-dof"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="V4N-0z-VE8" secondAttribute="trailing" constant="358" id="xci-Ia-nTK"/>
+                            <constraint firstItem="V85-pF-ihY" firstAttribute="leading" secondItem="ZUS-vn-4P8" secondAttribute="trailing" constant="315" id="yRu-Rb-sH0"/>
                             <constraint firstItem="Chy-of-ZBF" firstAttribute="centerX" secondItem="6i3-Cb-kg9" secondAttribute="centerX" id="zkh-Gl-6VY"/>
                         </constraints>
                     </view>
@@ -473,7 +309,7 @@ your Mathematics Classroom</string>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XgB-Hr-0Hk">
-                            <rect key="frame" x="0.0" y="844" width="1024" height="44"/>
+                            <rect key="frame" x="0.0" y="734" width="1024" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <animations/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -552,7 +388,7 @@ mathematics learners</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a TfEL element you are interested in exploring." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jac-uF-UGP">
-                                                    <rect key="frame" x="23" y="24" width="587" height="29"/>
+                                                    <rect key="frame" x="23" y="24" width="684" height="29"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -854,66 +690,6 @@ modes</string>
                                                         <segue destination="ZDM-P1-4nj" kind="show" id="Zm3-VG-VkK"/>
                                                     </connections>
                                                 </button>
-                                            </subviews>
-                                            <animations/>
-                                        </tableViewCellContentView>
-                                        <animations/>
-                                    </tableViewCell>
-                                    <tableViewCell hidden="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="110" id="ZDx-iD-a1S">
-                                        <rect key="frame" x="0.0" y="734" width="1024" height="110"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZDx-iD-a1S" id="8oe-nP-dU5">
-                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="109.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="V" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6HE-qJ-DCj">
-                                                    <rect key="frame" x="16" y="42" width="34" height="29"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
-                                                    <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="V" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="661-wA-C6x">
-                                                    <rect key="frame" x="381" y="42" width="34" height="29"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
-                                                    <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="V" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zag-dv-XkV">
-                                                    <rect key="frame" x="731" y="42" width="34" height="29"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
-                                                    <color key="textColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhR-Wv-AcL">
-                                                    <rect key="frame" x="58" y="30" width="266" height="53"/>
-                                                    <animations/>
-                                                    <string key="text">View all Domain 2
-support materials</string>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8V3-dP-6Ik">
-                                                    <rect key="frame" x="423" y="30" width="266" height="53"/>
-                                                    <animations/>
-                                                    <string key="text">View all Domain 3
-support materials</string>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8R-1y-g37">
-                                                    <rect key="frame" x="773" y="30" width="266" height="53"/>
-                                                    <animations/>
-                                                    <string key="text">View all Domain 4
-support materials</string>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <animations/>
                                         </tableViewCellContentView>
@@ -2121,7 +1897,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         <image name="compass_bg.png" width="85" height="82"/>
         <image name="green-tt.png" width="800" height="801"/>
         <image name="neals_gs.jpg" width="91" height="32"/>
-        <image name="ok.png" width="133" height="133"/>
         <image name="red-tt.png" width="800" height="801"/>
         <image name="tfel_compass_lg.png" width="316" height="295"/>
         <image name="thumbside.png" width="133" height="133"/>
