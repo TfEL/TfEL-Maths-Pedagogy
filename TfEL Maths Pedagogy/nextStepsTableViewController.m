@@ -24,10 +24,10 @@
 @synthesize subdomainTitleOutlet, domainSubtitleOutlet, domainTitleOutlet, domainTitleSubdomainTitleOutlet, compassImageOutlet, blueButtonOutlet, greenButtonOutlet, redButtonOutlet, yellowButtonOutlet, blueImageOutlet, greenImageOutlet, redImageOutlet, yellowImageOutlet;
 
 
-int bluePage;
-int greenPage;
-int redPage;
-int yellowPage;
+NSString *bluePage;
+NSString *greenPage;
+NSString *redPage;
+NSString *yellowPage;
 
 
 - (void)viewDidLoad {
@@ -60,25 +60,28 @@ int yellowPage;
     if (![db open]) {
         NSLog(@"TfEL Maths: Database Establishment Failed");
     } else {
-        NSLog(@"NSTVC DE S");
         FMResultSet *s = [db executeQuery:[NSString stringWithFormat:@"SELECT * FROM \"domainnext\" WHERE `domaincode` = '%@'", AppDelegate.nextDomain]];
         while ([s next]) {
             if ([s boolForColumn:@"blue"] == TRUE) {
                 blueButtonOutlet.enabled = YES;
                 [blueButtonOutlet setTitleColor:enabledColor forState:UIControlStateNormal];
-                bluePage = [s intForColumn:@"blue_page"];
+                bluePage = [s stringForColumn:@"blue_pdf"];
+                NSLog(@"Blue Page for %@, %@.", AppDelegate.nextDomain, bluePage);
             } if ([s boolForColumn:@"green"] == TRUE) {
                 greenButtonOutlet.enabled = YES;
                 [greenButtonOutlet setTitleColor:enabledColor forState:UIControlStateNormal];
-                bluePage = [s intForColumn:@"green_page"];
+                greenPage = [s stringForColumn:@"green_pdf"];
+                NSLog(@"Green Page for %@, %@.", AppDelegate.nextDomain, greenPage);
             } if ([s boolForColumn:@"red"] == TRUE) {
                 redButtonOutlet.enabled = YES;
                 [redButtonOutlet setTitleColor:enabledColor forState:UIControlStateNormal];
-                bluePage = [s intForColumn:@"red_page"];
+                redPage = [s stringForColumn:@"red_pdf"];
+                NSLog(@"Red Page for %@, %@.", AppDelegate.nextDomain, redPage);
             } if ([s boolForColumn:@"yellow"] == TRUE) {
                 yellowButtonOutlet.enabled = YES;
                 [yellowButtonOutlet setTitleColor:enabledColor forState:UIControlStateNormal];
-                bluePage = [s intForColumn:@"yellow_page"];
+                yellowPage = [s stringForColumn:@"yellow_pdf"];
+                NSLog(@"Yellow Page for %@, %@.", AppDelegate.nextDomain, yellowPage);
             }
         }
     }
@@ -90,26 +93,23 @@ int yellowPage;
 }
 
 - (IBAction)transformingTasksOne:(id)sender {
-    AppDelegate.nextPDFPage = bluePage;
-    AppDelegate.nextPDFView = [NSString stringWithFormat:@"%@", AppDelegate.nextDomain];
+    NSLog(@"%@", bluePage);
+    AppDelegate.nextPDFView = bluePage;
     [self jumpToResourceView];
 }
 
 - (IBAction)transformingTasksTwo:(id)sender {
-    AppDelegate.nextPDFPage = greenPage;
-    AppDelegate.nextPDFView = [NSString stringWithFormat:@"%@", AppDelegate.nextDomain];
+    AppDelegate.nextPDFView = greenPage;
     [self jumpToResourceView];
 }
 
 - (IBAction)transformingTasksThree:(id)sender {
-    AppDelegate.nextPDFPage = redPage;
-    AppDelegate.nextPDFView = [NSString stringWithFormat:@"%@", AppDelegate.nextDomain];
+    AppDelegate.nextPDFView = redPage;
     [self jumpToResourceView];
 }
 
 - (IBAction)transformingTasksFour:(id)sender {
-    AppDelegate.nextPDFPage = yellowPage;
-    AppDelegate.nextPDFView = [NSString stringWithFormat:@"%@", AppDelegate.nextDomain];
+    AppDelegate.nextPDFView = yellowPage;
     [self jumpToResourceView];
 }
 
@@ -125,4 +125,7 @@ int yellowPage;
     [self showViewController:vc sender:self];
 }
 
+- (IBAction)goToLeadingLearning:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.acleadersresource.sa.edu.au/features/transforming-tasks/index.html"]];
+}
 @end

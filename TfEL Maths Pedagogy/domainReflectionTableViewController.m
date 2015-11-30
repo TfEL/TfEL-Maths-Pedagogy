@@ -123,9 +123,11 @@ NSString *apiKey = @"f2e155da-849cdf";
     
     nydWhatMight.layer.borderWidth = 1;
     nydWhatMight.layer.borderColor = nydWhatMight.tintColor.CGColor;
+    nydWhatMight.layer.cornerRadius = 3;
     
     iwdWhatMight.layer.borderWidth = 1;
     iwdWhatMight.layer.borderColor = iwdWhatMight.tintColor.CGColor;
+    iwdWhatMight.layer.cornerRadius = 3;
     
     nextSteps.layer.cornerRadius = 3;
     nextSteps.layer.borderWidth = 1;

@@ -25,6 +25,8 @@
     
     NSString *nextPDFView = AppDelegate.nextPDFView;
     
+    NSLog(@"NPDFView in RC: %@", nextPDFView);
+    
     // Do any additional setup after loading the view.
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:nextPDFView ofType:@"pdf"]]]];
 }
@@ -41,7 +43,6 @@
     //now traverse to specific page
     int pages = AppDelegate.nextPDFPage;
     NSLog(@"%d", pages);
-    [self performSelector:@selector(traverseInWebViewWithPage:) withObject:[NSNumber numberWithInt:pages] afterDelay:0.1];
 }
 
 

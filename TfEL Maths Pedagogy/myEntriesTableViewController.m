@@ -53,7 +53,7 @@ NSMutableArray *tableViewPopulationIdentifier;
             // Let's pull the neccessary data, we can probably just ignore the id and mod date.
             
             [determineDetailForCode alloc];
-            NSMutableDictionary *domainDetailForCode = [determineDetailForCode domainDetailForCode:AppDelegate.nextDomain];
+            NSMutableDictionary *domainDetailForCode = [determineDetailForCode domainDetailForCode:[s objectForColumnName:@"domaincode"]];
             
             [tableViewPopulationDomains addObject:[NSString stringWithFormat:@"My entry to: %@ %@", [s objectForColumnName:@"domaincode"], [domainDetailForCode objectForKey:@"subdomainTitle"]]];
             [tableViewPopulationTimes addObject:[NSString stringWithFormat:@"Added: %@", [s objectForColumnName:@"datemodified"]]];

@@ -35,4 +35,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *yellowButtonOutlet;
 @property (weak, nonatomic) IBOutlet UIImageView *yellowImageOutlet;
 
+- (IBAction)goToLeadingLearning:(id)sender;
+
 @end
