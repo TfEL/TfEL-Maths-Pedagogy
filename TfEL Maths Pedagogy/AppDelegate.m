@@ -29,6 +29,8 @@
     }else {
         NSLog(@"TfEL Maths: didFinishLaunchingWithOptions: ev: nil (or unhandled)");
     }
+    
+    NSLog(@"%@",[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject]);
         
     return YES;
 }

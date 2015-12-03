@@ -32,6 +32,8 @@ NSMutableDictionary *viewData;
 NSMutableDictionary *userData;
 bool shouldPopulateNydIwd;
 
+bool alreadyEnteredThisSet;
+
 // API KEY
 NSString *apiKey = @"f2e155da-849cdf";
 
@@ -142,7 +144,7 @@ NSString *apiKey = @"f2e155da-849cdf";
     nydTextOutlet.layer.borderWidth = 1;
     nydTextOutlet.layer.borderColor = nydTextOutlet.tintColor.CGColor;
     
-    nydTextOutlet.placeholder = @"Note student and teacher actions that suggest this elemet is not yet developed...";
+    nydTextOutlet.placeholder = @"Type Here... Note student and teacher actions that suggest this element is not yet developed...";
     nydTextOutlet.placeholderTextColor = [UIColor lightGrayColor];
     
     
@@ -150,7 +152,7 @@ NSString *apiKey = @"f2e155da-849cdf";
     iwdTextOutlet.layer.borderWidth = 1;
     iwdTextOutlet.layer.borderColor = iwdTextOutlet.tintColor.CGColor;
     
-    iwdTextOutlet.placeholder = @"Note student and teacher actions that suggest that this elemet is well developed...";
+    iwdTextOutlet.placeholder = @"Type Here... Note student and teacher actions that suggest that this element is well developed...";
     iwdTextOutlet.placeholderTextColor = [UIColor lightGrayColor];
 
     [sliderOutlet setThumbImage:[[UIImage imageNamed:@"thumbside-blk.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 17, 0, 0)] forState:UIControlStateNormal];
@@ -192,8 +194,13 @@ NSString *apiKey = @"f2e155da-849cdf";
                 
             } else {
                 // Run the insert sparky...
-                if( [db executeUpdate:@"INSERT INTO \"userentries\" (\"id\",\"datemodified\",\"neg_notes\",\"pos_notes\",\"slider_val\",\"domaincode\") VALUES (NULL,time(),?,?,?,?)", nydTextOutlet.text, iwdTextOutlet.text, [NSNumber numberWithFloat:sliderOutlet.value], AppDelegate.nextDomain] ) {
+                if (alreadyEnteredThisSet == YES) {
+                    NSLog(@"TfEL Maths: This data already existed...");
+                } else if( [db executeUpdate:@"INSERT INTO \"userentries\" (\"id\",\"datemodified\",\"neg_notes\",\"pos_notes\",\"slider_val\",\"domaincode\") VALUES (NULL,CURRENT_TIMESTAMP,?,?,?,?)", nydTextOutlet.text, iwdTextOutlet.text, [NSNumber numberWithFloat:sliderOutlet.value], AppDelegate.nextDomain] ) {
                     NSLog(@"TfEL Maths: Added new data"); AppDelegate.nvShouldEnterToUserEntries = NO;
+                    alreadyEnteredThisSet = YES;
+                } else {
+                    NSLog(@"TfEL Maths: Possible inconsistency, not crashing.");
                 }
             }
         }

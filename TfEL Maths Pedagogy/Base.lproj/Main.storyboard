@@ -1333,14 +1333,14 @@ The links below are excerpts relevant to this TfEL element.</string>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9Md-Lz-A4v">
                                                     <rect key="frame" x="192" y="162" width="295" height="220"/>
                                                     <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
                                                     <state key="normal">
                                                         <string key="title">The Transforming Tasks module on the Leading Learning Resource supports teachers to transform traditional textbook tasks for greater intellectual challenge.
 
-The complete Transforming Tasks Module can be found here.
+The complete Transforming Tasks module can be found here.
 
 The links below are excerpts from the transforming tasks module. These excerpts support the development of this TfEL element.</string>
-                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleColor" red="0.33333333329999998" green="0.36862745099999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
                                                     <connections>
                                                         <action selector="goToLeadingLearning:" destination="2hR-3w-cJg" eventType="touchUpInside" id="XBu-Wb-MOq"/>

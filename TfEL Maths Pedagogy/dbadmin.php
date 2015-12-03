@@ -1,50 +1,9 @@
 <?php
-//	
-//	Project: phpLiteAdmin (https://bitbucket.org/phpliteadmin/public)
-//	Version: 1.9.6
-//	Summary: PHP-based admin tool to manage SQLite2 and SQLite3 databases on the web
-//	Last updated: 2015-07-05
-//	Developers:
-//	   Dane Iracleous (daneiracleous@gmail.com)
-//	   Ian Aldrighetti (ian.aldrighetti@gmail.com)
-//	   George Flanagin & Digital Gaslight, Inc (george@digitalgaslight.com)
-//	   Christopher Kramer (crazy4chrissi@gmail.com, http://en.christosoft.de)
-//	   Ayman Teryaki (http://havalite.com)
-//	   Dreadnaut (dreadnaut@gmail.com, http://dreadnaut.altervista.org)
-//	
-//	
-//	Copyright (C) 2015, phpLiteAdmin
-//	
-//	This program is free software: you can redistribute it and/or modify
-//	it under the terms of the GNU General Public License as published by
-//	the Free Software Foundation, either version 3 of the License, or
-//	(at your option) any later version.
-//	
-//	This program is distributed in the hope that it will be useful,
-//	but WITHOUT ANY WARRANTY; without even the implied warranty of
-//	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//	GNU General Public License for more details.
-//	
-//	You should have received a copy of the GNU General Public License
-//	along with this program.  If not, see <http://www.gnu.org/licenses/>.
-//	
-//	////////////////////////////////////////////////////////////////////////
-//	
-//	Please report any bugs you may encounter to our issue tracker here:
-//		https://bitbucket.org/phpliteadmin/public/issues?status=new&status=open
 
-//
-// This is sample configuration file
-//
-// You can configure phpliteadmin in one of 2 ways:
-// 1. Rename phpliteadmin.config.sample.php to phpliteadmin.config.php and change parameters in there.
-//    You can set only your custom settings in phpliteadmin.config.php. All other settings will be set to defaults.
-// 2. Change parameters directly in main phpliteadmin.php file
-//
-// Please see https://bitbucket.org/phpliteadmin/public/wiki/Configuration for more details
+// TfEL Database Admin – Hacked apart verson of PHPLiteAdmin, originally GNU – preferred re-release under BSD3C
 
 //password to gain access
-$password = 'admin';
+$password = 'tfel';
 
 //directory relative to this file to search for databases (if false, manually list databases in the $databases variable)
 $directory = '.';
@@ -212,7 +171,7 @@ $lang = array(
 	"not_dir" => "The directory you specified to scan for databases does not exist or is not a directory.",
 	"bad_php_directive" => "It appears that the PHP directive, 'register_globals' is enabled. This is bad. You need to disable it before continuing.",
 	"page_gen" => "Page generated in %s seconds.",
-	"powered" => "Powered by",
+	"powered" => "Powered by PHPLiteAdmin. Mastered into ",
 	"free_software" => "This is free software.",
 	"please_donate" => "Please donate.",
 	"remember" => "Remember me",
@@ -420,8 +379,8 @@ if (is_readable($config_filename)) {
 }
 
 //constants 1
-define("PROJECT", "phpLiteAdmin");
-define("VERSION", "1.9.6");
+define("PROJECT", "TfEL DB Debug");
+define("VERSION", "Dataset Manager 1.9.6");
 define("PAGE", basename(__FILE__));
 define("FORCETYPE", false); //force the extension that will be used (set to false in almost all circumstances except debugging)
 define("SYSTEMPASSWORD", $password); // Makes things easier.
@@ -956,7 +915,7 @@ if(isset($_GET['help']))
 	<div id='help_container'>
 	<?php
 	echo "<div class='help_list'>";
-	echo "<span style='font-size:18px;'>".PROJECT." v".VERSION." ".$lang['help_doc']."</span><br/><br/>";
+	echo "<span style='font-size:18px;'>".PROJECT." <small>".VERSION."</small> ".$lang['help_doc']."</span><br/><br/>";
 	foreach((array)$help as $key => $val)
 	{
 		echo "<a href='#".$key."'>".$key."</a><br/>";
@@ -999,7 +958,7 @@ if(ini_get("register_globals") == "on" || ini_get("register_globals")=="1") //ch
 if(!$auth->isAuthorized())
 {
 	echo "<div id='loginBox'>";
-	echo "<h1><span id='logo'>".PROJECT."</span> <span id='version'>v".VERSION."</span></h1>";
+	echo "<h1><span id='logo'>".PROJECT."</span> <span id='version'><small>".VERSION."</small></span></h1>";
 	echo "<div style='padding:15px; text-align:center;'>";
 	if ($auth->isFailedLogin())
 		echo "<span class='warning'>".$lang['passwd_incorrect']."</span><br/><br/>";
@@ -1598,12 +1557,10 @@ $target_table_type = $target_table ? $db->getTypeOfTable($target_table) : null;
 echo '<table class="body_tbl" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td valign="top" class="left_td" style="width:100px; padding:9px 2px 9px 9px;">';
 echo "<div id='leftNav'>";
 echo "<h1><a href='".PAGE."'>";
-echo "<span id='logo'>".PROJECT."</span> <span id='version'>v".VERSION."</span>";
+echo "<span id='logo'>".PROJECT."</span> <br> <span id='version'><small>".VERSION."</small></span>";
 echo "</a></h1>";
 echo "<div id='headerlinks'>";
-echo "<a href='javascript:void' onclick='openHelp(\"top\");'>".$lang['docu']."</a> | ";
-echo "<a href='http://www.gnu.org/licenses/gpl.html' target='_blank'>".$lang['license']."</a> | ";
-echo "<a href='".PROJECT_URL."' target='_blank'>".$lang['proj_site']."</a>";
+echo "<a style='font-weight: 100;'>Adapted for DECD OFLI <br> by Aidan Cornelius-Bell</a>";
 echo "</div>";
 
 //- HTML: database list
@@ -4124,7 +4081,6 @@ if(!$target_table && !isset($_GET['confirm']) && (!isset($_GET['action']) || (is
 //- HTML: page footer
 echo "<br/>";
 echo "<span style='font-size:11px;'>".$lang['powered']." <a href='".PROJECT_URL."' target='_blank' style='font-size:11px;'>".PROJECT."</a> | ";
-echo $lang['free_software']." <a href='".DONATE_URL."' target='_blank' style='font-size:11px;'>".$lang['please_donate']."</a> | ";
 printf($lang['page_gen'], $pageTimer);
 echo "</span>";
 echo "</td></tr></table>";
@@ -5543,7 +5499,7 @@ function getInternalResource($res) {
 }
 
 // resources embedded below, do not edit!
-__halt_compiler() ?>body{margin:0px;padding:0px;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#000;background-color:#e0ebf6;overflow:auto}.body_tbl td{padding:9px 2px 9px 9px}.left_td{width:100px}a{color:#03F;text-decoration:none;cursor:pointer}a:hover{color:#06F}hr{height:1px;border:0;color:#bbb;background-color:#bbb;width:100%}h1{margin:0px;padding:5px;font-size:24px;background-color:#f3cece;text-align:center;color:#000;border-top-left-radius:5px;border-top-right-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px}#headerlinks{text-align:center;margin-bottom:10px;padding:5px 15px;border-color:#03F;border-width:1px;border-style:solid;border-left-style:none;border-right-style:none;font-size:12px;background-color:#e0ebf6;font-weight:bold}h1 #version{color:#000;font-size:16px}h1 #logo{color:#000}h2{margin:0px;padding:0px;font-size:14px;margin-bottom:20px}input,select,textarea{font-family:Arial,Helvetica,sans-serif;background-color:#eaeaea;color:#03F;border-color:#03F;border-style:solid;border-width:1px;margin:5px;border-radius:5px;-moz-border-radius:5px;padding:3px}input.btn{cursor:pointer}input.btn:hover{background-color:#ccc}fieldset{padding:15px;border-color:#03F;border-width:1px;border-style:solid;border-radius:5px;-moz-border-radius:5px;background-color:#f9f9f9}#container{padding:10px}#leftNav{min-width:250px;padding:0px;border-color:#03F;border-width:1px;border-style:solid;background-color:#FFF;padding-bottom:15px;border-radius:5px;-moz-border-radius:5px}.viewTable tr td{padding:1px}#loginBox{width:500px;margin-left:auto;margin-right:auto;margin-top:50px;border-color:#03F;border-width:1px;border-style:solid;background-color:#FFF;border-radius:5px;-moz-border-radius:5px}#main{border-color:#03F;border-width:1px;border-style:solid;padding:15px;background-color:#FFF;border-bottom-left-radius:5px;border-bottom-right-radius:5px;border-top-right-radius:5px;-moz-border-radius-bottomleft:5px;-moz-border-radius-bottomright:5px;-moz-border-radius-topright:5px}.td1{background-color:#f9e3e3;text-align:right;font-size:12px;padding-left:10px;padding-right:10px}.td2{background-color:#f3cece;text-align:right;font-size:12px;padding-left:10px;padding-right:10px}.tdheader{border-color:#03F;border-width:1px;border-style:solid;font-weight:bold;font-size:12px;padding-left:10px;padding-right:10px;background-color:#e0ebf6;border-radius:5px;-moz-border-radius:5px}.confirm{border-color:#03F;border-width:1px;border-style:dashed;padding:15px;background-color:#e0ebf6}.tab{display:block;padding:5px;padding-right:8px;padding-left:8px;border-color:#03F;border-width:1px;border-style:solid;margin-right:5px;float:left;border-bottom-style:none;position:relative;top:1px;padding-bottom:4px;background-color:#eaeaea;border-top-left-radius:5px;border-top-right-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px}.tab_pressed{display:block;padding:5px;padding-right:8px;padding-left:8px;border-color:#03F;border-width:1px;border-style:solid;margin-right:5px;float:left;border-bottom-style:none;position:relative;top:1px;background-color:#FFF;cursor:default;border-top-left-radius:5px;border-top-right-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px}.helpq{font-size:11px;font-weight:normal}#help_container{padding:0px;font-size:12px;margin-left:auto;margin-right:auto;background-color:#fff}.help_outer{background-color:#FFF;padding:0px;height:300px;position:relative}.help_list{padding:10px;height:auto}.headd{font-size:14px;font-weight:bold;display:block;padding:10px;background-color:#e0ebf6;border-color:#03F;border-width:1px;border-style:solid;border-left-style:none;border-right-style:none}.help_inner{padding:10px}.help_top{display:block;position:absolute;right:10px;bottom:10px}.warning,.delete,.empty,.drop,.delete_db{color:red}.sidebar_table{font-size:11px}.active_table,.active_db{text-decoration:underline}.null{color:#888}.found{background:#FF0;text-decoration:none}
+__halt_compiler() ?>body{margin:0px;padding:0px;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#222;background-color:#F8F8FF;overflow:auto}.body_tbl td{padding:9px 2px 9px 9px}.left_td{width:100px}a{color:#4b2682;text-decoration:none;cursor:pointer}a:hover{color:#06F}hr{height:1px;border:0;color:#bbb;background-color:#bbb;width:100%}h1{margin:0px;padding:5px;font-size:24px;background-color:#4a2581;text-align:center;color:#000;border-top-left-radius:5px;border-top-right-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px}#headerlinks a{color:#fff;}#headerlinks{text-align:center;margin-bottom:10px;padding:5px 15px;border-color:#6a5396;border-width:1px;border-style:solid;border-left-style:none;border-right-style:none;font-size:12px;background-color:#6a5396;font-weight:bold;color:#fff}h1 #version{color:#FFF;font-size:16px}h1 #logo{color:#FFF}h2{margin:0px;padding:0px;font-size:14px;margin-bottom:20px}input,select,textarea{font-family:Arial,Helvetica,sans-serif;background-color:#eaeaea;color:#6a5396;border-color:#6a5396;border-style:solid;border-width:1px;margin:5px;border-radius:5px;-moz-border-radius:5px;padding:3px}input.btn{cursor:pointer}input.btn:hover{background-color:#ccc}fieldset{padding:15px;border-color:#6a5396;border-width:1px;border-style:solid;border-radius:5px;-moz-border-radius:5px;background-color:#f9f9f9}#container{padding:10px}#leftNav{min-width:250px;padding:0px;border-color:#6a5396;border-width:1px;border-style:solid;background-color:#FFF;padding-bottom:15px;border-radius:5px;-moz-border-radius:5px}.viewTable tr td{padding:1px}#loginBox{width:500px;margin-left:auto;margin-right:auto;margin-top:50px;border-color:#6a5396;border-width:1px;border-style:solid;background-color:#FFF;border-radius:5px;-moz-border-radius:5px}#main{border-color:#6a5396;border-width:1px;border-style:solid;padding:15px;background-color:#FFF;border-bottom-left-radius:5px;border-bottom-right-radius:5px;border-top-right-radius:5px;-moz-border-radius-bottomleft:5px;-moz-border-radius-bottomright:5px;-moz-border-radius-topright:5px}.td1{background-color:#e6e7e8;text-align:right;font-size:12px;padding-left:10px;padding-right:10px}.td2{background-color:#FFF;text-align:right;font-size:12px;padding-left:10px;padding-right:10px}.tdheader{border-color:#6a5396;border-width:1px;border-style:solid;font-weight:bold;font-size:12px;padding-left:10px;padding-right:10px;background-color:#e0ebf6;border-radius:5px;-moz-border-radius:5px}.confirm{border-color:#6a5396;border-width:1px;border-style:dashed;padding:15px;background-color:#e0ebf6}.tab{display:block;padding:5px;padding-right:8px;padding-left:8px;border-color:#6a5396;border-width:1px;border-style:solid;margin-right:5px;float:left;border-bottom-style:none;position:relative;top:1px;padding-bottom:4px;background-color:#eaeaea;border-top-left-radius:5px;border-top-right-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px}.tab_pressed{display:block;padding:5px;padding-right:8px;padding-left:8px;border-color:#6a5396;border-width:1px;border-style:solid;margin-right:5px;float:left;border-bottom-style:none;position:relative;top:1px;background-color:#FFF;cursor:default;border-top-left-radius:5px;border-top-right-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px}.helpq{font-size:11px;font-weight:normal}#help_container{padding:0px;font-size:12px;margin-left:auto;margin-right:auto;background-color:#fff}.help_outer{background-color:#FFF;padding:0px;height:300px;position:relative}.help_list{padding:10px;height:auto}.headd{font-size:14px;font-weight:bold;display:block;padding:10px;background-color:#e0ebf6;border-color:#6a5396;border-width:1px;border-style:solid;border-left-style:none;border-right-style:none}.help_inner{padding:10px}.help_top{display:block;position:absolute;right:10px;bottom:10px}.warning,.delete,.empty,.drop,.delete_db{color:red}.sidebar_table{font-size:11px}.active_table,.active_db{text-decoration:underline}.null{color:#888}.found{background:#FF0;text-decoration:none}
 function initAutoincrement()
 {var i=0;while(document.getElementById('i'+i+'_autoincrement')!=undefined)
 {document.getElementById('i'+i+'_autoincrement').disabled=true;i++;}}
