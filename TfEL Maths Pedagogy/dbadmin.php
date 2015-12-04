@@ -13,16 +13,7 @@ $subdirectories = false;
 
 //if the above $directory variable is set to false, you must specify the databases manually in an array as the next variable
 //if any of the databases do not exist as they are referenced by their path, they will be created automatically
-$databases = array(
-	array(
-		'path'=> 'database1.sqlite',
-		'name'=> 'Database 1'
-	),
-	array(
-		'path'=> 'database2.sqlite',
-		'name'=> 'Database 2'
-	),
-);
+$databases = array();
 
 
 /* ---- Interface settings ---- */
@@ -379,7 +370,7 @@ if (is_readable($config_filename)) {
 }
 
 //constants 1
-define("PROJECT", "TfEL DB Debug");
+define("PROJECT", "TfEL DB");
 define("VERSION", "Dataset Manager 1.9.6");
 define("PAGE", basename(__FILE__));
 define("FORCETYPE", false); //force the extension that will be used (set to false in almost all circumstances except debugging)
@@ -1560,7 +1551,7 @@ echo "<h1><a href='".PAGE."'>";
 echo "<span id='logo'>".PROJECT."</span> <br> <span id='version'><small>".VERSION."</small></span>";
 echo "</a></h1>";
 echo "<div id='headerlinks'>";
-echo "<a style='font-weight: 100;'>Adapted for DECD OFLI <br> by Aidan Cornelius-Bell</a>";
+echo "<span style='font-weight: 100;'>Adapted for <a href='#' title='Department for Education and Child Development, Office for Education, Learning Improvement Division, Pedagogy and Leadership Team'>DECD OFE - LID PLT <br> by <a href='https://teachersolutions.com.au'>Aidan Cornelius-Bell</a></span>";
 echo "</div>";
 
 //- HTML: database list
@@ -1958,7 +1949,7 @@ if(isset($_GET['action']) && !isset($_GET['confirm']))
 				echo "</ul><br/><br/>";
 			}
 			echo "<div style='float:left; width:70%;'>";
-			echo "<textarea style='width:97%; height:300px;' name='queryval' id='queryval' cols='50' rows='8'>".htmlencode($queryStr)."</textarea>";
+			echo "<textarea style='width:97%; height:300px;' name='queryval' id='queryval' cols='60' rows='8'>".htmlencode($queryStr)."</textarea>";
 			echo "</div>";
 			echo "<div style='float:left; width:28%; padding-left:10px;'>";
 			echo $lang['fields']."<br/>";
@@ -2235,7 +2226,7 @@ if(isset($_GET['action']) && !isset($_GET['confirm']))
 						if($target_table_type == 'table')
 						{
 							echo $tdWithClass."<a href='?table=".urlencode($target_table)."&amp;action=row_editordelete&amp;pk=".urlencode($pk)."&amp;type=edit' title='".$lang['edit']."' class='edit'><span>".$lang['edit']."</span></a></td>"; 
-							echo $tdWithClass."<a href='?table=".urlencode($target_table)."&amp;action=row_editordelete&amp;pk=".urlencode($pk)."&amp;type=delete' title='".$lang['del']."' class='delete'><span>".$lang['del']."</span></a></td>";
+							echo $tdWithClass."<a href='?table=".urlencode($target_table)."&amp;action=row_editordelete&amp;pk=".urlencode($pk)."&amp;type=delete' title='".$lang['del']."' class='delete' style='color:red;'><span>".$lang['del']."</span></a></td>";
 						}
 						for($z=0; $z<sizeof($result); $z++)
 						{
@@ -2552,7 +2543,7 @@ if(isset($_GET['action']) && !isset($_GET['confirm']))
 							echo "<a href='?table=".urlencode($target_table)."&amp;action=row_editordelete&amp;pk=".urlencode($pk)."&amp;type=edit' title='".$lang['edit']."' class='edit'><span>".$lang['edit']."</span></a>";
 							echo "</td>";
 							echo $tdWithClass;
-							echo "<a href='?table=".urlencode($target_table)."&amp;action=row_editordelete&amp;pk=".urlencode($pk)."&amp;type=delete' title='".$lang['del']."' class='delete'><span>".$lang['del']."</span></a>";
+							echo "<a href='?table=".urlencode($target_table)."&amp;action=row_editordelete&amp;pk=".urlencode($pk)."&amp;type=delete' title='".$lang['del']."' class='delete' style='color:red;'><span>".$lang['del']."</span></a>";
 							echo "</td>";
 						}
 						for($j=0; $j<sizeof($result); $j++)
@@ -2941,14 +2932,14 @@ if(isset($_GET['action']) && !isset($_GET['confirm']))
 							if($typeAffinity=="INTEGER" || $typeAffinity=="REAL" || $typeAffinity=="NUMERIC")
 								echo "<input type='text' name='".htmlencode($field)."[]' value='".htmlencode($value)."' onblur='changeIgnore(this, \"".$j."\", \"".htmlencode($pks[$j]).":".htmlencode($field)."_null\")' />";
 							else
-								echo "<textarea name='".htmlencode($field)."[]' rows='1' cols='60' class='".htmlencode($field)."_textarea' onblur='changeIgnore(this, \"".$j."\", \"".htmlencode($pks[$j]).":".htmlencode($field)."_null\")'>".htmlencode($value)."</textarea>";
+								echo "<textarea name='".htmlencode($field)."[]' rows='5' cols='90' class='".htmlencode($field)."_textarea' onblur='changeIgnore(this, \"".$j."\", \"".htmlencode($pks[$j]).":".htmlencode($field)."_null\")'>".htmlencode($value)."</textarea>";
 							echo "</td>";
 							echo "</tr>";
 						}
 						echo "<tr>";
 						echo "<td class='tdheader' style='text-align:right;' colspan='5'>";
 						// Note: the 'Save changes' button must be first in the code so it is the one used when submitting the form with the Enter key (issue #215)
-						echo "<input type='submit' value='".$lang['save_ch']."' class='btn'/> ";
+						echo "<input type='submit' value='".$lang['save_ch']."' class='btn btn-sub'/> ";
 						echo "<input type='submit' name='new_row' value='".$lang['new_insert']."' class='btn'/> ";
 						echo "<a href='?table=".urlencode($target_table)."&amp;action=row_view'>".$lang['cancel']."</a>";
 						echo "</td>";
@@ -3026,7 +3017,7 @@ if(isset($_GET['action']) && !isset($_GET['confirm']))
 					echo "<a href='?table=".urlencode($target_table)."&amp;action=column_edit&amp;pk=".urlencode($fieldVal)."' title='".$lang['edit']."' class='edit'><span>".$lang['edit']."</span></a>";
 					echo "</td>";
 					echo $tdWithClass;
-					echo "<a href='?table=".urlencode($target_table)."&amp;action=column_confirm&amp;action2=column_delete&amp;pk=".urlencode($fieldVal)."' title='".$lang['del']."' class='delete'><span>".$lang['del']."</span></a>";
+					echo "<a href='?table=".urlencode($target_table)."&amp;action=column_confirm&amp;action2=column_delete&amp;pk=".urlencode($fieldVal)."' title='".$lang['del']."' class='delete' style='color:red;'><span>".$lang['del']."</span></a>";
 					echo "</td>";
 				}
 				echo $tdWithClass;
@@ -3065,7 +3056,7 @@ if(isset($_GET['action']) && !isset($_GET['confirm']))
 				if($noPrimaryKey)
 					echo "<option value='primarykey_add'>".$lang['prim_key']."</option>";
 				echo "</select> ";
-				echo "<input type='submit' value='".$lang['go']."' name='massGo' class='btn'/>";
+				echo "<input type='submit' value='".$lang['go']."' name='massGo' class='btn btn-sub'/>";
 			}
 			echo "</form>";
 			if($target_table_type == 'table')
@@ -3073,7 +3064,7 @@ if(isset($_GET['action']) && !isset($_GET['confirm']))
 				echo "<br/>";
 				echo "<form action='?table=".urlencode($target_table)."&amp;action=column_create' method='post'>";
 				echo "<input type='hidden' name='tablename' value='".htmlencode($target_table)."'/>";
-				echo $lang['add']." <input type='text' name='tablefields' style='width:30px;' value='1'/> ".$lang['tbl_end']." <input type='submit' value='".$lang['go']."' name='addfields' class='btn'/>";
+				echo $lang['add']." <input type='text' name='tablefields' style='width:30px;' value='1'/> ".$lang['tbl_end']." <input type='submit' value='".$lang['go']."' name='addfields' class='btn btn-sub'/>";
 				echo "</form>";
 			}
 			
@@ -3123,7 +3114,7 @@ if(isset($_GET['action']) && !isset($_GET['confirm']))
 						$tdWithClassLeftSpan = "<td class='td".($i%2 ? "1" : "2")."' style='text-align:left;' rowspan='".$span."'>";
 						echo "<tr>";
 						echo $tdWithClassSpan;
-						echo "<a href='?table=".urlencode($target_table)."&amp;action=index_delete&amp;pk=".urlencode($result[$i]['name'])."' title='".$lang['del']."' class='delete'><span>".$lang['del']."</span></a>";
+						echo "<a href='?table=".urlencode($target_table)."&amp;action=index_delete&amp;pk=".urlencode($result[$i]['name'])."' title='".$lang['del']."' class='delete' style='color:red;'><span>".$lang['del']."</span></a>";
 						echo "</td>";
 						echo $tdWithClassLeftSpan;
 						echo $result[$i]['name'];
@@ -3168,7 +3159,7 @@ if(isset($_GET['action']) && !isset($_GET['confirm']))
 						$tdWithClass = "<td class='td".($i%2 ? "1" : "2")."'>";
 						echo "<tr>";
 						echo $tdWithClass;
-						echo "<a href='?table=".urlencode($target_table)."&amp;action=trigger_delete&amp;pk=".urlencode($result[$i]['name'])."' title='".$lang['del']."' class='delete'><span>".$lang['del']."</span></a>";
+						echo "<a href='?table=".urlencode($target_table)."&amp;action=trigger_delete&amp;pk=".urlencode($result[$i]['name'])."' title='".$lang['del']."' class='delete' style='color:red;'><span>".$lang['del']."</span></a>";
 						echo "</td>";
 						echo $tdWithClass;
 						echo htmlencode($result[$i]['name']);
@@ -3183,14 +3174,14 @@ if(isset($_GET['action']) && !isset($_GET['confirm']))
 				echo "<form action='?table=".urlencode($target_table)."&amp;action=index_create' method='post'>";
 				echo "<input type='hidden' name='tablename' value='".htmlencode($target_table)."'/>";
 				echo "<br/><div class='tdheader'>";
-				echo $lang['create_index2']." <input type='text' name='numcolumns' style='width:30px;' value='1'/> ".$lang['cols']." <input type='submit' value='".$lang['go']."' name='addindex' class='btn'/>";
+				echo $lang['create_index2']." <input type='text' name='numcolumns' style='width:30px;' value='1'/> ".$lang['cols']." <input type='submit' value='".$lang['go']."' name='addindex' class='btn bnt-sub'/>";
 				echo "</div>";
 				echo "</form>";
 				
 				echo "<form action='?table=".urlencode($target_table)."&amp;action=trigger_create' method='post'>";
 				echo "<input type='hidden' name='tablename' value='".htmlencode($target_table)."'/>";
 				echo "<br/><div class='tdheader'>";
-				echo $lang['create_trigger2']." <input type='submit' value='".$lang['go']."' name='addindex' class='btn'/>";
+				echo $lang['create_trigger2']." <input type='submit' value='".$lang['go']."' name='addindex' class='btn btn-sub'/>";
 				echo "</div>";
 				echo "</form>";
 			}
@@ -3257,7 +3248,7 @@ if(isset($_GET['action']) && !isset($_GET['confirm']))
 				}
 				echo "<tr>";
 				echo "<td class='tdheader' style='text-align:right;' colspan='6'>";
-				echo "<input type='submit' value='".$lang['add_flds']."' class='btn'/> ";
+				echo "<input type='submit' value='".$lang['add_flds']."' class='btn btn-sub'/> ";
 				echo "<a href='?table=".urlencode($_POST['tablename'])."&amp;action=column_view'>".$lang['cancel']."</a>";
 				echo "</td>";
 				echo "</tr>";
@@ -3294,7 +3285,7 @@ if(isset($_GET['action']) && !isset($_GET['confirm']))
 				echo "<div class='confirm'>";
 				printf($lang['ques_'.$_REQUEST['action2']], htmlencode($str), htmlencode($target_table));
 				echo "<br/><br/>";
-				echo "<input type='submit' value='".$lang['confirm']."' class='btn'/> ";
+				echo "<input type='submit' value='".$lang['confirm']."' class='btn btn-sub'/> ";
 				echo "<a href='?table=".urlencode($target_table)."&amp;action=column_view'>".$lang['cancel']."</a>";
 				echo "</div>";
 			}
@@ -3384,7 +3375,7 @@ if(isset($_GET['action']) && !isset($_GET['confirm']))
 
 				echo "<tr>";
 				echo "<td class='tdheader' style='text-align:right;' colspan='6'>";
-				echo "<input type='submit' value='".$lang['save_ch']."' class='btn'/> ";
+				echo "<input type='submit' value='".$lang['save_ch']."' class='btn btn-sub'/> ";
 				echo "<a href='?table=".urlencode($target_table)."&amp;action=column_view'>".$lang['cancel']."</a>";
 				echo "</td>";
 				echo "</tr>";
@@ -3448,7 +3439,7 @@ if(isset($_GET['action']) && !isset($_GET['confirm']))
 				echo $lang['trigger_step'].":<br/>";
 				echo "<textarea name='triggersteps' style='width:500px; height:100px;' rows='8' cols='50'></textarea>";
 				echo "</fieldset><br/><br/>";
-				echo "<input type='submit' value='".$lang['create_trigger2']."' class='btn'/> ";
+				echo "<input type='submit' value='".$lang['create_trigger2']."' class='btn btn-sub'/> ";
 				echo "<a href='?table=".urlencode($_POST['tablename'])."&amp;action=column_view'>".$lang['cancel']."</a>";
 				echo "</form>";
 			}
@@ -3494,7 +3485,7 @@ if(isset($_GET['action']) && !isset($_GET['confirm']))
 				echo "</fieldset>";
 				echo "<br/><br/>";
 				echo "<input type='hidden' name='num' value='".$num."'/>";
-				echo "<input type='submit' value='".$lang['create_index1']."' class='btn'/> ";
+				echo "<input type='submit' value='".$lang['create_index1']."' class='btn btn-sub'/> ";
 				echo "<a href='?table=".urlencode($_POST['tablename'])."&amp;action=column_view'>".$lang['cancel']."</a>";
 				echo "</form>";
 			}
@@ -3709,10 +3700,10 @@ if(!$target_table && !isset($_GET['confirm']) && (!isset($_GET['action']) || (is
 					echo "<a href='?table=".urlencode($result[$i]['name'])."&amp;action=table_rename'>".$lang['rename']."</a>";
 					echo "</td>";
 					echo $tdWithClass;
-					echo "<a href='?table=".urlencode($result[$i]['name'])."&amp;action=table_empty' class='empty'>".$lang['empty']."</a>";
+					echo "<a href='?table=".urlencode($result[$i]['name'])."&amp;action=table_empty' class='empty' style='color:darkred;'>".$lang['empty']."</a>";
 					echo "</td>";
 					echo $tdWithClass;
-					echo "<a href='?table=".urlencode($result[$i]['name'])."&amp;action=table_drop' class='drop'>".$lang['drop']."</a>";
+					echo "<a href='?table=".urlencode($result[$i]['name'])."&amp;action=table_drop' class='drop' style='color:red;'>".$lang['drop']."</a>";
 					echo "</td>";
 					echo $tdWithClass;
 					echo $records;
@@ -3756,7 +3747,7 @@ if(!$target_table && !isset($_GET['confirm']) && (!isset($_GET['action']) || (is
 					echo "";
 					echo "</td>";
 					echo $tdWithClass;
-					echo "<a href='?table=".urlencode($result[$i]['name'])."&amp;action=view_drop' class='drop'>".$lang['drop']."</a>";
+					echo "<a href='?table=".urlencode($result[$i]['name'])."&amp;action=view_drop' class='drop' style='color:red;'>".$lang['drop']."</a>";
 					echo "</td>";
 					echo $tdWithClass;
 					echo $records;
@@ -3778,7 +3769,7 @@ if(!$target_table && !isset($_GET['confirm']) && (!isset($_GET['action']) || (is
 		echo "<form action='?action=table_create' method='post'>";
 		echo $lang['name'].": <input type='text' name='tablename' style='width:200px;'/> ";
 		echo $lang['fld_num'].": <input type='text' name='tablefields' style='width:90px;'/> ";
-		echo "<input type='submit' name='createtable' value='".$lang['go']."' class='btn'/>";
+		echo "<input type='submit' name='createtable' value='".$lang['go']."' class='btn btn-sub'/>";
 		echo "</form>";
 		echo "</fieldset>";
 		echo "<br/>";
@@ -3787,7 +3778,7 @@ if(!$target_table && !isset($_GET['confirm']) && (!isset($_GET['action']) || (is
 		echo "<form action='?action=view_create&amp;confirm=1' method='post'>";
 		echo $lang['name'].": <input type='text' name='viewname' style='width:200px;'/> ";
 		echo $lang['sel_state']." ".helpLink($lang['help4']).": <input type='text' name='select' style='width:400px;'/> "; 
-		echo "<input type='submit' name='createtable' value='".$lang['go']."' class='btn'/>";
+		echo "<input type='submit' name='createtable' value='".$lang['go']."' class='btn btn-sub'/>";
 		echo "</form>";
 		echo "</fieldset>";
 	}
@@ -3896,7 +3887,7 @@ if(!$target_table && !isset($_GET['confirm']) && (!isset($_GET['action']) || (is
 		}
 		echo "<textarea style='width:100%; height:300px;' name='queryval' id='queryval' cols='50' rows='8'>".htmlencode($queryStr)."</textarea>";
 		echo $lang['delimit']." <input type='text' name='delimiter' value='".htmlencode($delimiter)."' style='width:50px;'/> ";
-		echo "<input type='submit' name='query' value='".$lang['go']."' class='btn'/>";
+		echo "<input type='submit' name='query' value='".$lang['go']."' class='btn btn-sub'/>";
 		echo "</form>";
 		echo "</fieldset>";
 	}
@@ -3914,7 +3905,7 @@ if(!$target_table && !isset($_GET['confirm']) && (!isset($_GET['action']) || (is
 		echo "<form method='post' action='?view=vacuum'>";
 		printf($lang['vac_desc'],htmlencode($db->getName()));
 		echo "<br/><br/>";
-		echo "<input type='submit' value='".$lang['vac']."' name='vacuum' class='btn'/>";
+		echo "<input type='submit' value='".$lang['vac']."' name='vacuum' class='btn btn-sub'/>";
 		echo "</form>";
 	}
 	else if($view=="export")
@@ -3966,7 +3957,7 @@ if(!$target_table && !isset($_GET['confirm']) && (!isset($_GET['action']) || (is
 		echo "<fieldset><legend><b>".$lang['save_as']."</b></legend>";
 		$file = pathinfo($db->getPath());
 		$name = $file['filename'];
-		echo "<input type='text' name='filename' value='".htmlencode($name)."_".date("Y-m-d").".dump' style='width:400px;'/> <input type='submit' name='export' value='".$lang['export']."' class='btn'/>";
+		echo "<input type='text' name='filename' value='".htmlencode($name)."_".date("Y-m-d").".dump' style='width:400px;'/> <input type='submit' name='export' value='".$lang['export']."' class='btn btn-sub'/>";
 		echo "</fieldset>";
 		echo "</form>";
 		echo "<div class='confirm' style='margin-top: 2em'>".sprintf($lang['backup_hint'], "<a href='?download=".urlencode($currentDB['path'])."' title='".$lang['backup']."'>".$lang["backup_hint_linktext"]."</a>")."</div>";
@@ -4025,7 +4016,7 @@ if(!$target_table && !isset($_GET['confirm']) && (!isset($_GET['action']) || (is
 		echo "<br/><br/>";
 		
 		echo "<fieldset><legend><b>".$lang['import_f']."</b></legend>";
-		echo "<input type='file' value='".$lang['choose_f']."' name='file' style='background-color:transparent; border-style:none;'/> <input type='submit' value='".$lang['import']."' name='import' class='btn'/>";
+		echo "<input type='file' value='".$lang['choose_f']."' name='file' style='background-color:transparent; border-style:none;'/> <input type='submit' value='".$lang['import']."' name='import' class='btn btn-sub'/>";
 		echo "</fieldset>";
 	}
 	else if($view=="rename")
@@ -4059,7 +4050,7 @@ if(!$target_table && !isset($_GET['confirm']) && (!isset($_GET['action']) || (is
 		}
 		echo "<form action='?view=rename&amp;database_rename=1' method='post'>";
 		echo "<input type='hidden' name='oldname' value='".htmlencode($db->getPath())."'/>";
-		echo $lang['db_rename']." '".htmlencode($db->getPath())."' ".$lang['to']." <input type='text' name='newname' style='width:200px;' value='".htmlencode($db->getPath())."'/> <input type='submit' value='".$lang['rename']."' name='rename' class='btn'/>";
+		echo $lang['db_rename']." '".htmlencode($db->getPath())."' ".$lang['to']." <input type='text' name='newname' style='width:200px;' value='".htmlencode($db->getPath())."'/> <input type='submit' value='".$lang['rename']."' name='rename' class='btn btn-sub'/>";
 		echo "</form>";	
 	}
 	else if($view=="delete")
@@ -4069,7 +4060,7 @@ if(!$target_table && !isset($_GET['confirm']) && (!isset($_GET['action']) || (is
 		echo "<div class='confirm'>";
 		echo sprintf($lang['ques_del_db'],htmlencode($db->getPath()))."<br/><br/>";
 		echo "<input name='database_delete' value='".htmlencode($db->getPath())."' type='hidden'/>";
-		echo "<input type='submit' value='".$lang['confirm']."' class='btn'/> ";
+		echo "<input type='submit' value='".$lang['confirm']."' class='btn btn-sub'/> ";
 		echo "<a href='".PAGE."'>".$lang['cancel']."</a>";
 		echo "</div>";
 		echo "</form>";	
@@ -4212,7 +4203,7 @@ class Database
 				echo "<div class='confirm' style='margin:20px;'>";
 				printf($lang['db_not_writeable'], htmlencode($this->data["path"]), htmlencode(dirname($this->data["path"])));
 				echo "<form action='".PAGE."' method='post'>";
-				echo "<input type='submit' value='Log Out' name='".$lang['logout']."' class='btn'/>";
+				echo "<input type='submit' value='Log Out' name='".$lang['logout']."' class='btn btn-sub'/>";
 				echo "</form>";
 				echo "</div><br/>";
 				exit();
@@ -5499,7 +5490,7 @@ function getInternalResource($res) {
 }
 
 // resources embedded below, do not edit!
-__halt_compiler() ?>body{margin:0px;padding:0px;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#222;background-color:#F8F8FF;overflow:auto}.body_tbl td{padding:9px 2px 9px 9px}.left_td{width:100px}a{color:#4b2682;text-decoration:none;cursor:pointer}a:hover{color:#06F}hr{height:1px;border:0;color:#bbb;background-color:#bbb;width:100%}h1{margin:0px;padding:5px;font-size:24px;background-color:#4a2581;text-align:center;color:#000;border-top-left-radius:5px;border-top-right-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px}#headerlinks a{color:#fff;}#headerlinks{text-align:center;margin-bottom:10px;padding:5px 15px;border-color:#6a5396;border-width:1px;border-style:solid;border-left-style:none;border-right-style:none;font-size:12px;background-color:#6a5396;font-weight:bold;color:#fff}h1 #version{color:#FFF;font-size:16px}h1 #logo{color:#FFF}h2{margin:0px;padding:0px;font-size:14px;margin-bottom:20px}input,select,textarea{font-family:Arial,Helvetica,sans-serif;background-color:#eaeaea;color:#6a5396;border-color:#6a5396;border-style:solid;border-width:1px;margin:5px;border-radius:5px;-moz-border-radius:5px;padding:3px}input.btn{cursor:pointer}input.btn:hover{background-color:#ccc}fieldset{padding:15px;border-color:#6a5396;border-width:1px;border-style:solid;border-radius:5px;-moz-border-radius:5px;background-color:#f9f9f9}#container{padding:10px}#leftNav{min-width:250px;padding:0px;border-color:#6a5396;border-width:1px;border-style:solid;background-color:#FFF;padding-bottom:15px;border-radius:5px;-moz-border-radius:5px}.viewTable tr td{padding:1px}#loginBox{width:500px;margin-left:auto;margin-right:auto;margin-top:50px;border-color:#6a5396;border-width:1px;border-style:solid;background-color:#FFF;border-radius:5px;-moz-border-radius:5px}#main{border-color:#6a5396;border-width:1px;border-style:solid;padding:15px;background-color:#FFF;border-bottom-left-radius:5px;border-bottom-right-radius:5px;border-top-right-radius:5px;-moz-border-radius-bottomleft:5px;-moz-border-radius-bottomright:5px;-moz-border-radius-topright:5px}.td1{background-color:#e6e7e8;text-align:right;font-size:12px;padding-left:10px;padding-right:10px}.td2{background-color:#FFF;text-align:right;font-size:12px;padding-left:10px;padding-right:10px}.tdheader{border-color:#6a5396;border-width:1px;border-style:solid;font-weight:bold;font-size:12px;padding-left:10px;padding-right:10px;background-color:#e0ebf6;border-radius:5px;-moz-border-radius:5px}.confirm{border-color:#6a5396;border-width:1px;border-style:dashed;padding:15px;background-color:#e0ebf6}.tab{display:block;padding:5px;padding-right:8px;padding-left:8px;border-color:#6a5396;border-width:1px;border-style:solid;margin-right:5px;float:left;border-bottom-style:none;position:relative;top:1px;padding-bottom:4px;background-color:#eaeaea;border-top-left-radius:5px;border-top-right-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px}.tab_pressed{display:block;padding:5px;padding-right:8px;padding-left:8px;border-color:#6a5396;border-width:1px;border-style:solid;margin-right:5px;float:left;border-bottom-style:none;position:relative;top:1px;background-color:#FFF;cursor:default;border-top-left-radius:5px;border-top-right-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px}.helpq{font-size:11px;font-weight:normal}#help_container{padding:0px;font-size:12px;margin-left:auto;margin-right:auto;background-color:#fff}.help_outer{background-color:#FFF;padding:0px;height:300px;position:relative}.help_list{padding:10px;height:auto}.headd{font-size:14px;font-weight:bold;display:block;padding:10px;background-color:#e0ebf6;border-color:#6a5396;border-width:1px;border-style:solid;border-left-style:none;border-right-style:none}.help_inner{padding:10px}.help_top{display:block;position:absolute;right:10px;bottom:10px}.warning,.delete,.empty,.drop,.delete_db{color:red}.sidebar_table{font-size:11px}.active_table,.active_db{text-decoration:underline}.null{color:#888}.found{background:#FF0;text-decoration:none}
+__halt_compiler() ?>body{margin:0px;padding:0px;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#222;background-color:#F8F8FF;overflow:auto}.body_tbl td{padding:9px 2px 9px 9px}.left_td{width:100px}a{color:#4b2682;text-decoration:none;cursor:pointer}a:hover{color:#06F}hr{height:1px;border:0;color:#bbb;background-color:#bbb;width:100%}h1{margin:0px;padding:5px;font-size:24px;background-color:#4a2581;text-align:center;color:#000;border-top-left-radius:5px;border-top-right-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px}#headerlinks a{color:#fff;}#headerlinks{text-align:center;margin-bottom:10px;padding:5px 15px;border-color:#6a5396;border-width:1px;border-style:solid;border-left-style:none;border-right-style:none;font-size:12px;background-color:#6a5396;font-weight:bold;color:#fff}h1 #version{color:#FFF;font-size:16px}h1 #logo{color:#FFF}h2{margin:0px;padding:0px;font-size:14px;margin-bottom:20px}input,select,textarea{font-family:Arial,Helvetica,sans-serif;background-color:#eaeaea;color:#6a5396;border-color:#6a5396;border-style:solid;border-width:1px;margin:5px;border-radius:5px;-moz-border-radius:5px;padding:3px;min-width:100px;max-width:800px;}input.btn{cursor:pointer}input.btn:hover{background-color:#ccc}input.btn-sub{background:#4b2682;color:#fff;}input.btn-sub:hover{background:#fff;color:#4b2682;}fieldset{padding:15px;border-color:#6a5396;border-width:1px;border-style:solid;border-radius:5px;-moz-border-radius:5px;background-color:#f9f9f9}#container{padding:10px}#leftNav{min-width:250px;padding:0px;border-color:#6a5396;border-width:1px;border-style:solid;background-color:#FFF;padding-bottom:15px;border-radius:5px;-moz-border-radius:5px}.viewTable tr td{padding:1px}#loginBox{width:500px;margin-left:auto;margin-right:auto;margin-top:50px;border-color:#6a5396;border-width:1px;border-style:solid;background-color:#FFF;border-radius:5px;-moz-border-radius:5px}#main{border-color:#6a5396;border-width:1px;border-style:solid;padding:15px;background-color:#FFF;border-bottom-left-radius:5px;border-bottom-right-radius:5px;border-top-right-radius:5px;-moz-border-radius-bottomleft:5px;-moz-border-radius-bottomright:5px;-moz-border-radius-topright:5px}.td1{background-color:#e6e7e8;text-align:right;font-size:12px;padding-left:10px;padding-right:10px}.td2{background-color:#FFF;text-align:right;font-size:12px;padding-left:10px;padding-right:10px}.tdheader{border-color:#6a5396;border-width:1px;border-style:solid;font-weight:bold;font-size:12px;padding-left:10px;padding-right:10px;background-color:#e0ebf6;border-radius:5px;-moz-border-radius:5px}.confirm{border-color:#4a2581;border-width:2px;border-style:solid;padding:15px;background-color:#6a5396;color:#fff}.tab{display:block;padding:5px;padding-right:8px;padding-left:8px;border-color:#6a5396;border-width:1px;border-style:solid;margin-right:5px;float:left;border-bottom-style:none;position:relative;top:1px;padding-bottom:4px;background-color:#eaeaea;border-top-left-radius:5px;border-top-right-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px}.tab_pressed{display:block;padding:5px;padding-right:8px;padding-left:8px;border-color:#6a5396;border-width:1px;border-style:solid;margin-right:5px;float:left;border-bottom-style:none;position:relative;top:1px;background-color:#FFF;cursor:default;border-top-left-radius:5px;border-top-right-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px}.helpq{font-size:11px;font-weight:normal}#help_container{padding:0px;font-size:12px;margin-left:auto;margin-right:auto;background-color:#fff}.help_outer{background-color:#FFF;padding:0px;height:300px;position:relative}.help_list{padding:10px;height:auto}.headd{font-size:14px;font-weight:bold;display:block;padding:10px;background-color:#e0ebf6;border-color:#6a5396;border-width:1px;border-style:solid;border-left-style:none;border-right-style:none}.help_inner{padding:10px}.help_top{display:block;position:absolute;right:10px;bottom:10px}.warning,.delete,.empty,.drop,.delete_db{color:red !important;}.sidebar_table{font-size:11px}.active_table,.active_db{text-decoration:underline}.null{color:#888}.found{background:#FF0;text-decoration:none}
 function initAutoincrement()
 {var i=0;while(document.getElementById('i'+i+'_autoincrement')!=undefined)
 {document.getElementById('i'+i+'_autoincrement').disabled=true;i++;}}
