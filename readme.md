@@ -1,5 +1,5 @@
 <p align="center" >
-  <img src="https://raw.github.com/AFNetworking/AFNetworking/assets/afnetworking-logo.png" alt="AFNetworking" title="AFNetworking">
+  <img src="https://raw.githubusercontent.com/TfEL/TfEL-Maths-Pedagogy/master/maths-pedagogy-banner.jpg" alt="TfEL Maths Pedagogy">
 </p>
 
 [![Build Status](https://travis-ci.org/TfEL/TfEL-Maths-Pedagogy.svg)](https://travis-ci.org/TfEL/TfEL-Maths-Pedagogy)
