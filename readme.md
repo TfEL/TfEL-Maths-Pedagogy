@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/TfEL/TfEL-Maths-Pedagogy.svg)](https://travis-ci.org/TfEL/TfEL-Maths-Pedagogy)
+
 # Maths Pedagogy
 
 Central Repository for the Teaching for Effective Learning Maths Pedagogy iPad Application.
