@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/TfEL/TfEL-Maths-Pedagogy.svg)](https://travis-ci.org/TfEL/TfEL-Maths-Pedagogy)
+[![codecov.io](https://codecov.io/github/TfEL/TfEL-Maths-Pedagogy/coverage.svg?branch=master)](https://codecov.io/github/TfEL/TfEL-Maths-Pedagogy?branch=master)
+[![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/TfEL/TfEL-Maths-Pedagogy/blob/master/LICENSE)
 
 # Maths Pedagogy
 
