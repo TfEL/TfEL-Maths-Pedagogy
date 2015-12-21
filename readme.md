@@ -12,6 +12,14 @@ Central Repository for the Teaching for Effective Learning Maths Pedagogy iPad A
 
 Developed and maintained by Aidan Cornelius-Bell, TfEL.
 
+### Sub Repositories
+
+Unit tests and web interfaces are also in development for this project. Please see the links below, and other repositories in the TfEL GitHub account.
+
+[/TfEL/glowing-potato](/TfEL/glowing-potato)
+[/TfEL/sturdy-dollop](/TfEL/sturdy-dollop)
+[/TfEL/effective-succotash](/TfEL/effective-succotash)
+
 ### Copyright
 
 © 2015 Department for Education and Child Development, Some Rights Reserved.
